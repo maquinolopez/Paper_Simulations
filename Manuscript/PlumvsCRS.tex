@@ -1,4 +1,4 @@
-%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%
 %%  Template for latex documents
 %%  Author: Marco A. Aquino-Lopez
 %%  Nota: to get a word document use pandoc
@@ -21,7 +21,7 @@
 %|_______ (____  |____| \___  /___/\  \ 
 %        \/    \/           \/      \_/ 
 
-\graphicspath{{../Figures/}} %Setting the graphicspath
+\graphicspath{{Figures/}} %Setting the graphicspath
 
 %Extra packages
 \usepackage{placeins}
@@ -147,7 +147,7 @@ Simulation 3 	&	$8x+25\sin(\frac{x}{\pi})$	&	500 	& 15
 
 \section{Model Comparison}
 
-In order to compare both the CRS and Plum under simular circumstances the previously described data sets will be randomly selected for samples given a information percentage, e.g. for a percentage information of 50\% given our 30 sample data set, 14 samples will randomly selected from the samples at depths 1 to 29, and the samples at depth 30 will be always included. This was done to guaranty that background is reached, which is required for the CRS model. In the case of cores which have not reach background, \itshape{Plum}  \citep{Aquino2018} has shown to provide accurate results without the need of user interference, the CRS can provide a chronology if inventory is completed, which means user innervation. To avoid this problem and to provide a more objective comparison every sampling set will have reach background.  
+In order to compare both the CRS and Plum under simular circumstances the previously described data sets will be randomly selected for samples given a information percentage, e.g. for a percentage information of 50\% given our 30 sample data set, 14 samples will randomly selected from the samples at depths 1 to 29, and the samples at depth 30 will be always included. This was done to guaranty that background is reached, which is required for the CRS model. In the case of cores which have not reach background, \textit{Plum}  \citep{Aquino2018} has shown to provide accurate results without the need of user interference, the CRS can provide a chronology if inventory is completed, which means user innervation. To avoid this problem and to provide a more objective comparison every sampling set will have reach background.  
 \subsection{Sampling Techniques }
 
 In order to observe how sampling affects the accuracy and precision of $^{210}Pb$ models, we used the three simulated data sets created for the previous section. This simulated cores were randomly selected given a percentage of information (e.g. for a 20\% information sample, in the 30 cm cores, 6 random samples were selected). Becase the CRS model assumes that background has being reached, we decided to fix the last sample (30 cm depth) for every case, this will facilitate the CRS to provide more accurate results and also gives the model a single last depth to be removed as it is common practice when using this model. 100 individual samples were selected for information percentage from 10\% to 90\% in a 5\% intervals (e.i 10\%, 15\%, 20\%,...,85\% and 90\%).After a random sample was selected both the CRS model and Plum were performed and compared to the true age value to calculate its accuracy. 
@@ -155,13 +155,38 @@ In order to observe how sampling affects the accuracy and precision of $^{210}Pb
 In order to observe the precision and accuracy we decided to calculate the mean of length of the 95\% intervals (in yr), the offset (in yr) as well as the normalized accuracy (this variable will show us how far the model is from the true value given its uncertainty).  
 
 
-\textbf{Agregar gráficas aquí}
+\begin{figure}
+ \centering
+  \includegraphics[width=\linewidth]{AccPrec.pdf}
+  \caption{}
+  \label{fig:accpre}
+\end{figure}
 
-From this figure we can see that similar to the results presented by \cite{Blaauw2018}. The classical model (CRS) at first appears to provide a similar result (similar offset) with a more precise results (if we only look at the length of the 95\% interval) but by looking at the normalized result we se on average the true age is almost always outside the 95\% confidence intervals. This means that the CRS provides small uncertainties at the cost of its accuracy. It also appears that the length of the 95\% interval and offset is not affected by how much information is provided to the model as well this could be a results of the implicit interpolation provided by the method. 
+From Figure \ref{fig:accpre}, we can observe similar results those presented by \cite{Blaauw2018}. The classical model (CRS) at first appears to provide a similar result (similar offset) to the Bayesian alternative (\textit Plum}) with a more precise results (if we only look at the length of the 95\% interval). 
+These results can be misleading if we don't analysed the effects of these two parameters in conjunction (offset and length of interval). In order to observe how well the model captures the true ages calculated the normal offset (see Figure \ref{fig:accpre}). 
+These figures shows how on average the models contain the true within their uncertainty intervals (normalized to one standard deviation). Any value which is over the second standard deviations represents that the model is incapable of capturing the true ages within their uncertainty intervals.  
+This means that the CRS provides small uncertainties at the cost of its accuracy.
+It also appears that the length of the 95\% interval and offset is not affected by how much information is provided to the model. This is a results of the use of interpolation used by the method. 
 
-On the other hand, \textit{Plum}, which is a Bayesian method, shows more accurate results as more information is given to the model, with a consistently more accurate result compared to the CRS model, as well as  the uncertainty. This result supports the clame that \textit{Plum} provides more realistic uncertainties when compared to the CRS. 
+On the other hand, \textit{Plum}, which is a Bayesian method, shows more accurate results as more information is given to the model, this are similart to the ones found by \citet{Blaauw2018}. 
+When we observe the regular offset (not normalized), we observed that Plum provides a much smaller offset in comparison to the CRS model, this in combination with slightly bigger uncertainties results on a consistently accurate model which is capable of capturing the true values within its uncertainty intervals. 
+This result supports the clame that \textit{Plum} provides more realistic uncertainties when compared to the CRS. 
 
-shows how its normalized accuracy remains similar at any number of samples used. On
+
+
+
+
+\begin{figure}
+ \centering
+  \includegraphics[width=\linewidth]{Maps.pdf}
+  \caption{}
+  \label{fig:accpre}
+\end{figure}
+
+Plum has 87.86\% (4686/5333) of its runs under the 2 standard deviations, on the other hand the CRS model only has 7.48\% (399/5333).
+We can also observe a clear structure on the way Plum increases its accuracy and precision to obtained a better chronology, on the side the CRS model appears to not have this structure. 
+
+
 
 \newpage
 
@@ -288,6 +313,6 @@ shows how its normalized accuracy remains similar at any number of samples used.
 
 
 \bibliographystyle{apalike}
-\bibliography{../bibliography.bib}
+\bibliography{bibliography.bib}
 
 \end{document}
