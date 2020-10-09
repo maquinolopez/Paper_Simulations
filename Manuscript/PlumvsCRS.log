@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  5 OCT 2020 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  9 OCT 2020 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -264,7 +264,8 @@ File: Figures/Maps.pdf Graphic file (type pdf)
 <use Figures/Maps.pdf>
 Package pdftex.def Info: Figures/Maps.pdf  used on input line 181.
 (pdftex.def)             Requested size: 469.75502pt x 525.02147pt.
- [7] [8 <./Figures/Maps.pdf>] [9]
+ (./PlumvsCRS.bbl) [7] [8 <./Figures/Maps.pdf>]
+[9]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -272,26 +273,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.197 \begin{table}[H]
+l.199 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 11.00807pt on input line 233.
-
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.236 \begin{table}[H]
-                      
-Option `H' ignored and `p' used.
-
-
-LaTeX Warning: Float too large for page by 11.00807pt on input line 272.
+LaTeX Warning: Float too large for page by 11.00807pt on input line 235.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -300,14 +287,28 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.276 \begin{table}[H]
+l.238 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 11.00807pt on input line 312.
+LaTeX Warning: Float too large for page by 11.00807pt on input line 274.
 
-(./PlumvsCRS.bbl) [10] [11] [12] [13] (./PlumvsCRS.aux)
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.278 \begin{table}[H]
+                      
+Option `H' ignored and `p' used.
+
+
+LaTeX Warning: Float too large for page by 11.00807pt on input line 314.
+
+[10] [11] [12] (./PlumvsCRS.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -315,7 +316,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2464 strings out of 480608
  33518 string characters out of 5903631
- 310039 words of memory out of 5000000
+ 308039 words of memory out of 5000000
  18322 multiletter control sequences out of 15000+600000
  546038 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -339,10 +340,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2020/tex
 mf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2020/texmf
 -dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on PlumvsCRS.pdf (13 pages, 2061328 bytes).
+Output written on PlumvsCRS.pdf (12 pages, 2061088 bytes).
 PDF statistics:
- 158 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
+ 154 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
