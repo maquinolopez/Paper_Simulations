@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  9 OCT 2020 09:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  13 OCT 2020 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -169,11 +169,7 @@ File: l3backend-pdfmode.def 2020-03-12 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count188
 \l__pdf_internal_box=\box47
 )
-(./PlumvsCRS.aux
-
-LaTeX Warning: Label `fig:accpre' multiply defined.
-
-)
+(./PlumvsCRS.aux)
 \openout1 = `PlumvsCRS.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
@@ -190,7 +186,8 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
 LaTeX Font Info:    ... okay on input line 45.
- (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count189
 \scratchdimen=\dimen146
@@ -238,19 +235,25 @@ r-sity Belfast, Belfast, BT7-1NN.
 [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures/Simulations_t_act.pdf, id=18, 601.24625pt x 472.76625pt>
-File: Figures/Simulations_t_act.pdf Graphic file (type pdf)
-<use Figures/Simulations_t_act.pdf>
-Package pdftex.def Info: Figures/Simulations_t_act.pdf  used on input line 126.
+<Figures/Chronology-profile.pdf, id=18, 361.35pt x 650.43pt>
+File: Figures/Chronology-profile.pdf Graphic file (type pdf)
+<use Figures/Chronology-profile.pdf>
+Package pdftex.def Info: Figures/Chronology-profile.pdf  used on input line 126
+.
+(pdftex.def)             Requested size: 352.31625pt x 634.17166pt.
 
-(pdftex.def)             Requested size: 469.75502pt x 369.38379pt.
 
-[2] [3 <./Figures/Simulations_t_act.pdf>] [4]
-<Figures/AccPrec.pdf, id=44, 614.295pt x 686.565pt>
+LaTeX Warning: Float too large for page by 85.03069pt on input line 129.
+
+[2] [3 <./Figures/Chronology-profile.pdf>] [4]
+<Figures/AccPrec.pdf, id=40, 614.295pt x 686.565pt>
 File: Figures/AccPrec.pdf Graphic file (type pdf)
 <use Figures/AccPrec.pdf>
 Package pdftex.def Info: Figures/AccPrec.pdf  used on input line 160.
 (pdftex.def)             Requested size: 469.75502pt x 525.02147pt.
+
+
+LaTeX Warning: Float too large for page by 75.0886pt on input line 163.
 
 ! Too many }'s.
 l.165 ...o the Bayesian alternative (\textit Plum}
@@ -259,7 +262,7 @@ You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
 [5] [6 <./Figures/AccPrec.pdf>]
-<Figures/Maps.pdf, id=62, 614.295pt x 686.565pt>
+<Figures/Maps.pdf, id=58, 614.295pt x 686.565pt>
 File: Figures/Maps.pdf Graphic file (type pdf)
 <use Figures/Maps.pdf>
 Package pdftex.def Info: Figures/Maps.pdf  used on input line 181.
@@ -273,12 +276,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.199 \begin{table}[H]
+l.205 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 11.00807pt on input line 235.
+LaTeX Warning: Float too large for page by 11.00807pt on input line 241.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -287,12 +290,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.238 \begin{table}[H]
+l.244 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 11.00807pt on input line 274.
+LaTeX Warning: Float too large for page by 11.00807pt on input line 280.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -301,49 +304,46 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.278 \begin{table}[H]
+l.284 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 11.00807pt on input line 314.
+LaTeX Warning: Float too large for page by 11.00807pt on input line 320.
 
-[10] [11] [12] (./PlumvsCRS.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[10] [11] [12] (./PlumvsCRS.aux) ) 
 Here is how much of TeX's memory you used:
- 2464 strings out of 480608
- 33518 string characters out of 5903631
- 308039 words of memory out of 5000000
- 18322 multiletter control sequences out of 15000+600000
+ 2465 strings out of 480608
+ 33534 string characters out of 5903631
+ 308008 words of memory out of 5000000
+ 18323 multiletter control sequences out of 15000+600000
  546038 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,15n,27p,1056b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2020/texmf
--dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on PlumvsCRS.pdf (12 pages, 2061088 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc
+/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.
+pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pf
+b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
+
+Output written on PlumvsCRS.pdf (12 pages, 2065139 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 150 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

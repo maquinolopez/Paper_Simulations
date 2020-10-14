@@ -116,9 +116,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
-INPUT Figures/Simulations_t_act.pdf
-INPUT ./Figures/Simulations_t_act.pdf
-INPUT ./Figures/Simulations_t_act.pdf
+INPUT Figures/Chronology-profile.pdf
+INPUT ./Figures/Chronology-profile.pdf
+INPUT ./Figures/Chronology-profile.pdf
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT Figures/AccPrec.pdf
 INPUT ./Figures/AccPrec.pdf

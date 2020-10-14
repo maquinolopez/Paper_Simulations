@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex PlumvsCRS"] 1601932067 "PlumvsCRS.aux" "PlumvsCRS.bbl" "PlumvsCRS" 1602252296
+["bibtex PlumvsCRS"] 1602625388 "PlumvsCRS.aux" "PlumvsCRS.bbl" "PlumvsCRS" 1602625388
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "PlumvsCRS.aux" 1601932593 1691 d053eb31a1292605ba5158f35841ab9f "pdflatex"
+  "PlumvsCRS.aux" 1602625360 2686 579792c22a854a4afa8e868dae56d933 "pdflatex"
   "bibliography.bib" 1599503170 15089 503f82ba592d5658659ee6d71006a663 ""
   (generated)
   "PlumvsCRS.blg"
   "PlumvsCRS.bbl"
-["pdflatex"] 1602252296 "PlumvsCRS.tex" "PlumvsCRS.pdf" "PlumvsCRS" 1602252296
+["pdflatex"] 1602625389 "PlumvsCRS.tex" "PlumvsCRS.pdf" "PlumvsCRS" 1602625389
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -90,12 +90,12 @@
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1588889131 2432461 74f4813766deb5c332783967eee3544a ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
   "Figures/AccPrec.pdf" 1601922981 1274784 ee7fe0a48f26f25489783fb5e8a41be8 ""
+  "Figures/Chronology-profile.pdf" 1602272167 8317 4add130c21d976f7f40bc3df2cdd5146 ""
   "Figures/Maps.pdf" 1601932010 560285 7c9692208852f3c8134c0b7168b2ffab ""
-  "Figures/Simulations_t_act.pdf" 1595645580 5714 77a0cbfcb8fada27045c2e9b635aae17 ""
-  "PlumvsCRS.aux" 1601932593 1691 d053eb31a1292605ba5158f35841ab9f "pdflatex"
-  "PlumvsCRS.bbl" 1601932067 1076 1c6777094fd8298d3b33503aa80523d9 "bibtex PlumvsCRS"
-  "PlumvsCRS.tex" 1602252295 25606 d251d2afd633f15ef313a35c4fabe14d ""
+  "PlumvsCRS.aux" 1602625360 2686 579792c22a854a4afa8e868dae56d933 "pdflatex"
+  "PlumvsCRS.bbl" 1602625389 1076 1c6777094fd8298d3b33503aa80523d9 "bibtex PlumvsCRS"
+  "PlumvsCRS.tex" 1602625387 26568 8f77d354caeda12da4a33af99d76cd34 ""
   (generated)
-  "PlumvsCRS.log"
   "PlumvsCRS.pdf"
   "PlumvsCRS.aux"
+  "PlumvsCRS.log"
