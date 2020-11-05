@@ -108,15 +108,13 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT Figures/210Pbmodels-bar.pdf
 INPUT ./Figures/210Pbmodels-bar.pdf
 INPUT ./Figures/210Pbmodels-bar.pdf
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT Figures/Chronology-profile.pdf
 INPUT ./Figures/Chronology-profile.pdf
 INPUT ./Figures/Chronology-profile.pdf
 INPUT Figures/AccPrec.pdf
 INPUT ./Figures/AccPrec.pdf
 INPUT ./Figures/AccPrec.pdf
-INPUT Figures/Maps.pdf
-INPUT ./Figures/Maps.pdf
-INPUT ./Figures/Maps.pdf
 INPUT Figures/depths.pdf
 INPUT ./Figures/depths.pdf
 INPUT ./Figures/depths.pdf

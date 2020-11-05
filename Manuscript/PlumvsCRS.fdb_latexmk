@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex PlumvsCRS"] 1604544124 "PlumvsCRS.aux" "PlumvsCRS.bbl" "PlumvsCRS" 1604544124
+["bibtex PlumvsCRS"] 1604557776 "PlumvsCRS.aux" "PlumvsCRS.bbl" "PlumvsCRS" 1604557776
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "PlumvsCRS.aux" 1604544101 4617 b3a0c90be17113f22a3ae939c56813c1 "pdflatex"
+  "PlumvsCRS.aux" 1604557748 5102 1a3b683d683f57640b6ad423c44a7159 "pdflatex"
   "bibliography.bib" 1604541217 17763 e1e892f3c0b093c341bfa69156547dd1 ""
   (generated)
   "PlumvsCRS.bbl"
   "PlumvsCRS.blg"
-["pdflatex"] 1604544124 "PlumvsCRS.tex" "PlumvsCRS.pdf" "PlumvsCRS" 1604544124
+["pdflatex"] 1604557776 "PlumvsCRS.tex" "PlumvsCRS.pdf" "PlumvsCRS" 1604557776
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -87,12 +87,11 @@
   "Figures/210Pbmodels-bar.pdf" 1543782390 12385 016a36867f0179aec1aec9959b657ce5 ""
   "Figures/AccPrec.pdf" 1601922981 1274784 ee7fe0a48f26f25489783fb5e8a41be8 ""
   "Figures/Chronology-profile.pdf" 1602272167 8317 4add130c21d976f7f40bc3df2cdd5146 ""
-  "Figures/Maps.pdf" 1601932010 560285 7c9692208852f3c8134c0b7168b2ffab ""
   "Figures/depths.pdf" 1603952350 11435617 826250763758e005939d2907d894f543 ""
-  "PlumvsCRS.aux" 1604544101 4617 b3a0c90be17113f22a3ae939c56813c1 "pdflatex"
-  "PlumvsCRS.bbl" 1604544124 4281 39187e63e2a9c50d5e2cf4eb09dadc94 "bibtex PlumvsCRS"
-  "PlumvsCRS.tex" 1604544122 34281 08e8cf3ab099afce45cd07f01cf3bea2 ""
+  "PlumvsCRS.aux" 1604557748 5102 1a3b683d683f57640b6ad423c44a7159 "pdflatex"
+  "PlumvsCRS.bbl" 1604557776 4281 39187e63e2a9c50d5e2cf4eb09dadc94 "bibtex PlumvsCRS"
+  "PlumvsCRS.tex" 1604557776 39004 392492c5cc18119eda98ea0dbf83aa68 ""
   (generated)
-  "PlumvsCRS.pdf"
-  "PlumvsCRS.log"
   "PlumvsCRS.aux"
+  "PlumvsCRS.log"
+  "PlumvsCRS.pdf"

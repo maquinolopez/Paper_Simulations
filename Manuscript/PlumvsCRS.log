@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  4 NOV 2020 20:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  5 NOV 2020 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -223,71 +223,49 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-! Missing delimiter (. inserted).
-<to be read again> 
-                   {
-l.113 ... $x$ ($t(x)= \frac{1}{\lambda} \log\left{
-                                                   \frac{A_0}{A_x}}$, where ...
-I was expecting to see something like `(' or `\{' or
-`\}' here. If you typed, e.g., `{' instead of `\{', you
-should probably delete the `{' by typing `1' now, so that
-braces don't get unbalanced. Otherwise just proceed.
-Acceptable delimiters are characters whose \delcode is
-nonnegative, or you can use `\delimiter <delimiter code>'.
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.113 ...{1}{\lambda} \log\left{ \frac{A_0}{A_x}}$
-                                                  , where $A_0$ is the compl...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 <Figures/210Pbmodels-bar.pdf, id=16, 650.43pt x 542.025pt>
 File: Figures/210Pbmodels-bar.pdf Graphic file (type pdf)
 <use Figures/210Pbmodels-bar.pdf>
-Package pdftex.def Info: Figures/210Pbmodels-bar.pdf  used on input line 127.
+Package pdftex.def Info: Figures/210Pbmodels-bar.pdf  used on input line 131.
 (pdftex.def)             Requested size: 352.31625pt x 293.5989pt.
+ [2] [3 <./Figures/210Pbmodels-bar.pdf>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2] [3 <./Figures/210Pbmodels-bar.pdf>]
-<Figures/Chronology-profile.pdf, id=37, 361.35pt x 650.43pt>
+<Figures/Chronology-profile.pdf, id=39, 361.35pt x 650.43pt>
 File: Figures/Chronology-profile.pdf Graphic file (type pdf)
 <use Figures/Chronology-profile.pdf>
-Package pdftex.def Info: Figures/Chronology-profile.pdf  used on input line 165
+Package pdftex.def Info: Figures/Chronology-profile.pdf  used on input line 184
 .
-(pdftex.def)             Requested size: 352.31625pt x 634.17166pt.
+(pdftex.def)             Requested size: 234.8775pt x 422.78441pt.
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Warning: Float too large for page by 60.48602pt on input line 168.
+[4]
 
-[4] [5 <./Figures/Chronology-profile.pdf>]
-<Figures/AccPrec.pdf, id=52, 614.295pt x 686.565pt>
+LaTeX Warning: Text page 5 contains only floats.
+
+[5 <./Figures/Chronology-profile.pdf>] [6]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 239.
+
+<Figures/AccPrec.pdf, id=55, 614.295pt x 686.565pt>
 File: Figures/AccPrec.pdf Graphic file (type pdf)
 <use Figures/AccPrec.pdf>
-Package pdftex.def Info: Figures/AccPrec.pdf  used on input line 200.
-(pdftex.def)             Requested size: 469.75502pt x 525.02147pt.
+Package pdftex.def Info: Figures/AccPrec.pdf  used on input line 241.
+(pdftex.def)             Requested size: 352.31625pt x 393.7661pt.
+[7] [8 <./Figures/AccPrec.pdf>]
 
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 273.
 
-LaTeX Warning: Float too large for page by 38.8912pt on input line 203.
-
-[6] [7 <./Figures/AccPrec.pdf>]
-<Figures/Maps.pdf, id=71, 614.295pt x 686.565pt>
-File: Figures/Maps.pdf Graphic file (type pdf)
-<use Figures/Maps.pdf>
-Package pdftex.def Info: Figures/Maps.pdf  used on input line 221.
-(pdftex.def)             Requested size: 469.75502pt x 525.02147pt.
-<Figures/depths.pdf, id=72, 693.59125pt x 722.7pt>
+<Figures/depths.pdf, id=74, 693.59125pt x 722.7pt>
 File: Figures/depths.pdf Graphic file (type pdf)
 <use Figures/depths.pdf>
-Package pdftex.def Info: Figures/depths.pdf  used on input line 233.
+Package pdftex.def Info: Figures/depths.pdf  used on input line 275.
 (pdftex.def)             Requested size: 469.75502pt x 489.48865pt.
- [8] [9 <./Figures/Maps.pdf>] [10 <./Figures/depths.pdf>] (./PlumvsCRS.bbl [11]
-) [12] [13]
+[9] [10 <./Figures/depths.pdf>] (./PlumvsCRS.bbl [11]) [12] [13]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -295,7 +273,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.277 \begin{table}[H]
+l.326 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
@@ -306,7 +284,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.316 \begin{table}[H]
+l.365 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
@@ -317,19 +295,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.356 \begin{table}[H]
+l.405 \begin{table}[H]
                       
 Option `H' ignored and `p' used.
 
 [14] [15] [16] (./PlumvsCRS.aux) ) 
 Here is how much of TeX's memory you used:
- 2498 strings out of 480608
- 34369 string characters out of 5903631
- 308382 words of memory out of 5000000
- 18358 multiletter control sequences out of 15000+600000
- 542938 words of font info for 65 fonts, out of 8000000 for 9000
+ 2493 strings out of 480608
+ 34265 string characters out of 5903631
+ 308386 words of memory out of 5000000
+ 18353 multiletter control sequences out of 15000+600000
+ 543245 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,15n,31p,1039b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 30i,14n,31p,1039b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc
 /dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
@@ -350,10 +328,10 @@ y7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
 
-Output written on PlumvsCRS.pdf (16 pages, 13517718 bytes).
+Output written on PlumvsCRS.pdf (16 pages, 12965398 bytes).
 PDF statistics:
- 182 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 168 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
