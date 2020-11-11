@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  11 NOV 2020 11:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  11 NOV 2020 11:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -308,10 +308,10 @@ Option `H' ignored and `p' used.
 
 [14] [15] [16] (./PlumvsCRS.aux) ) 
 Here is how much of TeX's memory you used:
- 2496 strings out of 480608
- 34319 string characters out of 5903631
+ 2497 strings out of 480608
+ 34337 string characters out of 5903631
  308436 words of memory out of 5000000
- 18356 multiletter control sequences out of 15000+600000
+ 18357 multiletter control sequences out of 15000+600000
  543245 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,14n,31p,1039b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -335,7 +335,7 @@ y7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pf
 b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
 
-Output written on PlumvsCRS.pdf (16 pages, 12967713 bytes).
+Output written on PlumvsCRS.pdf (16 pages, 12967801 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  121 compressed objects within 2 object streams
