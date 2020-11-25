@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  18 NOV 2020 10:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  25 NOV 2020 12:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -253,52 +253,51 @@ r-sity Belfast, Belfast, BT7-1NN, UK.
 <Figures/210Pbmodels-bar.pdf, id=28, 650.43pt x 542.025pt>
 File: Figures/210Pbmodels-bar.pdf Graphic file (type pdf)
 <use Figures/210Pbmodels-bar.pdf>
-Package pdftex.def Info: Figures/210Pbmodels-bar.pdf  used on input line 154.
+Package pdftex.def Info: Figures/210Pbmodels-bar.pdf  used on input line 157.
 (pdftex.def)             Requested size: 352.31625pt x 293.5989pt.
  [3 <./Figures/210Pbmodels-bar.pdf>] [4]
 <Figures/chronology.pdf, id=44, 614.295pt x 325.215pt>
 File: Figures/chronology.pdf Graphic file (type pdf)
 <use Figures/chronology.pdf>
-Package pdftex.def Info: Figures/chronology.pdf  used on input line 223.
+Package pdftex.def Info: Figures/chronology.pdf  used on input line 227.
 (pdftex.def)             Requested size: 446.26582pt x 236.25867pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5]
+[5] [6 <./Figures/chronology.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 272.
+               Default added (so using `!tbp') on input line 279.
 
-<Figures/comparison1.png, id=48, 708.6475pt x 653.44125pt>
+<Figures/comparison1.png, id=57, 708.6475pt x 653.44125pt>
 File: Figures/comparison1.png Graphic file (type png)
 <use Figures/comparison1.png>
-Package pdftex.def Info: Figures/comparison1.png  used on input line 274.
+Package pdftex.def Info: Figures/comparison1.png  used on input line 281.
 (pdftex.def)             Requested size: 469.75502pt x 433.16699pt.
-[6 <./Figures/chronology.pdf>] [7 <./Figures/comparison1.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 282.
+               Default added (so using `!tbp') on input line 290.
 
-<Figures/AccPrec.png, id=64, 871.255pt x 1088.065pt>
+<Figures/AccPrec.png, id=59, 871.255pt x 1088.065pt>
 File: Figures/AccPrec.png Graphic file (type png)
 <use Figures/AccPrec.png>
-Package pdftex.def Info: Figures/AccPrec.png  used on input line 284.
+Package pdftex.def Info: Figures/AccPrec.png  used on input line 292.
 (pdftex.def)             Requested size: 352.31625pt x 439.98322pt.
 
-LaTeX Warning: Float too large for page by 20.9528pt on input line 287.
+LaTeX Warning: Float too large for page by 20.9528pt on input line 295.
 
+[7] [8 <./Figures/comparison1.png>] [9 <./Figures/AccPrec.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 319.
+               Default added (so using `!tbp') on input line 328.
 
-<Figures/depths.png, id=65, 808.01875pt x 699.61375pt>
+<Figures/depths.png, id=72, 808.01875pt x 699.61375pt>
 File: Figures/depths.png Graphic file (type png)
 <use Figures/depths.png>
-Package pdftex.def Info: Figures/depths.png  used on input line 321.
+Package pdftex.def Info: Figures/depths.png  used on input line 330.
 (pdftex.def)             Requested size: 469.75502pt x 406.73703pt.
-[8] [9 <./Figures/AccPrec.png>] [10 <./Figures/depths.png>] (./PlumvsCRS.bbl
-[11] [12]) [13] [14]
+[10] [11 <./Figures/depths.png>] (./PlumvsCRS.bbl [12]) [13] [14]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -338,7 +337,7 @@ b></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></u
 sr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr
 /local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
-Output written on PlumvsCRS.pdf (17 pages, 2230255 bytes).
+Output written on PlumvsCRS.pdf (17 pages, 2232321 bytes).
 PDF statistics:
  164 PDF objects out of 1000 (max. 8388607)
  112 compressed objects within 2 object streams
