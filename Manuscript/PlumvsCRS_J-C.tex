@@ -56,7 +56,8 @@
 % NOTE: To produce blinded version, replace "0" with "1" below.
 \newcommand{\blind}{1}
 \newcommand{\papertitle}{
-\ac A simulation study to compare $^{210}$Pb dating data analyses \ca}
+ A simulation study to compare $^{210}$Pb dating data analyses 
+}
 
 \begin{document}
 	\def\spacingset#1{\renewcommand{\baselinestretch}%
@@ -72,8 +73,8 @@
 				email: \texttt{aquino@cimat.mx} } \thanks{Corresponding author.}
 					\and
 			Nicole K. Sanderson\thanks{
-				GEOTOP Research Centre, Universit\'e du Qu\'ebec \'a Montr\'eal, 
-				Montr\'eal, Qu\'ebec, H2X 3Y7, Canada. 
+				GEOTOP Research Centre, Université du Québec à Montréal, 
+				Montréal, Québec, H2X 3Y7, Canada. 
 				email: \texttt{sanderson.nicole@uqam.ca}}
 					\and
 			Maarten Blaauw\thanks{School of Natural and Built Environment,
@@ -102,17 +103,7 @@
 
 	\bigskip
 \begin{abstract}
-    The increasing interest in understanding the impact of humans have on the environment, has lead to a considerable number of studies focusing on the analysis of sediment accumulation for the last 200 years. 
-Dating this period is often complicated by poor chronological resolution and large errors associated with recent radiocarbon (14C) ages, which is the most popular dating technique. 
-The use of lead-210 ($^{210}$Pb) is a popular method as it allows for the measurement of absolute and continuous dates for this period of time.
-$^{210}$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS) model which uses the radioactive decay equation resulting in a restrictive model to approximate dates.
-
-    Recent studies in radiocarbon age-depth models \citep{Blaauw2018} have shown that the Bayesian age-depth models provide a more reliable and trustworthy chronology.
-Following the recent development of \textit{Plum} \citep{Aquino2018}, the only Bayesian alternative to $^{210}$Pb dating model, this work presents a thorough and objective comparison between the classical approach to $^{210}$Pb dating (CRS) and its Bayesian alternative (\textit{Plum}).
-	Three different simulations, representing three different sedimentation processes and meeting the assumptions imposed by the CRS model, were used to produce a fair and honest comparison.
-Results from this study not only confirms the results obtained by \citet{Blaauw2018}, they also show a series of worrying outcomes regarding the accuracy and precision of the CRS model, mainly that the uncertainty associated with the model is consistently insufficient to capture the true values even when the sediment is entirely dated.
-In addition, the CRS model does not appear to improve its accuracy as more information is available, which results in a model for which accuracy is chaotic and unpredictable.
-On the other hand, the Bayesian alternative (\textit{Plum}) provides consistently accurate results even with few samples, and its accuracy and precision constantly improve as more information is available.
+	The increasing interest to understand anthropogenic impacts on the environment have led to a considerable amount of studies that focus on sedimentary records of $\sim$ 100 - 200 years. Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. Instead, sediment dating with lead-210 ($^210$Pb) is widely used it provides absolute and continuous dates for $\sim$ 100 – 150 years. The $^210$Pb dating method has traditionally relied on the Constant Flux (CF, also known as Constant Rate of Supply - CRS) model which uses the radioactive decay equation resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^210$Pb dating (CF) and its Bayesian alternative (\textit{Plum}). For this, we created simulated $^210$Pb profiles following three different sedimentation processes, complying the assumptions imposed by the CRS model, and analysed them with both approaches. Results indicate that the CRS model does not capture the true values even when the sediment is entirely dated, nor improves its accuracy as more information is available. On the other hand, the Bayesian alternative (Plum) provides consistently accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
 \end{abstract}
 	\noindent%
 	{\it Keywords:} Plum, Age-depth models, Chronology, Constant Rate of Supply, Comparison.
@@ -124,12 +115,12 @@ On the other hand, the Bayesian alternative (\textit{Plum}) provides consistentl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Lead-210 ($^{210}$Pb) is a radioactive nuclide,part of the $^{238}$U decay chain, which forms naturally in the atmosphere as well as in sediments.
+Lead-210 ($^{210}$Pb) is a radionuclide,part of the $^{238}$U decay chain, which forms naturally in the atmosphere as well as in sediments.
 This isotope, with a half-life of 22.23 years, is commonly used to date recent recently accumulated sediments ($<150$ to $200$ years). 
 Unlike to other dating techniques such as $^{14}$C (radiocarbon dating), using a single measurement of $^{210}$Pb is not possible for dating; it is only when a suitable portion of the decay curve (the total inventory) is measured and with certain assumptions about the sedimentation process are met that a chronology can be established.  
 In recent decades, increasing amounts of palaeoecological and pollution studies have focused on recent sediments \citep[e.g.,][]{Courtney2019} in order to evaluate human impacts on the environment.
 These studies strongly rely on the accuracy of their chronologies in order to correctly assign dates to chemical, biological and ecological changes.
-That is, unlike other dating techniques, an analysis of a series (data set) of $^{210}$Pb measurements most be carried out in order to obtain meaningful dates.  In a lake sediment, or any other, sedimentation process, samples are taken along a core at different depths, from which $^{210}$Pb activity is measured.  
+That is, unlike other dating techniques, an analysis of a series (data set) of $^{210}$Pb measurements must be carried out in order to obtain meaningful dates.  In a lake sediment, or any other, sedimentation process, samples are taken along a core at different depths, from which $^{210}$Pb activity is measured.  
 The whole series of $^{210}$Pb measurements need to be analyzed to attempt to produce a coherent chronology, see \cite{Aquino2018}.
 
 A range of traditional data analyses, or so called ``models'', are available for dating recent sediment using $^{210}$Pb, most notably are the Constant Rate of Supply (CRS), Constant Flux:Constant sedimentation (CF:CS) and Constant Initial Concentration (CIC) models \citep{Appleby1978,Robbins1978,Sanchez-Cabeza2012} . 
@@ -167,7 +158,7 @@ It also incorporates an important variable to the inferred processes, namely, th
 \begin{eqnarray}
 y_i\mid P^S_i, \Phi_i, \bar{t}\sim \mathcal{N} \left(A^S_i+\frac{\Phi_i}{\lambda} \left( e^{-\lambda t(x_i-\delta)} - e^{-\lambda t(x_i)} \right), (\sigma_i\rho_i)^2 \right). 
 \end{eqnarray}
-Here $y_i$ is the total amount of $^{210}$Pb in a sample, $A_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the supply of $^{210}$Pb to the sediment, see \cite{Aquino2018} for details. 
+Here $A_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the supply of $^{210}$Pb to the sediment, see \cite{Aquino2018} for details. 
 The age-depth model $t(x)$ is based on a piece-wise linear model constrained by prior information on the sediment's accumulation rates  \citep{Blaauw2011}.%and its variability
 
 This treatment of the data allows for a formal statistical inference and by using a Bayesian approach all the parameters of the model can be inferred.
