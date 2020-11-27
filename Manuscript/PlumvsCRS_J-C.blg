@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: PlumvsCRS_J-C.aux
 The style file: apalike.bst
 Database file #1: bibliography.bib
-You've used 16 entries,
+You've used 18 entries,
             1935 wiz_defined-function locations,
-            597 strings with 7411 characters,
-and the built_in function-call counts, 7448 in all, are:
-= -- 735
-> -- 347
-< -- 13
-+ -- 124
-- -- 122
-* -- 648
-:= -- 1277
-add.period$ -- 48
-call.type$ -- 16
-change.case$ -- 141
-chr.to.int$ -- 16
-cite$ -- 16
-duplicate$ -- 258
-empty$ -- 480
-format.name$ -- 144
-if$ -- 1451
+            611 strings with 7703 characters,
+and the built_in function-call counts, 8231 in all, are:
+= -- 813
+> -- 367
+< -- 15
++ -- 130
+- -- 128
+* -- 718
+:= -- 1409
+add.period$ -- 54
+call.type$ -- 18
+change.case$ -- 154
+chr.to.int$ -- 18
+cite$ -- 18
+duplicate$ -- 286
+empty$ -- 544
+format.name$ -- 154
+if$ -- 1609
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 16
-newline$ -- 83
-num.names$ -- 48
-pop$ -- 108
+missing$ -- 18
+newline$ -- 93
+num.names$ -- 54
+pop$ -- 115
 preamble$ -- 1
-purify$ -- 141
+purify$ -- 154
 quote$ -- 0
-skip$ -- 215
+skip$ -- 237
 stack$ -- 0
-substring$ -- 573
-swap$ -- 50
+substring$ -- 651
+swap$ -- 52
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 96
+type$ -- 108
 warning$ -- 0
-while$ -- 66
+while$ -- 72
 width$ -- 0
-write$ -- 210
+write$ -- 236

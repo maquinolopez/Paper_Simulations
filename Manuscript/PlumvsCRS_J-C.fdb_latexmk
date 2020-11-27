@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex PlumvsCRS_J-C"] 1606345621 "PlumvsCRS_J-C.aux" "PlumvsCRS_J-C.bbl" "PlumvsCRS_J-C" 1606360635
+["bibtex PlumvsCRS_J-C"] 1606520948 "PlumvsCRS_J-C.aux" "PlumvsCRS_J-C.bbl" "PlumvsCRS_J-C" 1606521473
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "PlumvsCRS_J-C.aux" 1606360634 6952 4777ff2759b260f12bc1836593188c4a "pdflatex"
-  "bibliography.bib" 1604586370 17763 e1e892f3c0b093c341bfa69156547dd1 ""
+  "PlumvsCRS_J-C.aux" 1606521473 7460 c2eb56c128554791ebcfd08788ebd5fc "pdflatex"
+  "bibliography.bib" 1606506752 18576 691268422bbb6d30f6c17ab3225a1d96 ""
   (generated)
   "PlumvsCRS_J-C.blg"
   "PlumvsCRS_J-C.bbl"
-["pdflatex"] 1606360633 "PlumvsCRS_J-C.tex" "PlumvsCRS_J-C.pdf" "PlumvsCRS_J-C" 1606360635
+["pdflatex"] 1606521472 "PlumvsCRS_J-C.tex" "PlumvsCRS_J-C.pdf" "PlumvsCRS_J-C" 1606521473
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -101,10 +101,10 @@
   "Figures/chronology.pdf" 1605593614 8475 f8251132df8eb3a8ae0165cd74812c6d ""
   "Figures/comparison1.png" 1605597488 228399 babde857ff8779d1b3b2e49cf6adcc16 ""
   "Figures/depths.png" 1605597450 1092647 b2422776b1e609161e5038397da0d4e3 ""
-  "PlumvsCRS_J-C.aux" 1606360634 6952 4777ff2759b260f12bc1836593188c4a "pdflatex"
-  "PlumvsCRS_J-C.bbl" 1606345621 4511 54bc3cee604d8dbfed0c3063d74504cd "bibtex PlumvsCRS_J-C"
-  "PlumvsCRS_J-C.tex" 1606360631 44642 8c621d07191428c3757be38c362f0497 ""
+  "PlumvsCRS_J-C.aux" 1606521473 7460 c2eb56c128554791ebcfd08788ebd5fc "pdflatex"
+  "PlumvsCRS_J-C.bbl" 1606520949 4962 88e942950f8f8b9512efe6153090e2b7 "bibtex PlumvsCRS_J-C"
+  "PlumvsCRS_J-C.tex" 1606521470 49182 8b91a64799a36b96df741b44c2ac3065 ""
   (generated)
+  "PlumvsCRS_J-C.pdf"
   "PlumvsCRS_J-C.log"
   "PlumvsCRS_J-C.aux"
-  "PlumvsCRS_J-C.pdf"

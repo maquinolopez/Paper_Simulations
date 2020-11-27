@@ -88,6 +88,12 @@ Robbins, J. (1978).
 \newblock Geochemical and geophysical applications of radioactive lead.
 \newblock {\em The biogeochemistry of lead in the environment}, pages 285--393.
 
+\bibitem[Robbins and Edgington, 1975]{Robbins1975}
+Robbins, J.~A. and Edgington, D. (1975).
+\newblock Determination of recent sedimentation rates in lake michigan using
+  pb-210 and cs-137.
+\newblock {\em Geochimica et Cosmochimica Acta}, 39(3):285 -- 304.
+
 \bibitem[Sanchez-Cabeza and Ruiz-Fern{\'{a}}ndez, 2012]{Sanchez-Cabeza2012}
 Sanchez-Cabeza, J.~A. and Ruiz-Fern{\'{a}}ndez, A.~C. (2012).
 \newblock {210Pb sediment radiochronology: An integrated formulation and
@@ -100,5 +106,10 @@ Sanchez-Cabeza, J.~A., Ruiz-Fern{\'{a}}ndez, A.~C., Ontiveros-Cuadras, J.~F.,
 \newblock {Monte Carlo uncertainty calculation of 210Pb chronologies and
   accumulation rates of sediments and peat bogs}.
 \newblock {\em Quaternary Geochronology}, 23:80--93.
+
+\bibitem[Smith, 2001]{Smith2001}
+Smith, J.~N. (2001).
+\newblock Why should we believe 210pb sediment geochronologies?
+\newblock {\em Journal of Environmental Radioactivity}, 55(2):121 -- 123.
 
 \end{thebibliography}

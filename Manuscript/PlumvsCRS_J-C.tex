@@ -46,7 +46,7 @@
 \newcommand{\cutac}[1]{\ac [cut] \ca} %% to mark cut text
 \newcommand{\noteac}[1]{\textcolor{red}{(note)}\footnote{\ac #1 \ca}}  %% To add a note or comment
 
-%%%% To mark notes or added text by Andres (ac)
+%%%% To mark notes or added text by Marco (ma)
 \newcommand{\ma}{\color{blue} }  %% begin
 \newcommand{\am}{\color{black}} %% end
 \newcommand{\cutma}[1]{\ac [cut] \ca} %% to mark cut text
@@ -103,7 +103,7 @@
 
 	\bigskip
 \begin{abstract}
-	The increasing interest to understand anthropogenic impacts on the environment have led to a considerable amount of studies that focus on sedimentary records of $\sim$ 100 - 200 years. Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. Instead, sediment dating with lead-210 ($^210$Pb) is widely used it provides absolute and continuous dates for $\sim$ 100 – 150 years. The $^210$Pb dating method has traditionally relied on the Constant Flux (CF, also known as Constant Rate of Supply - CRS) model which uses the radioactive decay equation resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^210$Pb dating (CF) and its Bayesian alternative (\textit{Plum}). For this, we created simulated $^210$Pb profiles following three different sedimentation processes, complying the assumptions imposed by the CRS model, and analysed them with both approaches. Results indicate that the CRS model does not capture the true values even when the sediment is entirely dated, nor improves its accuracy as more information is available. On the other hand, the Bayesian alternative (Plum) provides consistently accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
+	The increasing interest to understand anthropogenic impacts on the environment have led to a considerable amount of studies that focus on sedimentary records of $\sim$ 100 - 200 years. Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. Instead, sediment dating with lead-210 ($^210$Pb) is widely used it provides absolute and continuous dates for $\sim$ 100 – 150 years. The $^210$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS, also known as Constant Flux - CF) model which uses the radioactive decay equation as a age-depth relationship resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^210$Pb dating (CRS) and its Bayesian alternative (\textit{Plum}). For this, we created simulated $^210$Pb profiles following three different sedimentation processes, complying the assumptions imposed by the CRS model, and analysed them with both approaches. Results indicate that the CRS model does not capture the true values even when the sediment is entirely dated, nor improves its accuracy as more information is available. On the other hand, the Bayesian alternative (Plum) provides consistently accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
 \end{abstract}
 	\noindent%
 	{\it Keywords:} Plum, Age-depth models, Chronology, Constant Rate of Supply, Comparison.
@@ -116,33 +116,19 @@
 \section{Introduction}
 
 Lead-210 ($^{210}$Pb) is a radionuclide,part of the $^{238}$U decay chain, which forms naturally in the atmosphere as well as in sediments.
-This isotope, with a half-life of 22.23 years, is commonly used to date recent recently accumulated sediments ($<150$ to $200$ years). 
-Unlike to other dating techniques such as $^{14}$C (radiocarbon dating), using a single measurement of $^{210}$Pb is not possible for dating; it is only when a suitable portion of the decay curve (the total inventory) is measured and with certain assumptions about the sedimentation process are met that a chronology can be established.  
+This isotope, with a half-life of 22.23$\pm$0.12 years, is commonly used to date recent recently accumulated sediments ($<150$years). 
+Unlike to other dating techniques such as $^{14}$C (radiocarbon dating), using a single measurement of $^{210}$Pb is not possible for dating; it is only when a suitable portion of the excess-$^{210}$Pb decay curve (total inventory) is measured and with certain assumptions about the sedimentation process are met that a chronology can be established.  
 In recent decades, increasing amounts of palaeoecological and pollution studies have focused on recent sediments \citep[e.g.,][]{Courtney2019} in order to evaluate human impacts on the environment.
 These studies strongly rely on the accuracy of their chronologies in order to correctly assign dates to chemical, biological and ecological changes.
 That is, unlike other dating techniques, an analysis of a series (data set) of $^{210}$Pb measurements must be carried out in order to obtain meaningful dates.  In a lake sediment, or any other, sedimentation process, samples are taken along a core at different depths, from which $^{210}$Pb activity is measured.  
 The whole series of $^{210}$Pb measurements need to be analyzed to attempt to produce a coherent chronology, see \cite{Aquino2018}.
 
-A range of traditional data analyses, or so called ``models'', are available for dating recent sediment using $^{210}$Pb, most notably are the Constant Rate of Supply (CRS), Constant Flux:Constant sedimentation (CF:CS) and Constant Initial Concentration (CIC) models \citep{Appleby1978,Robbins1978,Sanchez-Cabeza2012} . 
-The CRS model, also known as Constant Flux - (CF) model is by far the most popular (see Figure \ref{fig:210models}) and has the most flexible assumptions. 
-The CRS model assumes a constant supply of $^{210}$Pb to the sediment from the atmosphere and allows for changes in the sedimentation rate. 
-In order to build a chronology, the CRS model uses a ratio between the complete ``inventory'' (the complete estimate of the radioactivity in the sediment column of the sediment between the surface and the ``equilibrium depth'' where $^{210}$Pb from the atmosphere can no longer be found) and the remaining  inventory from depth $x$ ($t(x)=\frac{1}{\lambda}\log\left( \frac{A_0}{A_x}\right)$, where $A_0$ is the complete inventory and $\lambda$ the decay constant of the $^{210}$Pb $\approx .03114$).
-
-Other, more restrictive models such as CF:CS and CIC requiere the assumption of a constant supply of $^{210}$Pb as well as other assumptions of the sedimentation process, as well as that of a constant supply of $^{210}$Pb.
-The flexibility of the CRS, regarding its assumptions, comes at the cost of the need to measure a sufficient portion of the inventory or the use of interpolation in order to properly estimate the complete inventory of $^{210}$Pb in the sediment. 
-
-The CRS model has undergone several revisions in the last decade in order to improve its accuracy and applicability. 
-There are two types of revisions to this model: (1) revisions to its uncertainty estimates \citep{Binford1990,Appleby2001,Sanchez-Cabeza2014} and (2) to its application where extra information is available, such as external independent dating markers (e.g. $^{137}$Cs dates) or laminated sediments \citep{Appleby1998,Appleby2001,Appleby2008}.
-
-A recent inter-laboratory model comparison experiment \citep{Barsanti2020} presented concerning results.
-A series of $^{210}$Pb measurements were send to 14 laboratories around the world.
-Each laboratory was ask to provide a chronology, given the same data.
-This experiment resulted in a wide range of chronologies not only when different models were used, but even when the same model was applied.
-The authors strongly recommended to the use of independent time markers (independent dating sources) to validate of the chronologies.
-This research clearly and critically shows the impact that user decisions have on the resulting chronologies, which becomes extremely important when trying to replicate and/or update the resulting chronologies.
-Users attending to do so will not only need access to the raw data but also to every user decision in constructing the chronology; unfortunately, these raw data sets and decisions are rarely reported.
-
-
+A range of traditional data analyses, or so called ``models'', are available for dating recent sediment using $^{210}$Pb, Constant Initial Concentration \citep[CIC,][]{Goldberg1963}, also known as Constant Activity \citep[CA,][]{Robbins1975}, the Constant Flux : Constant sedimentation \citep[CFCS,][]{Crozaz1964} and the Constant Rate of Supply  \citep[CRS,][]{Appleby1978,Robbins1978,Sanchez-Cabeza2012} also known as the Constant Flux model (CF). 
+The CRS model is by far the most popular (see Figure \ref{fig:210models}) and has the most flexible assumptions. 
+%most notably are the Constant Rate of Supply (CRS), Constant Flux:Constant sedimentation (CF:CS) and Constant Initial Concentration (CIC) models \citep{Appleby1978,Robbins1978,Sanchez-Cabeza2012} . 
+%The CRS model, also known as Constant Flux - (CF) model is by far the most popular (see Figure \ref{fig:210models}) and has the most flexible assumptions. 
+It assumes a constant supply of atmospheric $^{210}$Pb (also known as excess $^{210}$Pb ) to the sediment and allows for changes in the sedimentation rate. 
+In order to build a chronology, the CRS model uses a ratio between the complete ``inventory'' (the excess-$^{210}Pb$ activity accumulated in the sediment column, between the surface and the equilibrium depth, where excess-$^{210}$Pb  can no longer be found) and the remaining  inventory from depth $x$ to the previously defined equilibrium depth, ($t(x)=\frac{1}{\lambda}\log\left( \frac{A_0}{A_x}\right)$, where $A_0$ is the complete inventory and $\lambda$ the decay constant of the $^{210}$Pb $\approx 0.03118\pm 0.00017$ yr$^{-1}$).
 \begin{figure}[h!]
 	\begin{centering}
 		\includegraphics[width=.75\linewidth]{210Pbmodels-bar.pdf}
@@ -151,27 +137,49 @@ Users attending to do so will not only need access to the raw data but also to e
 	\end{centering}
 \end{figure}
 
+Other, more restrictive, models such as CFCS and CIC also requiere the assumption of a constant flux of $^{210}$Pb as well as other assumptions of the sedimentation process, as well as that of a constant supply of $^{210}$Pb.
+The flexibility of the CRS model, regarding its assumptions, comes at the cost of the need to measure a sufficient portion of the inventory or the use of interpolation in order to properly estimate the complete inventory of $^{210}$Pb in the sediment. 
+
+The CRS model has undergone several revisions in the last decade in order to improve its accuracy and applicability. 
+There are two types of revisions to this model: (1) revisions to its uncertainty estimates \citep[eg. ][]{Binford1990,Appleby2001,Sanchez-Cabeza2014} and (2) to its application where extra information is available, such as external independent dating markers (e.g. $^{137}$Cs profiles), laminated sediments, tephras, contaminated layers (known sedimentary events) \citep[eg. ]{Appleby1998,Appleby2001,Appleby2008}. 
+
+A recent inter-laboratory model comparison experiment \citep{Barsanti2020} presented concerning results.
+A series of $^{210}$Pb measurements were send to 14 laboratories around the world.
+Each laboratory was ask to provide a chronology, given the same data, it is important to note that each laboratory applied their preferred model, in most cases the CRS model was calculated.
+This experiment resulted in a wide range of chronologies, independently of the model used, providing different chronologies even when the same model and dataset was used.
+The authors reinforced the need to use of independent time markers (independent dating sources) to validate of the chronologies as suggested in previews studies \citep{Smith2001}.  
+This research clearly and critically shows the impact that user decisions have on the resulting chronologies, which becomes extremely important when trying to replicate and/or update the resulting chronologies.
+This requires not only need access to the raw data but also to every user decision leading to the resulting chronology; unfortunately, these raw data sets and decisions are rarely reported.
+
 Recently \citet{Aquino2018} presented an alternative to these classical models, by introducing \textit{Plum}, a Bayesian approach to $^{210}$Pb dating.
-This model treats every data point as originating from a system that includes the sedimentation process as well as the radioactive decay process. 
+This model treats every data point as originating from a forward model that includes both the sedimentation process and the radioactive decay process. 
 It also incorporates an important variable to the inferred processes, namely, the levels of supported $^{210}$Pb, which naturally forms in the sediment and is normally threaded as a hindrance variable.
-\textit{Plum} assumes that there exists an (unknown) age-depth function $t(x)$ that relates depth $x$ with calendar age $t(x)$.  Conditional on $t(x)$, the following model is assumed for measured $^{210}$Pb $y_i$ for the sediment section form depths $x_i - \delta$ to $x_i$
+\textit{Plum} assumes that there exists an (unknown) age-depth function $t(x)$ that relates depth $x$ with calendar age $t(x)$.  Conditional on $t(x)$, the following model is assumed for the measured $^{210}$Pb $y_i$ between depths $x_i - \delta$ to $x_i$
 \begin{eqnarray}
 y_i\mid P^S_i, \Phi_i, \bar{t}\sim \mathcal{N} \left(A^S_i+\frac{\Phi_i}{\lambda} \left( e^{-\lambda t(x_i-\delta)} - e^{-\lambda t(x_i)} \right), (\sigma_i\rho_i)^2 \right). 
 \end{eqnarray}
-Here $A_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the supply of $^{210}$Pb to the sediment, see \cite{Aquino2018} for details. 
+Here $A_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the supply of excess $^{210}$Pb to the sediment, see \cite{Aquino2018} for details. 
 The age-depth model $t(x)$ is based on a piece-wise linear model constrained by prior information on the sediment's accumulation rates  \citep{Blaauw2011}.%and its variability
 
 This treatment of the data allows for a formal statistical inference and by using a Bayesian approach all the parameters of the model can be inferred.
-This differs from the CRS model as the latter uses the decay equation to obtained the age-depth function resulting in a more restrictive age-depth model, removes assumed values of supported $^{210}$Pb before modelling, and does not provide a formal statistical inference.
-\textit{Plum} has shown to provide accurate results with a realistic precision depending on the different case scenarios \citep{Aquino2020} - both in simulations as well as for real cores.
-Under optimal conditions \textit{Plum} and the CRS model have shown to provide similar results \citep{Aquino2020} with \textit{Plum} providing more realistic uncertainties, with minimal user interaction. 
+This differs from the CRS model as the latter uses the decay equation to obtain the age-depth function resulting in a more restrictive age-depth model, removes assumed values of supported $^{210}$Pb before modelling, and does not provide a formal statistical inference.
+\textit{Plum} has shown to provide accurate results with a realistic precision depending on the different case scenarios \citep{Aquino2018,Aquino2020} - both in simulations as well as for real cores.
+Under optimal conditions \textit{Plum} and the CRS model have shown to provide similar results \citep{Aquino2020}, with \textit{Plum} providing more realistic uncertainties, with minimal user interaction. 
 
 \citet{Blaauw2018} presented a comparison between classical and Bayesian age-depth models construction, both for real and simulated $^{14}$C-dated cores.
 They concluded that Bayesian age-depth models provide a more accurate result and more realistic uncertainties under a wide range of scenarios.  
-Similarly, \textit{Plum} has shown to provide accurate results with a realistic precision depending on different scenarios, both in simulations as well as for real cores. Under optimal conditions, \textit{Plum} and the CRS model have shown to provide similar dates , with \textit{Plum} providing more realistic uncertainties with minimal user interaction. 
-In this study, we compare $^{210}$Pb dates and uncertainties from the widely applied CRS model (by far the most popular age-depth model for $^{210}$Pb) against \textit{Plum} using simulated cores, i.e. sedimentation ``scenarios''.
+%Similarly, \textit{Plum} has shown to provide accurate results with a realistic precision depending on different scenarios, both in simulations as well as for real cores. Under optimal conditions, \textit{Plum} and the CRS model have shown to provide similar dates , with \textit{Plum} providing more realistic uncertainties with minimal user interaction. 
 The objective of this study is to test whether the results obtained by \citet{Blaauw2018}, concerning the accuracy and precision of the Bayesian approach, are maintained in a more complex modelling situation, such as the construction of $^{210}$Pb-based age-depth models.
+In this study, we compare $^{210}$Pb dates and uncertainties from the widely applied CRS model (by far the most popular age-depth model for $^{210}$Pb) against \textit{Plum} using simulated cores, i.e. sedimentation ``scenarios''.
 We also wish to observe the learning process of each of the models and estimate the amount of information is needed to obtained a reasonable chronology for each model. 
+
+\ma 
+Provided that the CRS model has several alterations, as shown by \citet{Barsanti2020}, we decided to apply the original version provided by \citet{Appleby2001}, with its suggested error propagation calculation. 
+We acknowledge that this version may be the less suitable for some particular cases and then expert knowledge can greatly improve the precision and accuracy of the model.
+Provided that there are so many alterations of the CRS model and that the objective of this study is to observe the behaviour of both models with minimal user interaction, the use of the original equations is the most sensible alternative.
+\am % Aqui describir que se usara la version mas raw del CRS 
+
+
 
 The paper is organized as follows: first section sets the tools for the comparison, it describes the simulations of the three different scenarios and we described a parameter which will facilitate the comparison called information percentage. 
 Section 3 describes the comparison for both the overall chronologies and by single depths.
@@ -190,16 +198,15 @@ By using the approach presented by \citet{Aquino2018} for simulating $^{210}$Pb 
 
 \subsection{Simulation Construction}\label{sec:SimConst}
 
-Three different scenarios (see Table \ref{tab:sim_param}) were chosen for our sedimentation simulations, each with their own age-depth functions and parameters. 
-These scenarios were selected as they provide three key challenges for the models: Scenario 1 presents an age-depth function which is quite common for recent sediments, with less compaction toward the surface at 0 cm depth; Scenario 2 presents a challenging core structure as the function replicates a drastic and rapid shift in sediment accumulation behaviour around depth 15 cm depth; and lastly Scenario 3 presents a cyclic and periodic change in accumulation rates. 
+Three different scenarios (see Table \ref{tab:sim_param}) were chosen to simulate sedimentation processes, including with their own age-depth functions and parameters. 
+These scenarios were selected as they provide three key challenges for the models: Scenario 1 presents an age-depth function which is the result of increasing sedimentation and less compaction towards present (surface), this is quite common for recent sediments; Scenario 2 presents a challenging core structure as the function has a drastic and rapid shift in sediment accumulation around depth 15 cm depth; and lastly Scenario 3 presents a cyclic and periodic change in accumulation rates. 
 Using the age-depth functions and defined parameters defined in Table \ref{tab:sim_param}, we obtain the $^{210}$Pb activity, or concentration, at any given depth or interval by integrating the age-depth curve for that interval.  
-These concentrations may be interpreted as error-free measurements, 
-see Figure \ref{fig:true_210} . 
-Because $^{210}$Pb activity measurement is subject to error, we need to replicate the measurement errors. 
-\citet{Blaauw2018} presents error structure for radiocarbon dates. 
-We can use this structure to our $^{210}$Pb measurements as both measurements are subject to similar measurement problems. 
-
-
+Although these concentrations may be interpreted as error-free measurements 
+(see Figure \ref{fig:true_210}), we replicated the $^{210}$Pb activity uncertainty, following a similar methodology to \citet{Blaauw2018}.
+\ma 
+This methodology was chosen as it introduces different sources of uncertainty related to different steps of the measurement process.
+Even if other uncertainty methodologies could be used, but as longest the same methodology and uncertainty is provided to both models the comparison remains valid.
+\am
 \begin{table}[!h]
 	\centering
 	\begin{tabular}{l|ccc}
@@ -239,7 +246,22 @@ The default parameters were set in accordance with \citet{Blaauw2018}.
 For this this study we created a data set for each of the three simulation by integrating in intervals of $\delta =$1 cm, for depths from  0 to 30 cm where radioactive equilibrium was guaranteed \citep{Aquino2018}.
 The complete simulated $^{210}$Pb data sets can be found in the Supplementary Material \ref{sec:supp_mat}.
 
+\subsection{Model consideration}
+\ma
+In order to create a comparison with minimal each model will be run in an automatic matter.
+In the case of \textit{Plum}, automatic settings will be used in order to minimize user interaction.
+As the CRS model assumes that background has been reached, in order to reduce user manipulation, we decided to fix the last sample (30 cm depth) for every case.
+This step not only guarantees the consistent application of the CRS model, it also provides the model with a single bottom-most depth to be removed as it is common practice when using the CRS model.
+Because of this, \textit{Plum}'s resulting chronology will always reach 30 cm and as default 1 cm bacon sections will be used for every simulation.
+On the other hand, the CRS model only models the excess $^{210}$Pb (the total $^{210}$Pb minus the supported $^{210}$Pb), because of this if certain excess activities fall below zero, the chronology will only be calculated up to such depth.
+Regarding the supported $^{210}$Pb, \textit{Plum} deals with this variable as part of the inference and it only requires a user decision if it should be calculated at every depth or as constant throughout the core.
+In order to provide the best possible estimate for this variable, for both models, a constant level of supported $^{210}$Pb was assumed.
+For the CRS model, the mean of the supported $^{210}$Pb estimated was calculated and then subtracted from the total $^{210}$Pb to obtain the excess $^{210}$Pb, as it is common practice when using the CRS model.
 
+In order to provide an objective comparison we will calculated the offset to the true age-depth model (in yr), length of the 95\% intervals (in yr), as well as normalized accuracy indicating the distance of modelled ages from the true value given the model's own uncertainty at each depth. 
+The main discussion will revolve around the normalized offset as it provide a intuitive measure for the accuracy a model by taking into account the levels of uncertainty provided by each model. 
+
+\am
 
 %\ac (where equilibrium was guaranteed) -- \ma esto si es importante paleoecologos \ac y es algo en lo que no debemos entrar en detalle pero >de donde salen estos parametros 1, 0.1, 1.5 etc ... explica o pon cita ... > see \citet{Blaauw2018} for details ?\ac.
 
@@ -258,11 +280,9 @@ The complete simulated $^{210}$Pb data sets can be found in the Supplementary Ma
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Model Comparison}
 
-To allow for a reasonable comparison between models, and to evaluate the effect that different percentages of information may have on the accuracy and precision of $^{210}$Pb models, we used our three simulated data sets (see previous section). 
-For these simulated cores, samples were randomly selected given a percentage of information (e.g. for a 20\% information data set, 6 random 1-cm samples were selected of a possible total 30 1-cm samples). 
-As the CRS model assumes that background has been reached, in order to reduce user manipulation, we decided to fix the last sample (30 cm depth) for every case.
-This step not only guarantees the consistent application the CRS model, it also provides the model with single bottom-most depth to be removed as it is common practice when using the CRS model.
-100 different samples were randomly selected for information percentages from 10\% to 95\% at 5\% intervals (i.e., 10\%, 15\%, 20\%,...,95\%) and the complete sample was also used (i.e 100\% percentage of information sample).
+To allow for a reasonable comparison between models, and to evaluate the effect that different amount of information may have on the accuracy and precision of $^{210}$Pb models, we used our three simulated data sets (see Supplementary Material \ref{sec:supp_mat}). 
+For these simulated cores, samples were randomly created given a percentage of information (e.g. for a 20\% information data set, 6 random 1-cm samples were selected of a possible total 30 1-cm samples). 
+100 of these samples were randomly created for information percentages from 10\% to 95\% at 5\% intervals (i.e., 10\%, 15\%, 20\%,...,95\%), the complete sample was also used (i.e 100\% percentage of information sample).
 After a random sample was selected, both the CRS model and \textit{Plum} were applied to the data set.  
 To have an objective comparison, both models were run with their default configuration (\textit{Plum} with default settings and CRS estimates and uncertainties as described in \citet{Appleby2001}). 
 Both sets of outputs were then compared against the true known age value.
@@ -270,13 +290,13 @@ Both sets of outputs were then compared against the true known age value.
 \begin{figure}[!]
 	\begin{centering}
 		\includegraphics[width=\linewidth]{comparison1.png}
-		\caption{Comparison between \textit{Plum} and the CRS model against the true age-depth model using 50\% of the information percentage (using 1-cm samples at depths 2, 8, 10, 14, 16, 18, 19, 21, 22, 24, 25, 27, 28, 29, 30). Lines show the age estimates with the 95\% credible intervals (\textit{Plum}) and the 95\% confidence interval (CRS). Dots show the normalized offset, distance between the inferred age and the true age in relation to the standard error (the standard deviation in the case of the CRS and the length of the confidence interval divided by 4 in the case of \textit{Plum}).    }
+		\caption{Comparison between \textit{Plum} and the CRS model against the true age-depth model using 50\% of the information percentage (using 1-cm samples at depths 2, 8, 10, 14, 16, 18, 19, 21, 22, 24, 25, 27, 28, 29, 30). Lines show the age estimates with the 95\% credible intervals (\textit{Plum}) and the 95\% confidence interval (CRS). Dots show the normalized offset, distance between the inferred age and the true age in relation to the standard error (the standard deviation in the case of the CRS and the length of the confidence interval divided by 4 in the case of \textit{Plum}). Vertical right axis shows how many standard deviations is each model from the true age.  }
 		\label{fig:comparison1r}
 	\end{centering}
 \end{figure}
 
 Figure \ref{fig:comparison1r} shows an example of the comparison between the $^{210}$Pb models against the true value. 
-As we are dealing with a total of $n =$ 5333 simulations, in order to evaluate the overall precision and accuracy of bothmodels, we decided to calculate the mean offset to the true age-depth model (in yr), the mean of length of the 95\% intervals (in yr), as well as the mean normalized accuracy indicating the distance of modelled ages from the true value given the model's own uncertainty at each depth.  
+As we are dealing with a total of $n =$ 5333 simulations, in order to evaluate the overall precision and accuracy of both models, we decided to calculate the mean offset to the true age-depth model (in yr), the mean of length of the 95\% intervals (in yr), as well as the mean normalized accuracy indicating the distance of modelled ages from the true value given the model's own uncertainty at each depth.  
 
 \begin{figure}[!]
  \centering
@@ -297,10 +317,10 @@ It also appears that the length of the 95\% interval and offset are not affected
 
 On the other hand, \textit{Plum} seems to provide increasingly accurate results as more information is added to the model.
 This again coincides with the results outlined by \citet{Blaauw2018}. 
-When we observe the regular offset (not normalized), we find that textit{Plum} provides a smaller offset in comparison to the CRS model; this in combination with slightly larger modelled uncertainties results in more consistently accurate age-depth models which are capable of capturing the true values within their uncertainty intervals. 
+When we observe the regular offset (not normalized), we find that \textit{Plum} provides a smaller offset in comparison to the CRS model; this in combination with slightly larger modelled uncertainties results in more consistently accurate age-depth models which are capable of capturing the true values within their uncertainty intervals. 
 This result supports the claim that \textit{Plum} provides more realistic uncertainties than those of the CRS. 
 Another important statistic to take into account is that 87.86\% (4686/5333) of \textit{Plum}'s runs remain within the 2 standard deviations, opposed to 7.48\% (399/5333) for the CRS model. Furthermore, only 0.54\% (29/5333) of the CRS model runs remain under the 1 standard deviation, which is the most commonly reported interval when reporting CRS results.
-We can also observe a clear structure in the way that \textit{Plum} increases its accuracy and precision to obtained a better chronology as more information is available, whereas the CRS model does not appears to learn from additional data. 
+We can also observe a clear structure in the way that \textit{Plum} increases its accuracy and precision to obtain a better chronology as more information is available, whereas the CRS model does not appears to improve its capability of capturing the true value from additional data. 
 
 These results are presented for the overall chronology (the mean offset, interval and normalized offset of the overall chronology). 
 In order to evaluate whether certain models are better predicting ages at certain section of the sediment cores, we have to look at the normalized offset of every depth. 
@@ -326,31 +346,38 @@ In order to evaluate whether certain models are better predicting ages at certai
 
 Figure \ref{fig:depths} shows the normalized accuracy of every simulation according to depth for both models.
 \textit{Plum} shows a clear learning structure which depends on the information available to the model.
-The information percentage appears to be irrelevant to the accuracy of the CRS model, contrary to the results obtained by \textit{Plum}.
+The information percentage appears to be irrelevant to the normalized accuracy of the CRS model, contrary to the results obtained by \textit{Plum}.
 It is important to note that the inaccuracies of the CRS model are not exclusive to any particular sections of the chronology; this is most likely driven by the small uncertainties estimated by the CRS model.See below for a discussion of how \textit{Plum} behaved in sedimentation simulation 2.   
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and Conclusions}
-
-These results clearly show the biases associated with the CRS model. 
-\citet{Aquino2018} discussed this point and states that the bias is the product of the use of a logarithmic function for the age-depth model. 
+\ma
+These results clearly show concerning considerations regarding the CRS model. 
+\citet{Aquino2018} proposes that the bias related to the CRS model is the product of the use of a logarithmic function for the age-depth model. 
 It is also evident from these results that the CRS model's uncertainty estimates are not sufficient to capture the true age-depth function. 
 This is an important point given the fact that it is common practice among the $^{210}$Pb dating community to report credible intervals to one single deviation, instead of the 95\% confidence intervals, which have become the norm in most other chronological reconstructions.
-Other confidence intervals can be calculated for this model \citep{Sanchez-Cabeza2014} but the fact that these intervals are even smaller than the ones obtained by error propagation \citep{Appleby2001} is of concern. 
+Other confidence intervals can be calculated for this model but as \citet{Sanchez-Cabeza2014} mentioned these intervals are ``were sensibly smaller" by error propagation \citep{Appleby2001} which is of concern. 
+
+It is important to note that given the number of modifications to the core CRS model as well as the numerous ways of  calculating the uncertainty of the model, it is impossible to come to definite conclusion of the actual accuracy of the CRS model.
+These results centred on a minimal user interaction with minimal modification of the method. 
+Revisions such as those presented by \citet{Sanchez-Cabeza2012} may provide better results but using any particular modification would take form the general objective of this paper which was to provide a comparison with minimal interaction.
+CRS models which are analysed by an expert have shown to provide accurate results as shown by \citet{Aquino2020}, where the only discussion lies on the unrealistic uncertainties provided by the model, where low levels of information are provided.
+\am
 
 Previous work on model comparison \citep{Barsanti2020} has shown the problems with the variability of $^{210}$Pb dating results from different users, even when the same or similar models are applied to a single data set.
 In our study, user input was reduced to the minimum in an effort to show the potential effects that different percentage of information have on the resulting chronology. 
-The results of this experiment showed that the CRS model can provide extremely different results with data originating from the same data set, even while the effect of user input is mitigated. 
-Figure \ref{fig:accpre} showed that the CRS model appears not to learn from using more data.
-This explains why over the years, many authors have insisted in the use of other dating techniques to validate the chronologies provided by the CRS model \citep{Sanchez-Cabeza2012,Barsanti2020,Aquino2020}, a point which these results also highly encourage.
+The results of this experiment confirm that the CRS model can provide extremely different results with data originating from the same data set, even while the effect of user input is mitigated. 
+Figure \ref{fig:accpre} showed that the CRS model appears not to learn from using more data, which may be a result of the unrealistic uncertainty provided by the method.
+This explains why over the years, many authors have specially insisted in the use of other dating techniques to validate the chronologies provided by the CRS model \citep{Sanchez-Cabeza2012,Barsanti2020,Aquino2020}.
+Even when validation is recommended in any dating methodology, this results support the insistence to always validate $^{210}$Pb dating with independent dating techniques.
 
 
 On the other hand, \textit{Plum} shows a consistently accurate result by capturing the true values within the 95\% credible intervals for most of the simulated sampling strategies. 
 It is important to note that one of the big advantages of \textit{Plum} is its increase in accuracy and precision as more data becomes available.
 In the case of scenario 2, we observe that \textit{Plum} appears to behaves worse as more data is available, which would be of concern if we did not take into consideration that this sedimentation simulation was extremely unusual in the real world and also if users would not double check the resulting chronologies. 
-If more information is available about the core or the sediment, such as $^{210}$Pb influx rates, prior sedimentationrates or independent dating marker, this information can easily be implemented as prior information in \textit{Plum}, and this will result in a much better chronology.
+If more information is available about the core or the sediment, such as $^{210}$Pb influx rates, prior sedimentation rates or independent dating marker, this information can easily be implemented as prior information in \textit{Plum}, and this will result in a much better chronology.
 It is also important to note that even when \textit{Plum} performs less well in this specific case, it is providing a much better chronology in upper first 10-15 cm of the core than that of the chaotic CRS age-depth model model.
 
 
