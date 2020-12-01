@@ -3,53 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: PlumvsCRS_J-C.aux
 The style file: apalike.bst
 Database file #1: bibliography.bib
-I was expecting a `,' or a `}'---line 508 of file bibliography.bib
- : 
- : title = "Why should we believe 210Pb sediment geochronologies?",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--empty year in Smith2001
-Warning--empty title in Smith2001
-Warning--empty journal in Smith2001
 You've used 18 entries,
             1935 wiz_defined-function locations,
-            607 strings with 7601 characters,
-and the built_in function-call counts, 8117 in all, are:
-= -- 798
+            611 strings with 7699 characters,
+and the built_in function-call counts, 8231 in all, are:
+= -- 813
 > -- 367
 < -- 15
 + -- 130
 - -- 128
-* -- 705
-:= -- 1393
-add.period$ -- 52
+* -- 718
+:= -- 1409
+add.period$ -- 54
 call.type$ -- 18
-change.case$ -- 153
+change.case$ -- 154
 chr.to.int$ -- 18
-cite$ -- 21
-duplicate$ -- 285
-empty$ -- 532
+cite$ -- 18
+duplicate$ -- 286
+empty$ -- 544
 format.name$ -- 154
-if$ -- 1581
+if$ -- 1609
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 18
-newline$ -- 91
+newline$ -- 93
 num.names$ -- 54
-pop$ -- 124
+pop$ -- 115
 preamble$ -- 1
 purify$ -- 154
 quote$ -- 0
-skip$ -- 233
+skip$ -- 237
 stack$ -- 0
-substring$ -- 624
-swap$ -- 51
+substring$ -- 651
+swap$ -- 52
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 108
-warning$ -- 3
-while$ -- 71
+warning$ -- 0
+while$ -- 72
 width$ -- 0
-write$ -- 230
-(There was 1 error message)
+write$ -- 236
