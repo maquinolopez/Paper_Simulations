@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  3 DEC 2020 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  3 DEC 2020 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -290,30 +290,30 @@ Package pdftex.def Info: Figures/comparison1.pdf  used on input line 309.
 [8 <./Figures/comparison1.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 318.
+               Default added (so using `!tbp') on input line 317.
 
 <Figures/AccPrec.pdf, id=75, 578.16pt x 722.7pt>
 File: Figures/AccPrec.pdf Graphic file (type pdf)
 <use Figures/AccPrec.pdf>
-Package pdftex.def Info: Figures/AccPrec.pdf  used on input line 320.
+Package pdftex.def Info: Figures/AccPrec.pdf  used on input line 319.
 (pdftex.def)             Requested size: 352.31625pt x 440.39423pt.
 
-LaTeX Warning: Float too large for page by 21.36382pt on input line 323.
+LaTeX Warning: Float too large for page by 21.36382pt on input line 322.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 351.
+               Default added (so using `!tbp') on input line 350.
 
 <Figures/depths.pdf, id=76, 542.025pt x 469.755pt>
 File: Figures/depths.pdf Graphic file (type pdf)
 <use Figures/depths.pdf>
-Package pdftex.def Info: Figures/depths.pdf  used on input line 353.
+Package pdftex.def Info: Figures/depths.pdf  used on input line 352.
 (pdftex.def)             Requested size: 469.75502pt x 407.1353pt.
 [9] [10 <./Figures/AccPrec.pdf>] [11 <./Figures/depths.pdf>]
 <Figures/95Comparison.pdf, id=106, 650.43pt x 578.16pt>
 File: Figures/95Comparison.pdf Graphic file (type pdf)
 <use Figures/95Comparison.pdf>
-Package pdftex.def Info: Figures/95Comparison.pdf  used on input line 381.
+Package pdftex.def Info: Figures/95Comparison.pdf  used on input line 380.
 (pdftex.def)             Requested size: 446.26582pt x 396.69003pt.
 
 
