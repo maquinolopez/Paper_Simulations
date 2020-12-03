@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex PlumvsCRS_J-C"] 1607029852 "PlumvsCRS_J-C.aux" "PlumvsCRS_J-C.bbl" "PlumvsCRS_J-C" 1607033037
+["bibtex PlumvsCRS_J-C"] 1607029852 "PlumvsCRS_J-C.aux" "PlumvsCRS_J-C.bbl" "PlumvsCRS_J-C" 1607033676
   "/usr/local/texlive/2020/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "PlumvsCRS_J-C.aux" 1607033037 7930 3d48a42d273e77b07ae1ce001f351cd3 "pdflatex"
+  "PlumvsCRS_J-C.aux" 1607033676 7930 3d48a42d273e77b07ae1ce001f351cd3 "pdflatex"
   "bibliography.bib" 1606784739 18355 b475a9a28d42d640b6174e4718cec1a2 ""
   (generated)
   "PlumvsCRS_J-C.blg"
   "PlumvsCRS_J-C.bbl"
-["pdflatex"] 1607033036 "PlumvsCRS_J-C.tex" "PlumvsCRS_J-C.pdf" "PlumvsCRS_J-C" 1607033037
+["pdflatex"] 1607033675 "PlumvsCRS_J-C.tex" "PlumvsCRS_J-C.pdf" "PlumvsCRS_J-C" 1607033676
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -104,10 +104,10 @@
   "Figures/chronology.pdf" 1605593614 8475 f8251132df8eb3a8ae0165cd74812c6d ""
   "Figures/comparison1.pdf" 1607011670 9683 5e301bcf2bc72368ea4669d9cd8fcb1d ""
   "Figures/depths.pdf" 1605596793 11358179 768c9357c58d4a016376d39875c060a6 ""
-  "PlumvsCRS_J-C.aux" 1607033037 7930 3d48a42d273e77b07ae1ce001f351cd3 "pdflatex"
+  "PlumvsCRS_J-C.aux" 1607033676 7930 3d48a42d273e77b07ae1ce001f351cd3 "pdflatex"
   "PlumvsCRS_J-C.bbl" 1607029853 4962 88e942950f8f8b9512efe6153090e2b7 "bibtex PlumvsCRS_J-C"
-  "PlumvsCRS_J-C.tex" 1607033036 62998 96b14dd313e0a1b047f0817d5b992e2f ""
+  "PlumvsCRS_J-C.tex" 1607033673 63023 b15d57c8b3a10b74c24efcc7f00cffa5 ""
   (generated)
-  "PlumvsCRS_J-C.pdf"
-  "PlumvsCRS_J-C.aux"
   "PlumvsCRS_J-C.log"
+  "PlumvsCRS_J-C.aux"
+  "PlumvsCRS_J-C.pdf"
