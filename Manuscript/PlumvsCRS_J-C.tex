@@ -86,6 +86,20 @@
 				Centro de Investigaci\'on en Matem\'aticas (CIMAT),
 				Jalisco s/n, Valenciana, 36023 Guanajuato, Gto, Mexico.
 				email: \texttt{jac@cimat.mx}  }
+					\and
+			Joan-Albert Sanchez-Cabeza\thanks{
+				Unidad Acad\'emica de Mazatl\'an, 
+				Instituto de Ciencias del Mar y Limnolog\'ia, 
+				Universidad Nacional Aut\'onoma de Mexico, 
+				82040 Mazatl\'an, M\'exico}
+					\and
+			Ana Carolina Ruiz-Fernandez\thanks{
+				Unidad Acad\'emica de Mazatl\'an, 
+				Instituto de Ciencias del Mar y Limnolog\'ia, 
+				Universidad Nacional Aut\'onoma de Mexico, 
+				82040 Mazatl\'an, M\'exico}
+
+
 			}
 		\maketitle
 	} \fi
@@ -103,7 +117,7 @@
 
 	\bigskip
 \begin{abstract}
-	The increasing interest to understand anthropogenic impacts on the environment have led to a considerable amount of studies that focus on sedimentary records of $\sim$ 100 - 200 years. Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. Instead, sediment dating with lead-210 ($^210$Pb) is widely used it provides absolute and continuous dates for $\sim$ 100 – 150 years. The $^210$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS, also known as Constant Flux - CF) model which uses the radioactive decay equation as a age-depth relationship resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^210$Pb dating (CRS) and its Bayesian alternative (\textit{Plum}). For this, we created simulated $^210$Pb profiles following three different sedimentation processes, complying the assumptions imposed by the CRS model, and analysed them with both approaches. Results indicate that the CRS model does not capture the true values even when the sediment is entirely dated, nor improves its accuracy as more information is available. On the other hand, the Bayesian alternative (Plum) provides consistently accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
+	The increasing interest to understand anthropogenic impacts on the environment have led to a considerable amount of studies that focus on sedimentary records of $\sim$ 100 - 200 years. Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. Instead, sediment dating with lead-210 ($^{210}$Pb) is widely used it provides absolute and continuous dates for $\sim$ 100 – 150 years. The $^{210}$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS, also known as Constant Flux - CF) model which uses the radioactive decay equation as a age-depth relationship resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^210$Pb dating (CRS) and its Bayesian alternative (\textit{Plum}). For this, we created simulated $^{210}$Pb profiles following three different sedimentation processes, complying the assumptions imposed by the CRS model, and analysed them with both approaches. Results indicate that the CRS model does not capture the true values even when the sediment is heavily dated, nor improves its accuracy as more information is available. On the other hand, the Bayesian alternative (Plum) provides consistently accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
 \end{abstract}
 	\noindent%
 	{\it Keywords:} Plum, Age-depth models, Chronology, Constant Rate of Supply, Comparison.
@@ -137,7 +151,7 @@ In order to build a chronology, the CRS model uses a ratio between the complete 
 	\end{centering}
 \end{figure}
 
-Other, more restrictive, models such as CFCS and CIC also requiere the assumption of a constant flux of $^{210}$Pb as well as other assumptions of the sedimentation process, as well as that of a constant supply of $^{210}$Pb.
+Other, more restrictive, models such as CFCS and CIC also require the assumption of a constant flux of $^{210}$Pb as well as other assumptions of the sedimentation process, as well as that of a constant supply of $^{210}$Pb.
 The flexibility of the CRS model, regarding its assumptions, comes at the cost of the need to measure a sufficient portion of the inventory or the use of interpolation in order to properly estimate the complete inventory of $^{210}$Pb in the sediment. 
 
 The CRS model has undergone several revisions in the last decade in order to improve its applicability and precision. 
@@ -303,7 +317,7 @@ As we are dealing with a total of $n =$ 5333 simulations, in order to evaluate t
 
 \begin{figure}[!]
  \centering
-  \includegraphics[width=.75\linewidth]{AccPrec.png}
+  \includegraphics[width=.75\linewidth]{AccPrec.pdf}
 	\caption{Top panel A) shows the offset between the modelled and true age of the CI-CRS (red) and \textit{Plum} (blue). This panel shows how \textit{Plum} provides a small offset in almost every scenario with both models improving their offset as more information is available. Middle panel B) shows the 95\% confidence intervals. It is clear, from this panel, than the uncertainty provided by \textit{Plum} is a lot bigger for low percentage of information and it constantly improves as more data is available, whereas the length of the intervals provided by the CI-CRS appear to stay constant regardless of the available information. Bottom panel C) shows the normalized offsets, presenting the distance between the modelled age and the true age normalized divided by the standard deviation (in the case of \textit{Plum}, the length of the 95\% interval divided by 4). This panel presents a worrying situation where the CI-CRS model's calculated standard deviation (on average) is incapable of of capturing the true age. On the other hand, \textit{Plum}'s credible intervals almost always capture the true age even when little information is available.}
   \label{fig:accpre}
 \end{figure}
@@ -330,19 +344,13 @@ These results are valid for the overall chronology (the mean offset, interval an
 In order to evaluate whether certain models are better predicting ages at certain section of the sediment cores, we have to look at the normalized offset of every depth. 
 
 
-%\begin{figure}
-% \centering
-%  \includegraphics[width=\linewidth]{Maps.pdf}
-%	\caption{}
-%  \label{fig:maps}
-%\end{figure}
 
 %Figure \ref{fig:maps} presents 
 
 
 \begin{figure}[!]
 	\begin{centering}
-		\includegraphics[width=\linewidth]{depths.png}
+		\includegraphics[width=\linewidth]{depths.pdf}
 		\caption{Normalized offset of every sampling sample at every depth for the three simulated scenarios - CI-CRS age estimates at samples depths and \textit{Plum}'s age estimates at 1 cm intervals. Dots go from lowest information percentage samples (few dated depths; red) to high percentage samples (nearly completely dated cores; purple). The CI-CRS's normalized offset shows no structure at any particular depth regardless of the available information. This means that the model can provide a reasonable chronology with low levels of information or a very inaccurate age estimate with high levels of information at any given depth resulting in a distrustful age-depth model. On the other hand, \textit{Plum} demostrares a systematic improvement in its age estimates as more data is available. This results assures that a Bayesian approach would consistently provide more reliable results.     }
 		\label{fig:depths}
 	\end{centering}
@@ -354,42 +362,147 @@ The information percentage appears to be irrelevant to the normalized accuracy o
 It is important to note that the inaccuracies of the CI-CRS model are not exclusive to any particular sections of the chronology; this is most likely driven by the small uncertainties estimated by the CI-CRS model.See below for a discussion of how \textit{Plum} behaved in sedimentation simulation 2.   
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Improvements to the CI-CRS}
+
+Since the 70's, when the CRS method was first introduced \citep{Appleby1978,Robbins1978}, the CRS has received several improvements. 
+Some of these improvements rely on independent dates, other isotopes or techniques, and/or require user manipulation to ``force" the method to agree with these independent dates.
+One recent improvement, which does not requires user manipulation and/or independent dates, is the comprehensive explanation, with expert notes, on the practical used of the CRS model by \citet{Sanchez-Cabeza2012}. 
+Soon after the same authors presented an improvement to the uncertainty quantification of the age estimates by using the Monte Carlo method \citep{Sanchez-Cabeza2014}.
+As part of this publication, the authors made publicly available an Excel spreadsheet, which facilitate the calculation of their age estimates and improved uncertainties. 
+\citet{Barsanti2020} showed that there exist several alterations and improvements to the CRS. 
+Considering that this research focuses on the methods with minimal user manipulation, and given that these modifications and alterations are usually not made publicly available, an R implementation of the improved CRS by \citet{Sanchez-Cabeza2014}, here labelled as revised CRS (R-CRS), was used to calculate a chronology of a particular, randomly selected, subsample with 95\% of information and then compare against \textit{Plum} and CI-CRS.
+The goal of this experiment is to quantify the improvement than these alterations have on the age estimates provided by the CRS methodology.
+
+\begin{figure}[h!]
+ \centering
+  \includegraphics[width=.95\linewidth]{95Comparison.pdf}
+	\caption{Comparison between the CI-CRS, R-CRS and \textit{Plum}.  .} 
+  \label{fig:95compa}
+\end{figure}
+
+Figure \ref{fig:95compa} shows the resulting chronologies for the three methodologies.
+From this figure it is clear that both versions of the CRS model (CI-CRS and R-CRS), with a good percentage of information, are capable of replicating the cyclic changes in accumulation that this scenario presents.
+It is also important to note that the offset of the R-CRS is improved throughout the whole chronology. 
+The smaller uncertainties provided by the Monte Carlo method \citep{Sanchez-Cabeza2014} appear to be the reason that the normalized offset, of the R-CRS, is bigger in some parts of the chronology, when compared to the CI-CRS. 
+
+The discussion on how large the standard deviation has to be in order to properly represent the uncertainty of the CRS model goes beyond the scope of this research.
+Nevertheless, it is important to point out that the realistic uncertainties, provided by \textit{Plum}, are the result of a proper statistical inference where a likelihood is properly defined.
+In the case of the two version of the CRS model used in this research (CI-CRS and R-CRS) a proper likelihood is never defined and the uncertainties are calculated as a separate part of the model, either by error propagation or the Monte Carlo method.
+This could be the reason that the uncertainty quantification is not properly defined.
+
+
+
+
+% hay que decir que el modelo tiene una mejora sobre el offset pero la incertidumbre sigue siendo un problema (the uncertainty quantification). Que es importante notar que se requiere un alto porcentaje de datos para obetener una buena chronologia, tambien que el modelo si presenta una mejora y que es una de muchas. 
+% La cuantificacion de la incertidumbre necesariamente se tiene que hacer usando la verosimilitud necesariamente
+% tambien hablar sobre la toma de decisiones y el buen uso de la cuantificacion de incertidumbre
+% enfatizar que Plum no requiere user input y tampoco 
+% hablar del suavisamiento que proviene de una propia introduccion de un modelo de edad en lugar de interpolar
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and Conclusions}
+
+This research focuses on exploring the uncertainty and precision of the most popular $^{210}$Pb dating methods (CI-CRS and \textit{Plum}).
+By using different scenarios, three different simulations were created.
+These simulations were then sub-sample at different percentage of information in order to observe the effects that different sample sizes have on the resulting chronology. 
+This experiment provided an objective comparison of the accuracy and precision of both methods.
+
+The experiment was measured in two different levels: (1) the overall accuracy and precision of the method.
+For this level, the mean of the; offset, length of the 95\% confidence and credible interval as well as normalized offset was measure.
+(2) The second level focused on the capability of the method to capture the true value in their credible/confidence interval.
+To measure this level the normalized offset of every scenario per depth was calculated. 
+These two levels provided a good picture of the difference in precision and accuracy between these methods.
+
+From the overall accuracy (see Figure \ref{fig:accpre}) it is clear that both methods reduce their offset as more data is available, with the Bayesian method providing, on average, smaller offset regardless of the sample size. 
+On the subject of precision, the Bayesian method is providing much bigger uncertainties when small sample size are used. 
+It is only with 60\%, or more, of the information that the length of the intervals becomes comparable. 
+This is a consequence of the linear interpolation, between data points, used by the CRS method and the Bayesian approach (\textit{Plum}) using a proper statistical inference.  
+As it is previously discussed by \citet{Aquino2020}, the larger uncertainties provided by \textit{Plum} are more realistic, and this experiment confirms it.
+Proof that these uncertainties are more sensible is that the length of the credible intervals becomes smaller as more data is available. 
+On the other hand, the length of the confidence intervals provided by the classical model (CI-CRS) remain almost constant at any sample size.
+Lastly, the normalized offset, which shows the capability of the model to capture the true values within their intervals, shows that the classical model (CI-CRS) on average is incapable of capturing the true values within its 95\% confidence interval. 
+This results is alarming as the $^{210}$Pb dating community rarely report 95\% confidence intervals and instead 65\% confidence intervals (one standard deviation intervals) are reported.
+On the other hand, \textit{Plum}'s normalized offset always remains under two, therefore guaranteeing that on average the true value is capture within its 95\% credible intervals, even with small sample sizes.
+\textit{Plum}'s normalized offset, for small sample size, is larger and it becomes much more stable between 50\% and 60\% of information percentage.
+This experiments shows that the Bayesian method, on average, provides more reliable results.
+These results coincide with those obtained by \citet{Blaauw2018}, where Bayesian methods provide more accurate results on the overall chronology when compared to their classical counterpart. 
+
+
+Because the normalized offset shows the capability of capturing the true value within its intervals, this variable can be used to conclude if any given method is better at estimating certain time period.
+Figure \ref{fig:depths}, presents the performance of both the CI-CRS mode and \textit{Plum} at every simulated scenario.
+It appears that, the normalized offset of many of the CI-CRS chronologies are bigger than two throughout the whole chronology, this means that the model does not have a period of time at which is more precise. 
+Moreover, the model presents a chaotic structure, where the normalized offset appears to be indifferent to the information available.
+It appears that even high levels of information percentage provide normalized offsets bigger than two, in some cases closer to four for scenario 2 and 3.
+\textit{Plum} on the other hand, shows a structure where more data is synonymous of a better model in scenarios 1 and 3.
+It is only in low levels of information where \textit{Plum}'s normalized offset is bigger than two.
+Scenario 2 on the other hand, presents and example where \textit{Plum} is both incapable of capturing the true value, for depths deeper than 15 cm, and it appears that as more data is available the model provides worse results. 
+This may be of concern if we do not recognized that this scenario is unrealistic and presents a extreme change in the accumulation around 15 cm, which coincides with the depth at which the normalized offset becomes bigger than two.
+It is also important to acknowledge that this experiment was performed using default settings, in a real world scenario the user has a some prior knowledge of the sedimentation process, in the site of interest, which is prior information and can be incorporated to the model to improve the resulting chronology.
+
+The results obtained by this experiment appear to persist even in the case of the improved version of the CRS model (R-CRS).
+The R-CRS model appears to improve the offset but this improvement appears to be nullify by the smaller uncertainties presented by \citet{Sanchez-Cabeza2014}.
+The question of which version of the CRS provides the best result is beyond the scope of this research.
+Nevertheless, it is important to note that that the offset, related to the CI-CRS and R-CRS, are reasonably small at certain sections of the sediment, but the uncertainty quantification of both methods is insufficient.  
+This is the results of a non-statistical quantification of the model's uncertainty.
+
+In conclusion, the use of the Bayesian age-depth models is preferred on the construction of sediment chronologies, not only on radiocarbon based chronologies as presented by \citet{Blaauw2018} but also in the more complex case of $^{210}$Pb as demonstrated by this research.
+The classical approach provides reasonable results, in function of the offset, unfortunately the uncertainty quantification in these methods needs improvements as they do not relied on a proper statistic structure. 
+Unfortunately in a real case scenario, it is impossible to measure the true offset of a method and this is why a proper uncertainty quantification becomes extremely important.
+These results support the recommendations presented by \citet{Smith2001,Barsanti2020} where the CRS method, or any dating methodology, should be validated using independent dating methods. 
+
+Lastly, it is important to highlight the benefits of the Bayesian methods.
+From both \citet{Blaauw2018} and the present work, it is shown that Bayesian methods constantly improve as more data is available, the uncertainty associated to the method is realistic and coherent with the amount of information available, this leads to a method which is able to capture the true age in their credible intervals. 
+The capability of capturing the true value in the credible intervals becomes important when the problem is associated with decision making processes, as it provides a more realistic picture of the available knowledge of the process. 
+Provided that $^{210}$Pb is used in pollution, environment and climate change studies, which has a high impact on both policy making and public perception, realistic uncertainties become extremely important. 
+
+
+
+\section{Acknowledgments}
+
+The authors are partially founded by CONACYT CB-2016-01-284451 and COVID19 312772 grants and a RDCOMM grant.
+
+The corresponding author is founded by CONACYT through the postdoctoral residence program with CVU  489201.
+
+
 %\ma
-These results clearly show concerning considerations regarding the CI-CRS model. 
-\citet{Aquino2018} proposes that the bias related to the CI-CRS model is the product of the use of a logarithmic function for the age-depth model. 
-It is also evident from these results that the CI-CRS model's uncertainty estimates are not sufficient to capture the true age-depth function. 
-This is an important point given the fact that it is common practice among the $^{210}$Pb dating community to report credible intervals to one single deviation, instead of the 95\% confidence intervals, which have become the norm in most other chronological reconstructions.
-It is important to note that in this study the error propagation method proposed by \citet{Appleby2001} was used.
-This method is not the only method to calculate CI-CRS's uncertainties, another alternative is \citet{Sanchez-Cabeza2014}, this methodology uses Monte Carlo simulations to estimate the uncertainty of the CI-CRS ages.
-In this work, we chose not to use this way to calculate the uncertainty of the CI-CRS as the author mentioned the calculated standard deviations are  smaller to those obtained by error propagation.
-Provided the results obtained by this experiment this may be of concern and farther work is required to determine which is the best method to calculate the uncertainties. 
+% These results clearly show concerning considerations regarding the CI-CRS model. 
+% \citet{Aquino2018} proposes that the bias related to the CI-CRS model is the product of the use of a logarithmic function for the age-depth model. 
+% It is also evident from these results that the CI-CRS model's uncertainty estimates are not sufficient to capture the true age-depth function. 
+% This is an important point given the fact that it is common practice among the $^{210}$Pb dating community to report credible intervals to one single deviation, instead of the 95\% confidence intervals, which have become the norm in most other chronological reconstructions.
+% It is important to note that in this study the error propagation method proposed by \citet{Appleby2001} was used.
+% This method is not the only method to calculate CI-CRS's uncertainties, another alternative is \citet{Sanchez-Cabeza2014}, this methodology uses Monte Carlo simulations to estimate the uncertainty of the CI-CRS ages.
+% In this work, we chose not to use this way to calculate the uncertainty of the CI-CRS as the author mentioned the calculated standard deviations are  smaller to those obtained by error propagation.
+% Provided the results obtained by this experiment this may be of concern and farther work is required to determine which is the best method to calculate the uncertainties. 
 %Other confidence intervals can be calculated for this model but as \citet{Sanchez-Cabeza2014} mentioned these intervals are ``were sensibly smaller" by error propagation \citep{Appleby2001} which is of concern. 
 
-It is important to note that given the number of modifications to the core CI-CRS model as well as the numerous ways of  calculating the uncertainty of the model, it is impossible to come to definite conclusion of the actual accuracy of the CI-CRS model.
-These results centred on a minimal user interaction with minimal modification of the method. 
-Revisions such as those presented by \citet{Sanchez-Cabeza2012} may provide better results but using any particular modification would take form the general objective of this paper which was to provide a comparison with minimal interaction.
-CI-CRS models which are analysed by an expert have shown to provide accurate results as shown by \citet{Aquino2020}, where the only discussion lies on the unrealistic uncertainties provided by the model, where low levels of information are provided.
-%\am
+%It is important to note that given the number of modifications to the core CI-CRS model as well as the numerous ways of  calculating the uncertainty of the model, it is impossible to come to definite conclusion of the actual accuracy of the CI-CRS model.
+%These results centred on a minimal user interaction with minimal modification of the method. 
+%Revisions such as those presented by \citet{Sanchez-Cabeza2012} may provide better results but using any particular modification would take form the general objective of this paper which was to provide a comparison with minimal interaction.
+%CI-CRS models which are analysed by an expert have shown to provide accurate results as shown by \citet{Aquino2020}, where the only discussion lies on the unrealistic uncertainties provided by the model, where low levels of information are provided.
+%%\am
 
-Previous work on model comparison \citep{Barsanti2020} has shown the problems with the variability of $^{210}$Pb dating results from different users, even when the same or similar models are applied to a single data set.
-In our study, user input was reduced to the minimum in an effort to show the potential effects that different percentage of information have on the resulting chronology. 
-The results of this experiment confirm that the CI-CRS model can provide extremely different results with data originating from the same data set, even while the effect of user input is mitigated. 
-Figure \ref{fig:accpre} showed that the CI-CRS model appears not to learn from using more data, which may be a result of the unrealistic uncertainty provided by the method.
-This explains why over the years, many authors have specially insisted in the use of other dating techniques to validate the chronologies provided by the CI-CRS model \citep{Sanchez-Cabeza2012,Barsanti2020,Aquino2020}.
-Even when validation is recommended in any dating methodology, this results support the insistence to always validate $^{210}$Pb dating with independent dating techniques.
-
-
-On the other hand, \textit{Plum} shows a consistently accurate result by capturing the true values within the 95\% credible intervals for most of the simulated sampling strategies. 
-It is important to note that one of the big advantages of \textit{Plum} is its increase in accuracy and precision as more data becomes available.
-In the case of scenario 2, we observe that \textit{Plum} appears to behaves worse as more data is available, which would be of concern if we did not take into consideration that this sedimentation simulation was extremely unusual in the real world and also if users would not double check the resulting chronologies. 
-If more information is available about the core or the sediment, such as $^{210}$Pb influx rates, prior sedimentation rates or independent dating marker, this information can easily be implemented as prior information in \textit{Plum}, and this will result in a much better chronology.
-It is also important to note that even when \textit{Plum} performs less well in this specific case, it is providing a much better chronology in upper first 10-15 cm of the core than that of the chaotic CI-CRS age-depth model model.
+%Previous work on model comparison \citep{Barsanti2020} has shown the problems with the variability of $^{210}$Pb dating results from different users, even when the same or similar models are applied to a single data set.
+%In our study, user input was reduced to the minimum in an effort to show the potential effects that different percentage of information have on the resulting chronology. 
+%The results of this experiment confirm that the CI-CRS model can provide extremely different results with data originating from the same data set, even while the effect of user input is mitigated. 
+%Figure \ref{fig:accpre} showed that the CI-CRS model appears not to learn from using more data, which may be a result of the unrealistic uncertainty provided by the method.
+%This explains why over the years, many authors have specially insisted in the use of other dating techniques to validate the chronologies provided by the CI-CRS model \citep{Sanchez-Cabeza2012,Barsanti2020,Aquino2020}.
+%Even when validation is recommended in any dating methodology, this results support the insistence to always validate $^{210}$Pb dating with independent dating techniques.
 
 
-In conclusion, the use of CI-CRS can only be recommended if users may validate their chronology with external dates as the $^{137}$Cs time markers or other time markers. If not additional information is available for this validation, the use of \textit{Plum}, the Bayesian approach, is still valid, specially if provide it with as as many $^{210}$Pb measurements as possible (at least 60\% of the available information of the core).  Even so, additional dating information may also be formally included in \textit{Plum} to improve the resulting chronology \citep{Aquino2018,Aquino2020}. 
+% On the other hand, \textit{Plum} shows a consistently accurate result by capturing the true values within the 95\% credible intervals for most of the simulated sampling strategies. 
+% It is important to note that one of the big advantages of \textit{Plum} is its increase in accuracy and precision as more data becomes available.
+% In the case of scenario 2, we observe that \textit{Plum} appears to behaves worse as more data is available, which would be of concern if we did not take into consideration that this sedimentation simulation was extremely unusual in the real world and also if users would not double check the resulting chronologies. 
+% If more information is available about the core or the sediment, such as $^{210}$Pb influx rates, prior sedimentation rates or independent dating marker, this information can easily be implemented as prior information in \textit{Plum}, and this will result in a much better chronology.
+% It is also important to note that even when \textit{Plum} performs less well in this specific case, it is providing a much better chronology in upper first 10-15 cm of the core than that of the chaotic CI-CRS age-depth model model.
+
+
+% In conclusion, the use of CI-CRS can only be recommended if users may validate their chronology with external dates as the $^{137}$Cs time markers or other time markers. If not additional information is available for this validation, the use of \textit{Plum}, the Bayesian approach, is still valid, specially if provide it with as as many $^{210}$Pb measurements as possible (at least 60\% of the available information of the core).  Even so, additional dating information may also be formally included in \textit{Plum} to improve the resulting chronology \citep{Aquino2018,Aquino2020}. 
 
 
 \bibliographystyle{apalike}
@@ -400,125 +513,125 @@ In conclusion, the use of CI-CRS can only be recommended if users may validate t
 
 
 \section{Supplementary Material}
-\label{sec:supp_mat}
-Data for each simulation and code used is hosted at: https://github.com/maquinolopez/Paper\_Simulations
-\newpage
-\begin{table}[h]
-	\begin{tabular}{c|cllllll}
-		Label    & Depth & Density  & 210Pb & sd(210Pb) & Thickness& 226Ra  & sd(226Ra) \\
-		& (cm) &($g/cm^3$) &(Bq/kg)& & (cm) & (Bq/kg)&\\
-		\hline 
-		Sim01-01 & 1          & 0.10009                         & 63.50103      & 2.85755   & 1              & 23.8045       & 1.125     \\
-		Sim01-02 & 2          & 0.10064                         & 80.08738      & 3.60393   & 1              & 23.2924       & 1.125     \\
-		Sim01-03 & 3          & 0.10173                         & 98.32806      & 4.42476   & 1              & 23.434        & 1.125     \\
-		Sim01-04 & 4          & 0.10334                         & 125.45705     & 5.64557   & 1              & 26.0873       & 1.125     \\
-		Sim01-05 & 5          & 0.10547                         & 141.27971     & 6.35759   & 1              & 22.8041       & 1.125     \\
-		Sim01-06 & 6          & 0.10809                         & 130.27571     & 5.86241   & 1              & 23.4333       & 1.125     \\
-		Sim01-07 & 7          & 0.11116                         & 134.04051     & 6.03182   & 1              & 25.6156       & 1.125     \\
-		Sim01-08 & 8          & 0.11466                         & 129.69245     & 5.83616   & 1              & 26.1371       & 1.125     \\
-		Sim01-09 & 9          & 0.11855                         & 134.93655     & 6.07214   & 1              & 25.4813       & 1.125     \\
-		Sim01-10 & 10         & 0.12278                         & 109.39886     & 4.92295   & 1              & 25.8877       & 1.125     \\
-		Sim01-11 & 11         & 0.12731                         & 110.68133     & 4.98066   & 1              & 24.4414       & 1.125     \\
-		Sim01-12 & 12         & 0.13209                         & 102.38094     & 4.60714   & 1              & 24.9053       & 1.125     \\
-		Sim01-13 & 13         & 0.13706                         & 75.80895      & 3.4114    & 1              & 22.9151       & 1.125     \\
-		Sim01-14 & 14         & 0.14218                         & 77.60406      & 3.49218   & 1              & 24.4808       & 1.125     \\
-		Sim01-15 & 15         & 0.14738                         & 68.4401       & 3.0798    & 1              & 24.9343       & 1.125     \\
-		Sim01-16 & 16         & 0.15262                         & 60.72037      & 2.73242   & 1              & 25.2659       & 1.125     \\
-		Sim01-17 & 17         & 0.15782                         & 50.28147      & 2.26267   & 1              & 22.961        & 1.125     \\
-		Sim01-18 & 18         & 0.16294                         & 44.24641      & 1.99109   & 1              & 22.9139       & 1.125     \\
-		Sim01-19 & 19         & 0.16791                         & 39.85997      & 1.7937    & 1              & 28.3774       & 1.125     \\
-		Sim01-20 & 20         & 0.17269                         & 38.40823      & 1.72837   & 1              & 23.5379       & 1.125     \\
-		Sim01-21 & 21         & 0.17722                         & 32.75922      & 1.47416   & 1              & 25.4363       & 1.125     \\
-		Sim01-22 & 22         & 0.18145                         & 28.02545      & 1.26115   & 1              & 24.8995       & 1.125     \\
-		Sim01-23 & 23         & 0.18534                         & 27.8749       & 1.25437   & 1              & 22.6783       & 1.125     \\
-		Sim01-24 & 24         & 0.18884                         & 30.74797      & 1.38366   & 1              & 24.8575       & 1.125     \\
-		Sim01-25 & 25         & 0.19191                         & 28.36187      & 1.27628   & 1              & 24.8724       & 1.125     \\
-		Sim01-26 & 26         & 0.19453                         & 27.24535      & 1.22604   & 1              & 24.3778       & 1.125     \\
-		Sim01-27 & 27         & 0.19666                         & 23.59236      & 1.06166   & 1              & 24.7209       & 1.125     \\
-		Sim01-28 & 28         & 0.19827                         & 25.74855      & 1.15868   & 1              & 24.6615       & 1.125     \\
-		Sim01-29 & 29         & 0.19936                         & 25.05368      & 1.12742   & 1              & 24.7199       & 1.125     \\
-		Sim01-30 & 30         & 0.19991                         & 25.0065       & 1.12529   & 1              & 24.4937       & 1.125    
-	\end{tabular}
-\end{table}
+% \label{sec:supp_mat}
+% Data for each simulation and code used is hosted at: https://github.com/maquinolopez/Paper\_Simulations
+% \newpage
+% \begin{table}[h]
+% 	\begin{tabular}{c|cllllll}
+% 		Label    & Depth & Density  & 210Pb & sd(210Pb) & Thickness& 226Ra  & sd(226Ra) \\
+% 		& (cm) &($g/cm^3$) &(Bq/kg)& & (cm) & (Bq/kg)&\\
+% 		\hline 
+% 		Sim01-01 & 1          & 0.10009                         & 63.50103      & 2.85755   & 1              & 23.8045       & 1.125     \\
+% 		Sim01-02 & 2          & 0.10064                         & 80.08738      & 3.60393   & 1              & 23.2924       & 1.125     \\
+% 		Sim01-03 & 3          & 0.10173                         & 98.32806      & 4.42476   & 1              & 23.434        & 1.125     \\
+% 		Sim01-04 & 4          & 0.10334                         & 125.45705     & 5.64557   & 1              & 26.0873       & 1.125     \\
+% 		Sim01-05 & 5          & 0.10547                         & 141.27971     & 6.35759   & 1              & 22.8041       & 1.125     \\
+% 		Sim01-06 & 6          & 0.10809                         & 130.27571     & 5.86241   & 1              & 23.4333       & 1.125     \\
+% 		Sim01-07 & 7          & 0.11116                         & 134.04051     & 6.03182   & 1              & 25.6156       & 1.125     \\
+% 		Sim01-08 & 8          & 0.11466                         & 129.69245     & 5.83616   & 1              & 26.1371       & 1.125     \\
+% 		Sim01-09 & 9          & 0.11855                         & 134.93655     & 6.07214   & 1              & 25.4813       & 1.125     \\
+% 		Sim01-10 & 10         & 0.12278                         & 109.39886     & 4.92295   & 1              & 25.8877       & 1.125     \\
+% 		Sim01-11 & 11         & 0.12731                         & 110.68133     & 4.98066   & 1              & 24.4414       & 1.125     \\
+% 		Sim01-12 & 12         & 0.13209                         & 102.38094     & 4.60714   & 1              & 24.9053       & 1.125     \\
+% 		Sim01-13 & 13         & 0.13706                         & 75.80895      & 3.4114    & 1              & 22.9151       & 1.125     \\
+% 		Sim01-14 & 14         & 0.14218                         & 77.60406      & 3.49218   & 1              & 24.4808       & 1.125     \\
+% 		Sim01-15 & 15         & 0.14738                         & 68.4401       & 3.0798    & 1              & 24.9343       & 1.125     \\
+% 		Sim01-16 & 16         & 0.15262                         & 60.72037      & 2.73242   & 1              & 25.2659       & 1.125     \\
+% 		Sim01-17 & 17         & 0.15782                         & 50.28147      & 2.26267   & 1              & 22.961        & 1.125     \\
+% 		Sim01-18 & 18         & 0.16294                         & 44.24641      & 1.99109   & 1              & 22.9139       & 1.125     \\
+% 		Sim01-19 & 19         & 0.16791                         & 39.85997      & 1.7937    & 1              & 28.3774       & 1.125     \\
+% 		Sim01-20 & 20         & 0.17269                         & 38.40823      & 1.72837   & 1              & 23.5379       & 1.125     \\
+% 		Sim01-21 & 21         & 0.17722                         & 32.75922      & 1.47416   & 1              & 25.4363       & 1.125     \\
+% 		Sim01-22 & 22         & 0.18145                         & 28.02545      & 1.26115   & 1              & 24.8995       & 1.125     \\
+% 		Sim01-23 & 23         & 0.18534                         & 27.8749       & 1.25437   & 1              & 22.6783       & 1.125     \\
+% 		Sim01-24 & 24         & 0.18884                         & 30.74797      & 1.38366   & 1              & 24.8575       & 1.125     \\
+% 		Sim01-25 & 25         & 0.19191                         & 28.36187      & 1.27628   & 1              & 24.8724       & 1.125     \\
+% 		Sim01-26 & 26         & 0.19453                         & 27.24535      & 1.22604   & 1              & 24.3778       & 1.125     \\
+% 		Sim01-27 & 27         & 0.19666                         & 23.59236      & 1.06166   & 1              & 24.7209       & 1.125     \\
+% 		Sim01-28 & 28         & 0.19827                         & 25.74855      & 1.15868   & 1              & 24.6615       & 1.125     \\
+% 		Sim01-29 & 29         & 0.19936                         & 25.05368      & 1.12742   & 1              & 24.7199       & 1.125     \\
+% 		Sim01-30 & 30         & 0.19991                         & 25.0065       & 1.12529   & 1              & 24.4937       & 1.125    
+% 	\end{tabular}
+% \end{table}
 
 
-\begin{table}[h]
-	\begin{tabular}{c|cllllll}
-		Label    & Depth& Density& 210Pb & sd(210Pb) & Thickness & 226Ra & sd(226Ra) \\
-				& (cm) &($g/cm^3$) &(Bq/kg)& & (cm) & (Bq/kg)&\\
-		\hline 
-		Sim02-01 & 1          & 0.1001                          & 909.3928      & 40.9227   & 1              & 8.9761        & 0.45      \\
-		Sim02-02 & 2          & 0.1006                          & 683.9989      & 30.7799   & 1              & 10.0607       & 0.45      \\
-		Sim02-03 & 3          & 0.1017                          & 453.0503      & 20.3873   & 1              & 9.8701        & 0.45      \\
-		Sim02-04 & 4          & 0.1033                          & 310.7897      & 13.9855   & 1              & 10.37         & 0.45      \\
-		Sim02-05 & 5          & 0.1055                          & 218.0058      & 9.8103    & 1              & 10.0418       & 0.45      \\
-		Sim02-06 & 6          & 0.1081                          & 158.6974      & 7.1414    & 1              & 10.104        & 0.45      \\
-		Sim02-07 & 7          & 0.1112                          & 113.9062      & 5.1258    & 1              & 10.2049       & 0.45      \\
-		Sim02-08 & 8          & 0.1147                          & 75.5493       & 3.3997    & 1              & 9.334         & 0.45      \\
-		Sim02-09 & 9          & 0.1185                          & 56.6252       & 2.5481    & 1              & 10.5145       & 0.45      \\
-		Sim02-10 & 10         & 0.1228                          & 44.1595       & 1.9872    & 1              & 9.8677        & 0.45      \\
-		Sim02-11 & 11         & 0.1273                          & 34.7448       & 1.5635    & 1              & 9.7694        & 0.45      \\
-		Sim02-12 & 12         & 0.1321                          & 25.384        & 1.1423    & 1              & 10.5134       & 0.45      \\
-		Sim02-13 & 13         & 0.1371                          & 24.0007       & 1.08      & 1              & 10.4589       & 0.45      \\
-		Sim02-14 & 14         & 0.1422                          & 21.3643       & 1         & 1              & 9.9504        & 0.45      \\
-		Sim02-15 & 15         & 0.1474                          & 17.7932       & 1         & 1              & 10.5135       & 0.45      \\
-		Sim02-16 & 16         & 0.1526                          & 15.0416       & 1         & 1              & 10.3362       & 0.45      \\
-		Sim02-17 & 17         & 0.1578                          & 14.2937       & 1         & 1              & 10.5131       & 0.45      \\
-		Sim02-18 & 18         & 0.1629                          & 12.3844       & 1         & 1              & 10.368        & 0.45      \\
-		Sim02-19 & 19         & 0.1679                          & 12.6023       & 1         & 1              & 10.5297       & 0.45      \\
-		Sim02-20 & 20         & 0.1727                          & 11.9329       & 1         & 1              & 10.0924       & 0.45      \\
-		Sim02-21 & 21         & 0.1772                          & 9.301         & 1         & 1              & 10.118        & 0.45      \\
-		Sim02-22 & 22         & 0.1815                          & 10.7777       & 1         & 1              & 10.249        & 0.45      \\
-		Sim02-23 & 23         & 0.1853                          & 12.9491       & 1         & 1              & 10.134        & 0.45      \\
-		Sim02-24 & 24         & 0.1888                          & 10.6571       & 1         & 1              & 10.1151       & 0.45      \\
-		Sim02-25 & 25         & 0.1919                          & 9.6297        & 1         & 1              & 9.6608        & 0.45      \\
-		Sim02-26 & 26         & 0.1945                          & 8.4331        & 1         & 1              & 8.7821        & 0.45      \\
-		Sim02-27 & 27         & 0.1967                          & 10.4921       & 1         & 1              & 9.8995        & 0.45      \\
-		Sim02-28 & 28         & 0.1983                          & 11.135        & 1         & 1              & 9.2481        & 0.45      \\
-		Sim02-29 & 29         & 0.1994                          & 10.109        & 1         & 1              & 10.4398       & 0.45      \\
-		Sim02-30 & 30         & 0.1999                          & 9.5404        & 1         & 1              & 10.1114       & 0.45     
-	\end{tabular}
-\end{table}
+% \begin{table}[h]
+% 	\begin{tabular}{c|cllllll}
+% 		Label    & Depth& Density& 210Pb & sd(210Pb) & Thickness & 226Ra & sd(226Ra) \\
+% 				& (cm) &($g/cm^3$) &(Bq/kg)& & (cm) & (Bq/kg)&\\
+% 		\hline 
+% 		Sim02-01 & 1          & 0.1001                          & 909.3928      & 40.9227   & 1              & 8.9761        & 0.45      \\
+% 		Sim02-02 & 2          & 0.1006                          & 683.9989      & 30.7799   & 1              & 10.0607       & 0.45      \\
+% 		Sim02-03 & 3          & 0.1017                          & 453.0503      & 20.3873   & 1              & 9.8701        & 0.45      \\
+% 		Sim02-04 & 4          & 0.1033                          & 310.7897      & 13.9855   & 1              & 10.37         & 0.45      \\
+% 		Sim02-05 & 5          & 0.1055                          & 218.0058      & 9.8103    & 1              & 10.0418       & 0.45      \\
+% 		Sim02-06 & 6          & 0.1081                          & 158.6974      & 7.1414    & 1              & 10.104        & 0.45      \\
+% 		Sim02-07 & 7          & 0.1112                          & 113.9062      & 5.1258    & 1              & 10.2049       & 0.45      \\
+% 		Sim02-08 & 8          & 0.1147                          & 75.5493       & 3.3997    & 1              & 9.334         & 0.45      \\
+% 		Sim02-09 & 9          & 0.1185                          & 56.6252       & 2.5481    & 1              & 10.5145       & 0.45      \\
+% 		Sim02-10 & 10         & 0.1228                          & 44.1595       & 1.9872    & 1              & 9.8677        & 0.45      \\
+% 		Sim02-11 & 11         & 0.1273                          & 34.7448       & 1.5635    & 1              & 9.7694        & 0.45      \\
+% 		Sim02-12 & 12         & 0.1321                          & 25.384        & 1.1423    & 1              & 10.5134       & 0.45      \\
+% 		Sim02-13 & 13         & 0.1371                          & 24.0007       & 1.08      & 1              & 10.4589       & 0.45      \\
+% 		Sim02-14 & 14         & 0.1422                          & 21.3643       & 1         & 1              & 9.9504        & 0.45      \\
+% 		Sim02-15 & 15         & 0.1474                          & 17.7932       & 1         & 1              & 10.5135       & 0.45      \\
+% 		Sim02-16 & 16         & 0.1526                          & 15.0416       & 1         & 1              & 10.3362       & 0.45      \\
+% 		Sim02-17 & 17         & 0.1578                          & 14.2937       & 1         & 1              & 10.5131       & 0.45      \\
+% 		Sim02-18 & 18         & 0.1629                          & 12.3844       & 1         & 1              & 10.368        & 0.45      \\
+% 		Sim02-19 & 19         & 0.1679                          & 12.6023       & 1         & 1              & 10.5297       & 0.45      \\
+% 		Sim02-20 & 20         & 0.1727                          & 11.9329       & 1         & 1              & 10.0924       & 0.45      \\
+% 		Sim02-21 & 21         & 0.1772                          & 9.301         & 1         & 1              & 10.118        & 0.45      \\
+% 		Sim02-22 & 22         & 0.1815                          & 10.7777       & 1         & 1              & 10.249        & 0.45      \\
+% 		Sim02-23 & 23         & 0.1853                          & 12.9491       & 1         & 1              & 10.134        & 0.45      \\
+% 		Sim02-24 & 24         & 0.1888                          & 10.6571       & 1         & 1              & 10.1151       & 0.45      \\
+% 		Sim02-25 & 25         & 0.1919                          & 9.6297        & 1         & 1              & 9.6608        & 0.45      \\
+% 		Sim02-26 & 26         & 0.1945                          & 8.4331        & 1         & 1              & 8.7821        & 0.45      \\
+% 		Sim02-27 & 27         & 0.1967                          & 10.4921       & 1         & 1              & 9.8995        & 0.45      \\
+% 		Sim02-28 & 28         & 0.1983                          & 11.135        & 1         & 1              & 9.2481        & 0.45      \\
+% 		Sim02-29 & 29         & 0.1994                          & 10.109        & 1         & 1              & 10.4398       & 0.45      \\
+% 		Sim02-30 & 30         & 0.1999                          & 9.5404        & 1         & 1              & 10.1114       & 0.45     
+% 	\end{tabular}
+% \end{table}
 
 
 
-\begin{table}[h]
-	\begin{tabular}{c|cllllll}
-		Label    & Depth & Density & 210Pb & sd(210Pb) & Thickness & 226Ra   & sd(226Ra) \\
-						& (cm) &($g/cm^3$) &(Bq/kg)& & (cm) & (Bq/kg)&\\
-		\hline 
-		Sim03-01 & 1     & 0.1001  & 6384.1354     & 287.2861  & 1         & 15.8007 & 0.675     \\
-		Sim03-02 & 2     & 0.1006  & 3550.0809     & 159.7536  & 1         & 14.5245 & 0.675     \\
-		Sim03-03 & 3     & 0.1017  & 1954.5702     & 87.9557   & 1         & 15.6527 & 0.675     \\
-		Sim03-04 & 4     & 0.1033  & 1183.8917     & 53.2751   & 1         & 14.5175 & 0.675     \\
-		Sim03-05 & 5     & 0.1055  & 760.2132      & 34.2096   & 1         & 14.9242 & 0.675     \\
-		Sim03-06 & 6     & 0.1081  & 360.2553      & 16.2115   & 1         & 14.801  & 0.675     \\
-		Sim03-07 & 7     & 0.1112  & 212.9402      & 9.5823    & 1         & 14.8738 & 0.675     \\
-		Sim03-08 & 8     & 0.1147  & 104.2684      & 4.6921    & 1         & 14.9028 & 0.675     \\
-		Sim03-09 & 9     & 0.1185  & 44.3849       & 1.9973    & 1         & 15.0768 & 0.675     \\
-		Sim03-10 & 10    & 0.1228  & 18.6447       & 1         & 1         & 15.3764 & 0.675     \\
-		Sim03-11 & 11    & 0.1273  & 23.2778       & 1.0475    & 1         & 14.6231 & 0.675     \\
-		Sim03-12 & 12    & 0.1321  & 53.1587       & 2.3921    & 1         & 15.1629 & 0.675     \\
-		Sim03-13 & 13    & 0.1371  & 97.363        & 4.3813    & 1         & 14.3047 & 0.675     \\
-		Sim03-14 & 14    & 0.1422  & 116.9788      & 5.264     & 1         & 14.0261 & 0.675     \\
-		Sim03-15 & 15    & 0.1474  & 153.2901      & 6.8981    & 1         & 15.9723 & 0.675     \\
-		Sim03-16 & 16    & 0.1526  & 151.8496      & 6.8332    & 1         & 14.7579 & 0.675     \\
-		Sim03-17 & 17    & 0.1578  & 136.3609      & 6.1362    & 1         & 16.114  & 0.675     \\
-		Sim03-18 & 18    & 0.1629  & 107.2736      & 4.8273    & 1         & 15.4595 & 0.675     \\
-		Sim03-19 & 19    & 0.1679  & 76.8966       & 3.4603    & 1         & 15.9439 & 0.675     \\
-		Sim03-20 & 20    & 0.1727  & 48.9213       & 2.2015    & 1         & 14.6235 & 0.675     \\
-		Sim03-21 & 21    & 0.1772  & 40.4439       & 1.82      & 1         & 14.6716 & 0.675     \\
-		Sim03-22 & 22    & 0.1815  & 26.5638       & 1.1954    & 1         & 16.2541 & 0.675     \\
-		Sim03-23 & 23    & 0.1853  & 21.714        & 1         & 1         & 14.4826 & 0.675     \\
-		Sim03-24 & 24    & 0.1888  & 17.6428       & 1         & 1         & 15.5109 & 0.675     \\
-		Sim03-25 & 25    & 0.1919  & 17.3533       & 1         & 1         & 13.6898 & 0.675     \\
-		Sim03-26 & 26    & 0.1945  & 17.4211       & 1         & 1         & 14.4684 & 0.675     \\
-		Sim03-27 & 27    & 0.1967  & 16.4246       & 1         & 1         & 15.3889 & 0.675     \\
-		Sim03-28 & 28    & 0.1983  & 12.4828       & 1         & 1         & 15.0698 & 0.675     \\
-		Sim03-29 & 29    & 0.1994  & 13.5514       & 1         & 1         & 15.2346 & 0.675     \\
-		Sim03-30 & 30    & 0.1999  & 14.3145       & 1         & 1         & 14.7846 & 0.675    
-	\end{tabular}
-\end{table}
+% \begin{table}[h]
+% 	\begin{tabular}{c|cllllll}
+% 		Label    & Depth & Density & 210Pb & sd(210Pb) & Thickness & 226Ra   & sd(226Ra) \\
+% 						& (cm) &($g/cm^3$) &(Bq/kg)& & (cm) & (Bq/kg)&\\
+% 		\hline 
+% 		Sim03-01 & 1     & 0.1001  & 6384.1354     & 287.2861  & 1         & 15.8007 & 0.675     \\
+% 		Sim03-02 & 2     & 0.1006  & 3550.0809     & 159.7536  & 1         & 14.5245 & 0.675     \\
+% 		Sim03-03 & 3     & 0.1017  & 1954.5702     & 87.9557   & 1         & 15.6527 & 0.675     \\
+% 		Sim03-04 & 4     & 0.1033  & 1183.8917     & 53.2751   & 1         & 14.5175 & 0.675     \\
+% 		Sim03-05 & 5     & 0.1055  & 760.2132      & 34.2096   & 1         & 14.9242 & 0.675     \\
+% 		Sim03-06 & 6     & 0.1081  & 360.2553      & 16.2115   & 1         & 14.801  & 0.675     \\
+% 		Sim03-07 & 7     & 0.1112  & 212.9402      & 9.5823    & 1         & 14.8738 & 0.675     \\
+% 		Sim03-08 & 8     & 0.1147  & 104.2684      & 4.6921    & 1         & 14.9028 & 0.675     \\
+% 		Sim03-09 & 9     & 0.1185  & 44.3849       & 1.9973    & 1         & 15.0768 & 0.675     \\
+% 		Sim03-10 & 10    & 0.1228  & 18.6447       & 1         & 1         & 15.3764 & 0.675     \\
+% 		Sim03-11 & 11    & 0.1273  & 23.2778       & 1.0475    & 1         & 14.6231 & 0.675     \\
+% 		Sim03-12 & 12    & 0.1321  & 53.1587       & 2.3921    & 1         & 15.1629 & 0.675     \\
+% 		Sim03-13 & 13    & 0.1371  & 97.363        & 4.3813    & 1         & 14.3047 & 0.675     \\
+% 		Sim03-14 & 14    & 0.1422  & 116.9788      & 5.264     & 1         & 14.0261 & 0.675     \\
+% 		Sim03-15 & 15    & 0.1474  & 153.2901      & 6.8981    & 1         & 15.9723 & 0.675     \\
+% 		Sim03-16 & 16    & 0.1526  & 151.8496      & 6.8332    & 1         & 14.7579 & 0.675     \\
+% 		Sim03-17 & 17    & 0.1578  & 136.3609      & 6.1362    & 1         & 16.114  & 0.675     \\
+% 		Sim03-18 & 18    & 0.1629  & 107.2736      & 4.8273    & 1         & 15.4595 & 0.675     \\
+% 		Sim03-19 & 19    & 0.1679  & 76.8966       & 3.4603    & 1         & 15.9439 & 0.675     \\
+% 		Sim03-20 & 20    & 0.1727  & 48.9213       & 2.2015    & 1         & 14.6235 & 0.675     \\
+% 		Sim03-21 & 21    & 0.1772  & 40.4439       & 1.82      & 1         & 14.6716 & 0.675     \\
+% 		Sim03-22 & 22    & 0.1815  & 26.5638       & 1.1954    & 1         & 16.2541 & 0.675     \\
+% 		Sim03-23 & 23    & 0.1853  & 21.714        & 1         & 1         & 14.4826 & 0.675     \\
+% 		Sim03-24 & 24    & 0.1888  & 17.6428       & 1         & 1         & 15.5109 & 0.675     \\
+% 		Sim03-25 & 25    & 0.1919  & 17.3533       & 1         & 1         & 13.6898 & 0.675     \\
+% 		Sim03-26 & 26    & 0.1945  & 17.4211       & 1         & 1         & 14.4684 & 0.675     \\
+% 		Sim03-27 & 27    & 0.1967  & 16.4246       & 1         & 1         & 15.3889 & 0.675     \\
+% 		Sim03-28 & 28    & 0.1983  & 12.4828       & 1         & 1         & 15.0698 & 0.675     \\
+% 		Sim03-29 & 29    & 0.1994  & 13.5514       & 1         & 1         & 15.2346 & 0.675     \\
+% 		Sim03-30 & 30    & 0.1999  & 14.3145       & 1         & 1         & 14.7846 & 0.675    
+% 	\end{tabular}
+% \end{table}
 
 
 
