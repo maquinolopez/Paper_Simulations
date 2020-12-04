@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  3 DEC 2020 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.5.7)  4 DEC 2020 12:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,7 +252,7 @@ r-sity Belfast, Belfast, BT7-1NN, UK.
 <Figures/barras.pdf, id=19, 325.215pt x 289.08pt>
 File: Figures/barras.pdf Graphic file (type pdf)
 <use Figures/barras.pdf>
-Package pdftex.def Info: Figures/barras.pdf  used on input line 148.
+Package pdftex.def Info: Figures/barras.pdf  used on input line 154.
 (pdftex.def)             Requested size: 352.31625pt x 313.19421pt.
 
 
@@ -265,101 +265,99 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <Figures/chronology.pdf, id=42, 614.295pt x 325.215pt>
 File: Figures/chronology.pdf Graphic file (type pdf)
 <use Figures/chronology.pdf>
-Package pdftex.def Info: Figures/chronology.pdf  used on input line 241.
+Package pdftex.def Info: Figures/chronology.pdf  used on input line 250.
 (pdftex.def)             Requested size: 446.26582pt x 236.25867pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] [6 <./Figures/chronology.pdf>]
-
-LaTeX Warning: Reference `sec:supp_mat' on page 7 undefined on input line 264.
-
-
-LaTeX Warning: Reference `sec:supp_mat' on page 7 undefined on input line 300.
-
-[7]
+[5] [6 <./Figures/chronology.pdf>] [7]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 307.
+               Default added (so using `!tbp') on input line 318.
 
-<Figures/comparison1.pdf, id=60, 650.43pt x 578.16pt>
+<Figures/comparison1.pdf, id=59, 650.43pt x 578.16pt>
 File: Figures/comparison1.pdf Graphic file (type pdf)
 <use Figures/comparison1.pdf>
-Package pdftex.def Info: Figures/comparison1.pdf  used on input line 309.
+Package pdftex.def Info: Figures/comparison1.pdf  used on input line 320.
 (pdftex.def)             Requested size: 469.75502pt x 417.57172pt.
 [8 <./Figures/comparison1.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 317.
+               Default added (so using `!tbp') on input line 328.
 
-<Figures/AccPrec.pdf, id=75, 578.16pt x 722.7pt>
+<Figures/AccPrec.pdf, id=74, 578.16pt x 722.7pt>
 File: Figures/AccPrec.pdf Graphic file (type pdf)
 <use Figures/AccPrec.pdf>
-Package pdftex.def Info: Figures/AccPrec.pdf  used on input line 319.
+Package pdftex.def Info: Figures/AccPrec.pdf  used on input line 330.
 (pdftex.def)             Requested size: 352.31625pt x 440.39423pt.
 
-LaTeX Warning: Float too large for page by 21.36382pt on input line 322.
+LaTeX Warning: Float too large for page by 21.36382pt on input line 333.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 350.
+               Default added (so using `!tbp') on input line 361.
 
-<Figures/depths.pdf, id=76, 542.025pt x 469.755pt>
+<Figures/depths.pdf, id=75, 542.025pt x 469.755pt>
 File: Figures/depths.pdf Graphic file (type pdf)
 <use Figures/depths.pdf>
-Package pdftex.def Info: Figures/depths.pdf  used on input line 352.
+Package pdftex.def Info: Figures/depths.pdf  used on input line 363.
 (pdftex.def)             Requested size: 469.75502pt x 407.1353pt.
 [9] [10 <./Figures/AccPrec.pdf>] [11 <./Figures/depths.pdf>]
-<Figures/95Comparison.pdf, id=106, 650.43pt x 578.16pt>
+<Figures/95Comparison.pdf, id=105, 650.43pt x 578.16pt>
 File: Figures/95Comparison.pdf Graphic file (type pdf)
 <use Figures/95Comparison.pdf>
-Package pdftex.def Info: Figures/95Comparison.pdf  used on input line 380.
+Package pdftex.def Info: Figures/95Comparison.pdf  used on input line 391.
 (pdftex.def)             Requested size: 446.26582pt x 396.69003pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12] [13 <./Figures/95Comparison.pdf>] [14] (./PlumvsCRS_J-C.bbl [15] [16])
-[17] [18] (./PlumvsCRS_J-C.aux)
+[17] [18]
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- ) 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[19] [20] [21] (./PlumvsCRS_J-C.aux) ) 
 Here is how much of TeX's memory you used:
- 3140 strings out of 480608
- 43544 string characters out of 5903631
- 299275 words of memory out of 5000000
+ 3139 strings out of 480608
+ 43541 string characters out of 5903631
+ 329284 words of memory out of 5000000
  18976 multiletter control sequences out of 15000+600000
- 545144 words of font info for 73 fonts, out of 8000000 for 9000
+ 544836 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,14n,31p,1471b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></u
-sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
-ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
-/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
-exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/cm-super/sfrm0800.pfb>
-Output written on PlumvsCRS_J-C.pdf (18 pages, 12992376 bytes).
+ 30i,14n,31p,1294b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts
+/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cms
+y10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.
+pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
+fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb
+></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb>
+Output written on PlumvsCRS_J-C.pdf (21 pages, 12989430 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 217 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
