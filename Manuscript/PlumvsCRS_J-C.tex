@@ -82,11 +82,6 @@
 				Belfast, BT7-1NN, UK.
 				email:\texttt{maarten.blaauw@qub.ac.uk}  }
 					\and
-			J Andr\'es Christen\thanks{
-				Centro de Investigaci\'on en Matem\'aticas (CIMAT),
-				Jalisco s/n, Valenciana, 36023 Guanajuato, Gto, Mexico.
-				email: \texttt{jac@cimat.mx}  }
-					\and
 			Joan-Albert Sanchez-Cabeza\thanks{
 				Unidad Acad\'emica de Mazatl\'an, 
 				Instituto de Ciencias del Mar y Limnolog\'ia, 
@@ -99,6 +94,11 @@
 				Universidad Nacional Aut\'onoma de Mexico, 
 				82040 Mazatl\'an, M\'exico}
 
+					\and
+			J Andr\'es Christen\thanks{
+				Centro de Investigaci\'on en Matem\'aticas (CIMAT),
+				Jalisco s/n, Valenciana, 36023 Guanajuato, Gto, Mexico.
+				email: \texttt{jac@cimat.mx}  }
 
 			}
 		\maketitle
@@ -117,7 +117,7 @@
 
 	\bigskip
 \begin{abstract}
-	The increasing interest to understand anthropogenic impacts on the environment have led to a considerable amount of studies that focus on sedimentary records of $\sim$ 100 - 200 years. Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. Instead, sediment dating with lead-210 ($^{210}$Pb) is widely used it provides absolute and continuous dates for $\sim$ 100 – 150 years. The $^{210}$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS, also known as Constant Flux - CF) model which uses the radioactive decay equation as a age-depth relationship resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^210$Pb dating (CRS) and its Bayesian alternative (\textit{Plum}). For this, we created simulated $^{210}$Pb profiles following three different sedimentation processes, complying the assumptions imposed by the CRS model, and analysed them with both approaches. Results indicate that the CRS model does not capture the true values even when the sediment is heavily dated, nor improves its accuracy as more information is available. On the other hand, the Bayesian alternative (Plum) provides consistently accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
+	The increasing interest to understand anthropogenic impacts on the environment have led to a considerable amount of studies that focus on sedimentary records of $\sim$ 100 - 200 years. Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. Instead, sediment dating with lead-210 ($^{210}$Pb) is widely used it provides absolute and continuous dates for $\sim$ 100 – 150 years. The $^{210}$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS, also known as Constant Flux - CF) model which uses the radioactive decay equation as a age-depth relationship resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^{210}$Pb dating (CRS) and its Bayesian alternative (\textit{Plum}). For this, we created simulated $^{210}$Pb profiles following three different sedimentation processes, complying the assumptions imposed by the CRS model, and analysed them with both approaches. Results indicate that the CRS model does not capture the true values even when the sediment is heavily dated, nor improves its accuracy as more information is available. On the other hand, the Bayesian alternative (\textit{Plum}) provides consistently accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
 \end{abstract}
 	\noindent%
 	{\it Keywords:} Plum, Age-depth models, Chronology, Constant Rate of Supply, Comparison.
@@ -368,38 +368,32 @@ It is important to note that the inaccuracies of the CI-CRS model are not exclus
 
 Since the 70's, when the CRS method was first introduced \citep{Appleby1978,Robbins1978}, the CRS has received several improvements. 
 Some of these improvements rely on independent dates, other isotopes or techniques, and/or require user manipulation to ``force" the method to agree with these independent dates.
-One recent improvement, which does not requires user manipulation and/or independent dates, is the comprehensive explanation, with expert notes, on the practical used of the CRS model by \citet{Sanchez-Cabeza2012}. 
-Soon after the same authors presented an improvement to the uncertainty quantification of the age estimates by using the Monte Carlo method \citep{Sanchez-Cabeza2014}.
-As part of this publication, the authors made publicly available an Excel spreadsheet, which facilitate the calculation of their age estimates and improved uncertainties. 
-\citet{Barsanti2020} showed that there exist several alterations and improvements to the CRS. 
-Considering that this research focuses on the methods with minimal user manipulation, and given that these modifications and alterations are usually not made publicly available, an R implementation of the improved CRS by \citet{Sanchez-Cabeza2014}, here labelled as revised CRS (R-CRS), was used to calculate a chronology of a particular, randomly selected, subsample with 95\% of information and then compare against \textit{Plum} and CI-CRS.
-The goal of this experiment is to quantify the improvement than these alterations have on the age estimates provided by the CRS methodology.
+One recent improvement, which does not require user manipulation and/or independent dates, is the comprehensive explanation, with expert notes, on the practical used of the CRS model by \citet{Sanchez-Cabeza2012}. 
+The same authors presented an improvement to the uncertainty quantification of the age estimates by using the Monte Carlo method \citep{Sanchez-Cabeza2014}
+and made publicly available an Excel spreadsheet, which facilitate the calculation of their age estimates and Monte Carlo uncertainties. 
+\citet{Barsanti2020} showed that there exist several modifications and improvements to the CRS. 
+Considering that this research focuses on the methods with minimal user manipulation, and given that these modifications are usually not made publicly available, an R implementation of the improved CRS by \citet{Sanchez-Cabeza2014}, here labelled as revised CRS (R-CRS), was used to calculate a chronology of a particular, randomly selected, subsample with 95\% of information and then compared against \textit{Plum} and CI-CRS.
+The goal of this experiment is to quantify the improvement than a particular modification have on the age estimates provided by the CRS methodology.
 
 \begin{figure}[h!]
  \centering
   \includegraphics[width=.95\linewidth]{95Comparison.pdf}
-	\caption{Comparison between the CI-CRS, R-CRS and \textit{Plum}.  .} 
+	\caption{Comparison between the CI-CRS, R-CRS and \textit{Plum}.} 
   \label{fig:95compa}
 \end{figure}
 
 Figure \ref{fig:95compa} shows the resulting chronologies for the three methodologies.
 From this figure it is clear that both versions of the CRS model (CI-CRS and R-CRS), with a good percentage of information, are capable of replicating the cyclic changes in accumulation that this scenario presents.
 It is also important to note that the offset of the R-CRS is improved throughout the whole chronology. 
-The smaller uncertainties provided by the Monte Carlo method \citep{Sanchez-Cabeza2014} appear to be the reason that the normalized offset, of the R-CRS, is bigger in some parts of the chronology, when compared to the CI-CRS. 
+The smaller uncertainties provided by the Monte Carlo method in \citet{Sanchez-Cabeza2014} appear to be the reason that the normalized offset, of the R-CRS, is bigger in some parts of the chronology, when compared to the CI-CRS. 
 
 The discussion on how large the standard deviation has to be in order to properly represent the uncertainty of the CRS model goes beyond the scope of this research.
-Nevertheless, it is important to point out that the realistic uncertainties, provided by \textit{Plum}, are the result of a proper statistical inference where a likelihood is properly defined.
+Nevertheless, it is important to point out that the realistic uncertainties provided by \textit{Plum}, are the result of a proper statistical inference where a likelihood is defined.
 In the case of the two version of the CRS model used in this research (CI-CRS and R-CRS) a proper likelihood is never defined and the uncertainties are calculated as a separate part of the model, either by error propagation or the Monte Carlo method.
-This could be the reason that the uncertainty quantification is not properly defined.
+This could be the reason that the uncertainty quantification appears to be unrepresentative.
 
 
 
-
-% hay que decir que el modelo tiene una mejora sobre el offset pero la incertidumbre sigue siendo un problema (the uncertainty quantification). Que es importante notar que se requiere un alto porcentaje de datos para obetener una buena chronologia, tambien que el modelo si presenta una mejora y que es una de muchas. 
-% La cuantificacion de la incertidumbre necesariamente se tiene que hacer usando la verosimilitud necesariamente
-% tambien hablar sobre la toma de decisiones y el buen uso de la cuantificacion de incertidumbre
-% enfatizar que Plum no requiere user input y tampoco 
-% hablar del suavisamiento que proviene de una propia introduccion de un modelo de edad en lugar de interpolar
 
 
 
@@ -407,58 +401,57 @@ This could be the reason that the uncertainty quantification is not properly def
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and Conclusions}
 
-This research focuses on exploring the uncertainty and precision of the most popular $^{210}$Pb dating methods (CI-CRS and \textit{Plum}).
+This research focuses on exploring the uncertainty and precision of the most commonly used $^{210}$Pb dating methods (CI-CRS and \textit{Plum}).
 By using different scenarios, three different simulations were created.
-These simulations were then sub-sample at different percentage of information in order to observe the effects that different sample sizes have on the resulting chronology. 
+These simulations were then sub-sampled at different percentages of information in order to observe the effects that different sample sizes have on the resulting chronology. 
 This experiment provided an objective comparison of the accuracy and precision of both methods.
 
-The experiment was measured in two different levels: (1) the overall accuracy and precision of the method.
-For this level, the mean of the; offset, length of the 95\% confidence and credible interval as well as normalized offset was measure.
-(2) The second level focused on the capability of the method to capture the true value in their credible/confidence interval.
-To measure this level the normalized offset of every scenario per depth was calculated. 
-These two levels provided a good picture of the difference in precision and accuracy between these methods.
+The experiment was measured in two different levels: For the first level, the overall accuracy and precision of the method.
+Regarding this, the mean of the offset, length of the 95\% confidence and credible interval as well as the normalized offset were measured.
+The second level focused on the capability of the method to capture the true value in their credible/confidence interval.
+To measure this the normalized offset of every scenario per depth was calculated. 
+These two comparisons provided a good picture of the difference in precision and accuracy between these methods.
 
 From the overall accuracy (see Figure \ref{fig:accpre}) it is clear that both methods reduce their offset as more data is available, with the Bayesian method providing, on average, smaller offset regardless of the sample size. 
-On the subject of precision, the Bayesian method is providing much bigger uncertainties when small sample size are used. 
+On the subject of precision, the Bayesian method is providing much bigger uncertainties when small sample sizes are used. 
 It is only with 60\%, or more, of the information that the length of the intervals becomes comparable. 
 This is a consequence of the linear interpolation, between data points, used by the CRS method and the Bayesian approach (\textit{Plum}) using a proper statistical inference.  
-As it is previously discussed by \citet{Aquino2020}, the larger uncertainties provided by \textit{Plum} are more realistic, and this experiment confirms it.
-Proof that these uncertainties are more sensible is that the length of the credible intervals becomes smaller as more data is available. 
+As it is previously discussed by \citet{Aquino2020}, the larger uncertainties provided by \textit{Plum} are more realistic, and this experiment confirms the latter.
+Further evidence that these uncertainties are more sensible is that the length of the credible intervals becomes smaller as more data is available. 
 On the other hand, the length of the confidence intervals provided by the classical model (CI-CRS) remain almost constant at any sample size.
 Lastly, the normalized offset, which shows the capability of the model to capture the true values within their intervals, shows that the classical model (CI-CRS) on average is incapable of capturing the true values within its 95\% confidence interval. 
-This results is alarming as the $^{210}$Pb dating community rarely report 95\% confidence intervals and instead 65\% confidence intervals (one standard deviation intervals) are reported.
-On the other hand, \textit{Plum}'s normalized offset always remains under two, therefore guaranteeing that on average the true value is capture within its 95\% credible intervals, even with small sample sizes.
-\textit{Plum}'s normalized offset, for small sample size, is larger and it becomes much more stable between 50\% and 60\% of information percentage.
-This experiments shows that the Bayesian method, on average, provides more reliable results.
-These results coincide with those obtained by \citet{Blaauw2018}, where Bayesian methods provide more accurate results on the overall chronology when compared to their classical counterpart. 
+These results are specially worrisome considering that the $^{210}$Pb dating community rarely report 95\% confidence intervals and instead only 65\% confidence intervals (one standard deviation intervals) are reported.
+On the other hand, \textit{Plum}'s normalized offsets always remain $\leq 2$, therefore guaranteeing that on average the true value is capture within its 95\% credible intervals, even with small sample sizes.
+\textit{Plum}'s normalized offsets are constantly improving and reaching stability with 50\%, or more, of information percentage.
+These experiments show that the Bayesian method, on average, provides more reliable results.
+%These results coincide with those obtained by \citet{Blaauw2018}, where Bayesian methods provide more accurate results on the overall chronology when compared to their classical counterpart. 
 
 
 Because the normalized offset shows the capability of capturing the true value within its intervals, this variable can be used to conclude if any given method is better at estimating certain time period.
-Figure \ref{fig:depths}, presents the performance of both the CI-CRS mode and \textit{Plum} at every simulated scenario.
-It appears that, the normalized offset of many of the CI-CRS chronologies are bigger than two throughout the whole chronology, this means that the model does not have a period of time at which is more precise. 
-Moreover, the model presents a chaotic structure, where the normalized offset appears to be indifferent to the information available.
-It appears that even high levels of information percentage provide normalized offsets bigger than two, in some cases closer to four for scenario 2 and 3.
-\textit{Plum} on the other hand, shows a structure where more data is synonymous of a better model in scenarios 1 and 3.
-It is only in low levels of information where \textit{Plum}'s normalized offset is bigger than two.
+Figure \ref{fig:depths} presents the performance of both the CI-CRS mode and \textit{Plum} at every simulated scenario.
+It appears that, the normalized offset of many of the CI-CRS chronologies are $> 2$ throughout the whole chronology, this means that the model does not have a period of time at which is more precise. 
+Moreover, the CI-CRS exhibits a chaotic structure, where the normalized offset appears to be indifferent to the information available.
+It appears that even high levels of information percentage provide normalized offsets $> 2$, in some cases closer to 4 for scenarios 2 and 3.
+\textit{Plum} on the other hand, shows a structure where more data is reflected in improved models in scenarios 1 and 3.
+It is only in low levels of information where \textit{Plum}'s normalized offset is $>2$.
 Scenario 2 on the other hand, presents and example where \textit{Plum} is both incapable of capturing the true value, for depths deeper than 15 cm, and it appears that as more data is available the model provides worse results. 
-This may be of concern if we do not recognized that this scenario is unrealistic and presents a extreme change in the accumulation around 15 cm, which coincides with the depth at which the normalized offset becomes bigger than two.
-It is also important to acknowledge that this experiment was performed using default settings, in a real world scenario the user has a some prior knowledge of the sedimentation process, in the site of interest, which is prior information and can be incorporated to the model to improve the resulting chronology.
+This may be of concern if we do not recognized that this scenario is unrealistic and presents a extreme change in the accumulation around 15 cm, which coincides with the depth at which the normalized offset becomes $>2$.
+It is also important to acknowledge that this experiment was performed using default settings.  In a real world scenario the user commonly has some prior knowledge of the sedimentation process, about the site of interest, which could be incorporated as prior information to the model to improve the resulting chronology.
 
-The results obtained by this experiment appear to persist even in the case of the improved version of the CRS model (R-CRS).
-The R-CRS model appears to improve the offset but this improvement appears to be nullify by the smaller uncertainties presented by \citet{Sanchez-Cabeza2014}.
+The results obtained by this experiment appear to persist even in the case of the revised version of the CRS model (R-CRS).
+The R-CRS model appears to improve the offset but this improvement appears to be nullified by the smaller uncertainties presented by \citet{Sanchez-Cabeza2014}.
 The question of which version of the CRS provides the best result is beyond the scope of this research.
-Nevertheless, it is important to note that that the offset, related to the CI-CRS and R-CRS, are reasonably small at certain sections of the sediment, but the uncertainty quantification of both methods is insufficient.  
-This is the results of a non-statistical quantification of the model's uncertainty.
+Nevertheless, it is important to note that that the offset, related to the CI-CRS and R-CRS, are reasonably small at certain sections of the sediment, but the uncertainty quantification of both methods is over optimistic.  
 
 In conclusion, the use of the Bayesian age-depth models is preferred on the construction of sediment chronologies, not only on radiocarbon based chronologies as presented by \citet{Blaauw2018} but also in the more complex case of $^{210}$Pb as demonstrated by this research.
-The classical approach provides reasonable results, in function of the offset, unfortunately the uncertainty quantification in these methods needs improvements as they do not relied on a proper statistic structure. 
-Unfortunately in a real case scenario, it is impossible to measure the true offset of a method and this is why a proper uncertainty quantification becomes extremely important.
+The classical approach provides reasonable results, regarding the offset, unfortunately the uncertainty quantification in these methods needs improvements as they do not relied on a proper statistic structure. 
+Unfortunately in a real case scenario, it is impossible to measure the true offset of a method and therefore a proper uncertainty quantification becomes extremely important.
 These results support the recommendations presented by \citet{Smith2001,Barsanti2020} where the CRS method, or any dating methodology, should be validated using independent dating methods. 
 
 Lastly, it is important to highlight the benefits of the Bayesian methods.
-From both \citet{Blaauw2018} and the present work, it is shown that Bayesian methods constantly improve as more data is available, the uncertainty associated to the method is realistic and coherent with the amount of information available, this leads to a method which is able to capture the true age in their credible intervals. 
+From both \citet{Blaauw2018} and the present work, it is shown that Bayesian methods constantly improve as more data is available, the uncertainty associated to the method is realistic and coherent with the amount of information available. This leads to chronologies that are capable of capturing the true age in their credible intervals. 
 The capability of capturing the true value in the credible intervals becomes important when the problem is associated with decision making processes, as it provides a more realistic picture of the available knowledge of the process. 
-Provided that $^{210}$Pb is used in pollution, environment and climate change studies, which has a high impact on both policy making and public perception, realistic uncertainties become extremely important. 
+Provided that $^{210}$Pb is used in pollution, environmental and climate change studies, which potentially have a high impact on both policy making and public perception, realistic uncertainties become extremely important. 
 
 
 
