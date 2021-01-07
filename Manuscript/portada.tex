@@ -1,0 +1,119 @@
+%%%%%%%%%%%%%%%%%
+%\documentclass [twocolumn,10pt] {article}
+\documentclass [10pt] {article}
+\usepackage [utf8] {inputenc}
+\usepackage[english]{babel}
+
+\usepackage {graphicx}
+\usepackage {amsfonts}
+\usepackage {amsthm}
+\usepackage {amsmath}
+\usepackage {natbib}
+\usepackage[in]{fullpage} %To have more in the page
+%.____         ___________    ____  ___ 
+%|    |   _____\__    _______ \   \/  / 
+%|    |   \__  \ |    |_/ __ \ \     /  
+%|    |___ / __ \|    |\  ___/ /     \  
+%|_______ (____  |____| \___  /___/\  \ 
+%        \/    \/           \/      \_/ 
+
+\graphicspath{{Figures/}} %Setting the graphicspath
+
+%Extra packages
+\usepackage{placeins}
+
+%%%%%%
+
+\date{ }
+\usepackage{color}
+
+%%%% To mark notes or added text by Author1 (a1)
+%%%% This allows to add notes
+%\newcommand{\a1}{\color{red} }  %% begin
+%\newcommand{\1a}{ \color{black}} %% end
+%\newcommand{\cuta1}[1]{\ac [cut] \ca} %% to mark cut text
+%\newcommand{\notea1}[1]{\textcolor{red}{(note)}\footnote{\ac #1 \ca}}  %% To add a note or comment
+
+
+% %%%% To mark notes or added text by Andres (ac)
+% \newcommand{\ac}{\color{red} }  %% begin
+% \newcommand{\ca}{\color{black}} %% end
+% \newcommand{\cutac}[1]{\ac [cut] \ca} %% to mark cut text
+% \newcommand{\noteac}[1]{\textcolor{red}{(note)}\footnote{\ac #1 \ca}}  %% To add a note or comment
+
+% %%%% To mark notes or added text by Marco (ma)
+% \newcommand{\ma}{\color{blue} }  %% begin
+% \newcommand{\am}{\color{black}} %% end
+% \newcommand{\cutma}[1]{\ac [cut] \ca} %% to mark cut text
+% \newcommand{\noteam}[1]{\textcolor{red}{(note)}\footnote{\ac #1 \ca}}  %% To add a note or comment
+
+
+% NOTE: To produce blinded version, replace "0" with "1" below.
+\newcommand{\blind}{1}
+\newcommand{\papertitle}{
+ A simulation study to compare $^{210}$Pb dating analyses 
+}
+
+\begin{document}
+	\def\spacingset#1{\renewcommand{\baselinestretch}%
+		{#1}\small\normalsize} \spacingset{1}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\if1\blind
+	{
+		\title{\textbf{\papertitle}}
+
+		\author{Marco A Aquino-L\'opez\thanks{
+				Centro de Investigaci\'on en Matem\'aticas (CIMAT),
+				Jalisco s/n, Valenciana, 36023 Guanajuato, Gto, Mexico.
+				email: \texttt{aquino@cimat.mx} } \thanks{Corresponding author.}
+					\and
+			Nicole K. Sanderson\thanks{
+				GEOTOP Research Centre, Université du Québec à Montréal, 
+				Montréal, Québec, H2X 3Y7, Canada. 
+				email: \texttt{sanderson.nicole@uqam.ca}}
+					\and
+			Maarten Blaauw\thanks{School of Natural and Built Environment,
+				Queen's University Belfast,
+				Belfast, BT7-1NN, UK.
+				email:\texttt{maarten.blaauw@qub.ac.uk}  }
+					\and
+			Joan-Albert Sanchez-Cabeza\thanks{
+				Unidad Acad\'emica de Mazatl\'an, 
+				Instituto de Ciencias del Mar y Limnolog\'ia, 
+				Universidad Nacional Aut\'onoma de Mexico, 
+				82040 Mazatl\'an, M\'exico
+				email:\texttt{jasanchez@cmarl.unam.mx}} 
+					\and
+			Ana Carolina Ruiz-Fernandez\thanks{
+				Unidad Acad\'emica de Mazatl\'an, 
+				Instituto de Ciencias del Mar y Limnolog\'ia, 
+				Universidad Nacional Aut\'onoma de Mexico, 
+				82040 Mazatl\'an, M\'exico
+				email:\texttt{caro@ola.icmyl.unam.mx}} 
+
+					\and
+			J Andr\'es Christen\thanks{
+				Centro de Investigaci\'on en Matem\'aticas (CIMAT),
+				Jalisco s/n, Valenciana, 36023 Guanajuato, Gto, Mexico.
+				email: \texttt{jac@cimat.mx}  }
+
+			}
+		\maketitle
+	} \fi
+
+	\if0\blind
+	{
+		\bigskip
+		\bigskip
+		\bigskip
+		\begin{center}
+			{\LARGE\bf \papertitle}
+		\end{center}
+		\medskip/
+	} \fi
+
+	\bigskip
+	\noindent%
+
+
+\end{document}
