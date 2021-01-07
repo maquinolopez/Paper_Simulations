@@ -6,7 +6,7 @@ url: [https://arxiv.org/abs/2012.06819](https://arxiv.org/abs/2012.06819)
 
 Authors:
 
-**Marco A. Aquino-López**
+**Marco A. Aquino-López** -Corresponding author-
 
 Centro de Investigacio ́n en Matema ́ticas (CIMAT), Jalisco s/n, Valenciana, 36023 Guanajuato, GT, Mexico. email: aquino@cimat.mx
 
