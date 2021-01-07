@@ -1,4 +1,6 @@
-This repostará host the paper for comparing the *CRS* and *Plum* using simulations.
+This repository host the paper for comparing the *CRS* and *Plum* using simulations: 
+
+***"A simulation study to compare 210Pb dating data analyses"***
 
 Authors:
 
