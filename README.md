@@ -2,6 +2,8 @@ This repository host the paper for comparing the *CRS* and *Plum* using simulati
 
 ***"A simulation study to compare 210Pb dating data analyses"***
 
+url: [https://arxiv.org/abs/2012.06819](https://arxiv.org/abs/2012.06819)
+
 Authors:
 
 **Marco A. Aquino-López**
