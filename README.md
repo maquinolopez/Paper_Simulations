@@ -24,5 +24,5 @@ Unidad Académica de Mazatlán, Instituto de Ciencias del Mar y Limnología, Uni
 
 **J Andrés Christen**
 
-Centro de Investigación en Matemáticas (CIMAT), Jalisco s/n, Valenciana, 36023 Guanajuato, GT, Mexico. email: aquino@cimat.mx
+Centro de Investigación en Matemáticas (CIMAT), Jalisco s/n, Valenciana, 36023 Guanajuato, GT, Mexico. 
 
