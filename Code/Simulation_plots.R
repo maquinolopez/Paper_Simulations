@@ -119,7 +119,7 @@ naccplot <- ggplot(df, aes(Information_percentage)) +
 #dev.off()
 figure1 <- multi_panel_figure(columns = 1, rows = 3, panel_label_type = "none")
 
-pdf("~/github/Paper_Simulations/Manuscript/Figures/AccPrec.pdf", width=8, height=10)
+#pdf("~/github/Paper_Simulations/Manuscript/Figures/AccPrec.pdf", width=8, height=10)
 # figure1 %<>%
 #   fill_panel(accplot, column = 1, row = 1) %<>%
 #   fill_panel(preplot , column = 1, row = 2) %<>%
@@ -129,7 +129,7 @@ dev.off()
 
 pdf("~/github/Paper_Simulations/Manuscript/Figures/AccPrec.pdf", width=8, height=10)
 multiplot(accplot,preplot,naccplot,cols=1)
-dev.
+dev.off()
 #################################
 # ver si hay algun patron en el sampling
 ################

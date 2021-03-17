@@ -30,18 +30,18 @@ source('~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/CRS.R')
 
 wd      <- "~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/Plum_runs/"
 core    <- list.files(wd)
-core    <- core[grepl("Sim03",substr(core,0,5) )]
-cores   <- vector()
-for (k in seq(20,95,5)){
-  tmp1  <- core[grepl(as.character(k),substr(core,7,8) )]
-  cores <- c(cores,sample(tmp1,20)) 
-}
+#core    <- core[grepl("Sim01",substr(core,0,5) )]
+cores   <- core #vector()
+# for (k in seq(20,95,5)){
+#   tmp1  <- core[grepl(as.character(k),substr(core,7,8) )]
+#   cores <- c(cores,sample(tmp1,20)) 
+# }
 
 #cores   <- core[-c(1:202)]
 
 #write.csv(cores,"~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_bigest.csv")
 #cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_bigest.csv")[,2]
-cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_big.csv")[,2]
+#cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_big.csv")[,2]
 #cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS.csv")[,2]
 
 #### preliminary actions ####
@@ -53,16 +53,27 @@ col.names   <- c("sample.code", "layer.bot", "layer.bot.u", "mass.dry", "mass.dr
                "pb210", "pb210.u", "ra226", "ra226.u", "cs137", "cs137.u")
 
 # theoretical age-models
- x  <- 0:30
-# f1 <- x**2/4 + x/2
-#f2 <- 12*x - 0.2*x**2
+x  <- 0:30
+f1 <- x**2/4 + x/2
+f2 <- 12*x - 0.2*x**2
 f3 <- 8*x + 25*sin(x/pi)
 
-
+modelMeans = NULL
+cont.malos = 0
 # creates files with age model and offsets and Normalized offsets
 for (i in 1:length(cores)){
+  if (substr(profiles[i],71,72) == "01"){
+    f = f1
+  }else{ 
+    if(substr(profiles[i],71,72) == "02"){
+      f = f2
+    }else{
+      f = f3
+    } }
+  
   #### sim1 ####
   o1 <- read.csv(profiles[i])
+  colnames(o1) <- c("ID", "Depth",   "Density",    "X210Pb", "X210Pb_sd", "Thickness",   "X226Ra", "X226Ra_sd", "info")
   ## transform and write new data frame to suit the package structure
   # As I work with masses, I simulate the equivalent core surface
   diameter <- sqrt(4 * 1 / pi)
@@ -80,28 +91,39 @@ for (i in 1:length(cores)){
   
   # complete profile (always needed if not all sections are considered)
   # SURFACE CONCENTRATION IS NEEDED, TO AVOID EXTRAPOLATION
-  s1.c  <- CompleteProfile(s1)
-  
+  s1.c  <- CompleteProfile(s1) 
   # calculate bottom layer for dating
   s1.e  <- Equilibrium(s1.c, Interactive = FALSE)
-  
+
   # CF dating
-  s1.CF <- Pb210CF(s1.e, Runs = 1e5)
-  
-  # values of interest for Marco
-  Age    <- head(s1.CF$Val$TimeLayer,-1)
-  Depth  <- s1.CF$Val$DepthLayerEx[1:length(Age)]
-  SD     <- s1.CF$Unc$TimeLayer[1:length(Age)]
-  #s1.CF$Unc$DepthLayerEx
-  offset <- abs(Age - f3[Depth+1])
-  Noffset<- offset/SD
-  E_CRS <- matrix(c(Depth,Age,SD,offset,Noffset),ncol=5)
-  colnames(E_CRS) <- c("depths","age",'sd','offset','N_offset')
+  s1.CF <- try(Pb210CF(s1.e, Runs = 1e5) )
+  if (typeof(s1.CF) == "list" ){
+    # values of interest for Marco
+    Age    <- head(s1.CF$Val$TimeLayer,-1)
+    Depth  <- s1.CF$Val$DepthLayerEx[1:length(Age)]
+    SD     <- s1.CF$Unc$TimeLayer[1:length(Age)]
+    #s1.CF$Unc$DepthLayerEx
+    offset <- abs(Age - f[Depth+1])
+    Noffset<- offset/SD
+    E_CRS <- matrix(c(Depth,Age,SD,offset,Noffset),ncol=5)
+    colnames(E_CRS) <- c("depths","age",'sd','offset','N_offset')
+    write.csv(E_CRS,results[i])
     
+    if(dim(E_CRS)[1]>2){
+      modelMeans = rbind(modelMeans, c(substr(profiles[i],68,79),colMeans(E_CRS[-1,],na.rm = T)  ) )  
+    }else{
+      modelMeans = rbind(modelMeans, c(substr(profiles[i],68,79),E_CRS[-1,]  ) )
+    }
+    
+  
+  }else{
+    print(substr(profiles[i],68,79)); cont.malos = cont.malos + 1
+    write.table(matrix(rep(0,6),ncol = 6),results[i],col.names = T,row.names = F,append = F)
+  }
+  }
+  
 
-  write.csv(E_CRS,results[i])
-}
-
+write.table(modelMeans,paste0("~/github/Paper_Simulations/Code/","E_CRS.txt"),col.names = T,row.names = F,append = F)
 #######################################################
 #######################################################
 #######################################################
