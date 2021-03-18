@@ -254,16 +254,16 @@ Once more details on the proper use of this and the previous models can be found
 
 \subsection{\textit{Plum}}
 
-Lastly, \textit{Plum} is the most recent age depth model \citep(Aquino2018).
+Lastly, \textit{Plum} is the most recent age depth model \citep{Aquino2018}.
 This model is the first Bayesian method for dating $^{210}$Pb sediments and it has recibe a moderate interest by the palaeoecological community with 18 citations up to the moment of writing this manuscript.
 This is more than the citations obtained by the CF:CS model and  in the literature review by \citet{Courtney2019}.
 
 \textit{Plum} assumes that there exists an (unknown) age-depth function $t(x)$ that relates depth $x$ with calendar age $t(x)$. 
 Conditional on $t(x)$, the following model is assumed for the measured $^{210}$Pb $y_i$ between depths $x_i - \delta$ to $x_i$
 \begin{eqnarray}
-y_i\mid P^S_i, \Phi_i, \bar{t}\sim \mathcal{N} \left(A^S_i+\frac{\Phi_i}{\lambda} \left( e^{-\lambda t(x_i-\delta)} - e^{-\lambda t(x_i)} \right), (\sigma_i\rho_i)^2 \right). 
+y_i\mid P^S_i, \Phi_i, \bar{t}\sim \mathcal{N} \left(P^S_i+\frac{\Phi_i}{\lambda} \left( e^{-\lambda t(x_i-\delta)} - e^{-\lambda t(x_i)} \right), (\sigma_i\rho_i)^2 \right). 
 \end{eqnarray}
-Here $A_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the supply of excess $^{210}$Pb to the sediment, the age-depth model $t(x)$ is based on a piece-wise linear model constrained by prior information on the sediment's accumulation rates  \citep{Blaauw2011}, see \cite{Aquino2018} for details.
+Here $P_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the supply of excess $^{210}$Pb to the sediment, the age-depth model $t(x)$ is based on a piece-wise linear model constrained by prior information on the sediment's accumulation rates  \citep{Blaauw2011}, see \citep{Aquino2018} for details.
 
 This treatment of the data allows for a formal statistical inference on a well-defined model with specific parameters. 
 In order to infer the parameters of the model, a Bayesian approach is used.
@@ -475,7 +475,7 @@ By using different scenarios, three different simulations were created.
 These simulations were then sub-sampled at different percentages of information in order to observe the effects that different sample sizes have on the resulting chronology. 
 This experiment provided an objective comparison of the accuracy and precision of both methods.
 
-The experiment was measured in two different level.
+The experiment was measured in two different levels.
 For the first level, the overall accuracy and precision of the method were evaluated.
 The mean of the bias, length of the 95\% confidence and credible intervals, as well as the coverage were measured.
 The second level focused on the ability of each model to capture the true value in their credible/confidence interval, and the coverage of every scenario per depth was calculated. 
@@ -489,7 +489,7 @@ As has been previously discussed by \citet{Aquino2020}, the larger uncertainties
 Further evidence that these uncertainties are more sensible is that the length of the credible intervals becomes smaller as more data becomes available. 
 On the other hand, the length of the confidence intervals provided by the classical model (CRS) remain almost constant at any sample size.
 Lastly, the coverage, which shows the capability of the model to capture the true values within their intervals, shows that the classical model (CRS) on average is incapable of capturing the true values within its 95\% confidence interval. 
-These results are especially worrisome considering that the $^{210}$Pb dating community rarely report 95\% confidence intervals and instead tend to use only 65\% confidence intervals (one standard deviation intervals) are reported.
+These results are especially worrisome considering that the $^{210}$Pb dating community rarely report 95\% confidence intervals and instead tend to use only 65\% confidence intervals (one standard deviation intervals).
 On the other hand, \textit{Plum}'s coverages always remain $\leq 2$, therefore guaranteeing that on average the true value is capture within its 95\% credible intervals, even with small sample sizes.
 \textit{Plum}'s coverages are constantly improving and reaching stability with 50\%, or more, of information percentage.
 These experiments show that the Bayesian method, on average, provides more reliable results.
@@ -515,7 +515,7 @@ In a real-world scenario the user typically has some prior knowledge of the sedi
 In conclusion, the use of the Bayesian age-depth models is preferred for the consistent construction of sediment chronologies, not only on radiocarbon-based chronologies as presented by \citet{Blaauw2018} but also in the more complex case of $^{210}$Pb as demonstrated by this research.
 While the classical approach provides reasonable results, regarding the bias, unfortunately the uncertainty quantification in these methods needs improvements as they do not rely on a proper statistical structure. 
 In a real-world scenario, it is impossible to measure the true bias of a method and therefore a proper uncertainty quantification becomes extremely important.
-These results support the recommendations presented by \citet{Smith2001,Barsanti2020} where the CRS method, or any dating methodology, should be validated using independent dating methods markers. 
+These results support the recommendations presented by \citet{Smith2001,Barsanti2020} where the CRS method, or any dating methodology, should be validated using independent dating markers. 
 
 Lastly, it is important to highlight the benefits of the Bayesian methods.
 From both \citet{Blaauw2018} and the present work, it is shown that Bayesian methods constantly improve as more data are added, the uncertainty associated to the method is realistic and coherent with the amount of information available. This leads to chronologies that are capable of capturing the true age in their credible intervals. 
