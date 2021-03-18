@@ -94,10 +94,11 @@ multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {
 
 ####### This will create the file with offsets and sds
 
-x  <- 0:30
+x  <- 1:30
 f1 <- x**2/4 + x/2
 f2 <- 12*x - 0.2*x**2
 f3 <- 8*x + 25*sin(x/pi)
+
 
 modelMeans = NULL
 cont.malos = 0
@@ -117,12 +118,15 @@ for (kore in core){
 
   if ( !is.null(CFCS$depth_avg_mm) ){
   #Se asume un intervalo del 95%
-  models  = matrix( abs(-approx(CFCS$depth_avg_mm,CFCS$BestAD,x,na.rm = TRUE)$y  + 2020   - f) )# CFCS model
-  models  = cbind(models,(approx(CFCS$depth_avg_mm,CFCS$MaxAD,x,na.rm = TRUE)$y-approx(CFCS$depth_avg_mm,CFCS$MinAD,x,na.rm = TRUE)$y) / 4)
-  models  = cbind(models,abs( -approx(CIC$depth_avg_mm,CIC$BestAD,x,na.rm = TRUE)$y  + 2020  -f) ) # CIC model
-  models  = cbind(models,(approx(CIC$depth_avg_mm,CIC$MaxAD,x,na.rm = TRUE)$y-approx(CIC$depth_avg_mm,CIC$MinAD,x,na.rm = TRUE)$y) / 4 )
-  models  = cbind(models,abs( -approx(CRS_serac$depth_avg_mm,CRS_serac$BestAD,x,na.rm = TRUE)$y  + 2020 - f) )# CRS model
-  models  = cbind(models,(approx(CRS_serac$depth_avg_mm,CRS_serac$MaxAD,x,na.rm = TRUE)$y-approx(CRS_serac$depth_avg_mm,CRS_serac$MinAD,x,na.rm = TRUE)$y) / 4 )
+  xtmp <- x[CRS_serac$depth_avg_mm[-c(1,2)]]
+  xCIC <- x[CIC$depth_avg_mm[-c(1,2)]]
+  xCFCS <- x[CRS_serac$depth_avg_mm[-c(1,2)]]
+  models  = matrix( abs(-approx(CFCS$depth_avg_mm,CFCS$BestAD,xCFCS,na.rm = TRUE)$y  + 2020   - f) )# CFCS model
+  models  = cbind(models,(approx(CFCS$depth_avg_mm,CFCS$MaxAD,xCFCS,na.rm = TRUE)$y-approx(CFCS$depth_avg_mm,CFCS$MinAD,xCFCS,na.rm = TRUE)$y) / 4)
+  models  = cbind(models,abs( -approx(CIC$depth_avg_mm,CIC$BestAD,xCIC,na.rm = TRUE)$y  + 2020  -f) ) # CIC model
+  models  = cbind(models,(approx(CIC$depth_avg_mm,CIC$MaxAD,xCIC,na.rm = TRUE)$y-approx(CIC$depth_avg_mm,CIC$MinAD,xCIC,na.rm = TRUE)$y) / 4 )
+  models  = cbind(models,abs( -approx(CRS_serac$depth_avg_mm,CRS_serac$BestAD,xtmp,na.rm = TRUE)$y  + 2020 - f) )# CRS model
+  models  = cbind(models,(approx(CRS_serac$depth_avg_mm,CRS_serac$MaxAD,xtmp,na.rm = TRUE)$y-approx(CRS_serac$depth_avg_mm,CRS_serac$MinAD,xtmp,na.rm = TRUE)$y) / 4 )
   models  = models[-1,]
   colnames(models) <- c("CFCS", "CFCS_sd","CIC","CIC_sd","CRS_serac","CRS_serac_sd")
   write.table(models,paste0("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/Plum_runs/",kore,'/',"serac_errors_sd.txt"),col.names = T,row.names = F,append = F)

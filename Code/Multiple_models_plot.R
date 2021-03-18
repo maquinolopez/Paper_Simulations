@@ -39,74 +39,74 @@ serac$Information_percentage = per_temp
 #pdf("../Fig/Acc_prec.pdf", width=8.5, height=9.5)
 accplot <- ggplot(serac, aes(x=Information_percentage)) + 
   geom_quantile(aes(y = CFCS),size=.5,alpha=.5,color="purple",method = "rqss") +
-  #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
-  ##
+  # #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
+  # ##
   geom_quantile(aes(y = CIC ),size=.5,alpha=.5,color="green",method = "rqss") +
-  #geom_point(aes(y = CIC),size=.7,alpha=.1,color='green') +
-  ##
-  geom_quantile(data=E_CRS,aes(y = offset ),size=.5,alpha=.5,color="chocolate",method = "rqss") +
+  # #geom_point(aes(y = CIC),size=.7,alpha=.1,color='green') +
+  # ##
+  # geom_quantile(data=E_CRS,aes(y = offset ),size=.5,alpha=.5,color="green",method = "rqss") + #forestgreen
+  # #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
+  # ##
+  # geom_quantile(data=Plum,aes(y = Accuracy ),size=.8,alpha=.8,color="blue",method = "rqss") +
+  # ##
+  # geom_quantile(data=Plum,aes(y = CRS_Accuracy ),size=.8,alpha=.8,color="red",method = "rqss") +
   #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
   ##
-  geom_quantile(data=Plum,aes(y = Accuracy ),size=.8,alpha=.8,color="blue",method = "rqss") +
-  ##
-  geom_quantile(data=Plum,aes(y = CRS_Accuracy ),size=.8,alpha=.8,color="forestgreen",method = "rqss") +
-  #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
-  ##
-  geom_quantile(aes(y = CRS_serac ),size=.8,alpha=.8,color="red",method = "rqss") +
+  # geom_quantile(aes(y = CRS_serac ),size=.8,alpha=.8,color="forestgreen",method = "rqss") +
   #geom_point(aes(y = CRS_serac),size=.8,alpha=.1,color='red') +
   theme(legend.justification=c(0,0),legend.position=c(0.5,0.5)) + 
-  labs(title = "A) Offset", x = "", y = "yr",colour = "hola")
+  labs(title = "A) Bias", x = "", y = "yr",colour = "hola")
 
  accplot
 
 
 preplot <-  ggplot(serac, aes(Information_percentage)) + 
-  geom_quantile(aes(y = CFCS_sd),size=.5,alpha=.5,color="purple",method = "rqss") +
-  #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
-  ##
-  geom_quantile(aes(y = CIC_sd ),size=.5,alpha=.5,color="green",method = "rqss") +
+  geom_quantile(aes(y = 4*CFCS_sd),size=.5,alpha=.5,color="purple",method = "rqss") +
+  # #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
+  # ##
+  geom_quantile(aes(y = 4*CIC_sd ),size=.5,alpha=.5,color="green",method = "rqss") +
   #geom_point(aes(y = CIC),size=.7,alpha=.1,color='green') +
   ##
-  geom_quantile(data=E_CRS,aes(y = sd ),size=.5,alpha=.5,color="chocolate",method = "rqss") +
+  # geom_quantile(data=E_CRS,aes(y = 4*sd ),size=.5,alpha=.5,color="green",method = "rqss") +
+  # #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
+  # ##
+  # geom_quantile(data=Plum,aes(y = CRS_Precision ),size=.8,alpha=.8,color="red",method = "rqss") +
+  # ##
+  # geom_quantile(data=Plum,aes(y = Precision ),size=.8,alpha=.8,color="blue",method = "rqss") +
   #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
   ##
-  geom_quantile(data=Plum,aes(y = CRS_Precision ),size=.8,alpha=.8,color="forestgreen",method = "rqss") +
-  ##
-  geom_quantile(data=Plum,aes(y = Precision ),size=.8,alpha=.8,color="blue",method = "rqss") +
-  #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
-  ##
-  geom_quantile(aes(y = CRS_serac_sd ),size=.8,alpha=.8,color="red",method = "rqss") +
+  # geom_quantile(aes(y = CRS_serac_sd ),size=.8,alpha=.8,color="forestgreen",method = "rqss") +
   #geom_point(aes(y = CRS_serac),size=.8,alpha=.1,color='red') +
   xlim(10, 100) + ylim(0, 63) + 
   labs(title = "B)Interval Length", x = "", y = "yr", color = "% Inf")
 
 
-# preplot
+ preplot
 
 naccplot <- ggplot(serac, aes(Information_percentage)) + 
   geom_quantile(aes(y = CFCS/CFCS_sd),size=.5,alpha=.5,color="purple",method = "rqss") +
-  #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
-  ##
+  # #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
+  # ##
   geom_quantile(aes(y = CIC/CIC_sd ),size=.5,alpha=.5,color="green",method = "rqss") +
   #geom_point(aes(y = CIC),size=.7,alpha=.1,color='green') +
   ##
-  geom_quantile(data=E_CRS,aes(y = N_offset ),size=.5,alpha=.5,color="chocolate",method = "rqss") +
-  #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
+  # geom_quantile(data=E_CRS,aes(y = N_offset ),size=.5,alpha=.5,color="green",method = "rqss") +
+  # #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
+  # ##
+  # geom_quantile(data=Plum,aes(y = CRS_NormAccuracy ),size=.8,alpha=.8,color="red",method = "rqss") +
+  # ##
+  # geom_quantile(data=Plum,aes(y = NormAccuracy ),size=.8,alpha=.8,color="blue",method = "rqss") +
+  # #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
   ##
-  geom_quantile(data=Plum,aes(y = CRS_NormAccuracy ),size=.8,alpha=.8,color="forestgreen",method = "rqss") +
-  ##
-  geom_quantile(data=Plum,aes(y = NormAccuracy ),size=.8,alpha=.8,color="blue",method = "rqss") +
-  #geom_point(data=E_CRS,aes(y = offset),size=.7,alpha=.1,color='yellow') +
-  ##
-   geom_quantile(aes(y = CRS_serac/CRS_serac_sd ),size=.8,alpha=.8,color="red",method = "rqss") +
+  # geom_quantile(aes(y = CRS_serac/CRS_serac_sd ),size=.8,alpha=.8,color="forestgreen",method = "rqss") +
   #geom_point(aes(y = CRS_serac),size=.8,alpha=.1,color='red') +
   xlim(10, 100) + ylim(0, 5) + 
-  labs(title = "C) Normalized Offset", x = "% of information", y = "", color = "% Inf")
+  labs(title = "C) Coverage", x = "% of information", y = "", color = "% Inf")
 
  naccplot
 
 
-pdf("~/github/Paper_Simulations/Manuscript/Figures/AccPrec.pdf", width=9, height=12)
+pdf("~/github/Paper_Simulations/Manuscript/Figures/AccPrec-appendix.pdf", width=9, height=12)
 multiplot(accplot,preplot,naccplot,cols=1)
 dev.off()
 

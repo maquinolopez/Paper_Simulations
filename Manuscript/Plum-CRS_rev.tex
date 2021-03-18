@@ -14,6 +14,7 @@
 \usepackage {amsthm}
 \usepackage {amsmath}
 \usepackage {natbib}
+\usepackage{hyperref}
 \usepackage[in]{fullpage} %To have more in the page
 %.____         ___________    ____  ___ 
 %|    |   _____\__    _______ \   \/  / 
@@ -180,7 +181,8 @@ This model treats every data point as originating from a forward model that incl
 They concluded that Bayesian age-depth models provide a more accurate result and more realistic uncertainties under a wide range of scenarios.  
 The objective of the present study is to test whether the results obtained by \citet{Blaauw2018}, concerning the accuracy and precision of the Bayesian approach, are maintained in a more complex modelling situation, such as the construction of $^{210}$Pb-based age-depth models.
 To do so, we compare $^{210}$Pb dates and uncertainties from the widely applied CRS model (by far the most popular age-depth model for $^{210}$Pb) against \textit{Plum} using simulated cores, i.e. sedimentation ``scenarios''.
-We also aim to observe the learning process of each of the models and estimate the amount of information is needed to obtained a reasonable chronology for each model. 
+We also aim to observe the learning process of each of the models and estimate the amount of information is needed to obtained a reasonable chronology for each model.
+This process is of crucial importance as the amount of information depends on the number of samples; which in turn depends on the budget and user decision of how much of such budget gets uses to developing the age-depth model. 
 
 
 %Esto debe ser revisado antes de tener una version final, se esta agregando una sección
@@ -378,37 +380,41 @@ The default parameters were set in accordance with \citet{Blaauw2018}.
 
 
 For this this study we created a data set for each of the three simulation by integrating in intervals of $\delta =$1 cm, for depths from  0 to 30 cm where radioactive equilibrium was guaranteed \citep{Aquino2018}.
-The complete simulated $^{210}$Pb data sets can be found in the Supplementary Material \ref{sec:supp_mat}.
+The complete simulated $^{210}$Pb data sets can be found in \url{https://github.com/maquinolopez/Paper_Simulations/tree/master/Code/Data}.
 
 \subsection{Model Considerations}
-In order to create a comparison with minimal user interaction, each model was run automatically.
+In order to create a comparison with minimal user interaction, each model was run automatically, with default settings.
 In the case of \textit{Plum}, default settings were used in order to minimize user interaction.
-As the CI-CRS model assumes that background (supported) $^{210}$Pb has been reached, in order to reduce user manipulation, we decided to fix the last sample (30 cm depth) for every case.
-This step not only guarantees the consistent application of the CI-CRS model, it also provides the model with a single bottom-most depth to be removed as it is common practice when using the CI-CRS model.
-Because of this, \textit{Plum}'s resulting chronology will always reaches 30 cm, as by default 1 cm sections are used for every simulation.
-Conversely, as CI-CRS model only models the excess $^{210}$Pb (the total $^{210}$Pb minus the supported $^{210}$Pb), when certain excess activities at depth fall below zero, the chronology will only be calculated up to that depth.
+As for the default settings were used.
+As the CRS model (for both the CI-CRS and R-CRS) assumes that background (supported) $^{210}$Pb has been reached, in order to reduce user innervation, we decided to fix the last sample (30 cm depth) for every case.
+This step not only guarantees the consistent application of the CRS model, it also provides the model with a single bottom-most depth to be removed as it is common practice when using the CRS model.
+Conversely, as CRS model only models the excess $^{210}$Pb (the total $^{210}$Pb minus the supported $^{210}$Pb), when certain excess activities at depth fall below zero, the chronology will only be calculated up to that depth.
 \textit{Plum} deals with this variable supported $^{210}$Pb variable automatically, as part of the inference.
-In order to provide the best possible estimate for this variable a constant level of supported $^{210}$Pb was assumed for both models.
-For the CI-CRS model, the mean of the supported $^{210}$Pb measurements was calculated and then subtracted from the total $^{210}$Pb to obtain the excess $^{210}$Pb, as it is common practice when using the CI-CRS model.
+Because of this, \textit{Plum}'s resulting chronology will always reaches 30 cm, as by default 1 cm sections are used for every simulation.
 
-In order to provide an objective comparison, the bias of the true age-depth model (in yr), length of the 95\% intervals (in yr) and coverage were calculated (the coverage indicates the distance of modelled ages from the true value given the model's own uncertainty). 
+In the case of the supported $^{210}$Pb and in order to reduce the influence of this variable in the bias of the models, a constant level of supported $^{210}$Pb was assumed for both models, which coincides with the way the simulation were constructed.
+For the CRS model, the mean of the supported $^{210}$Pb measurements was calculated and then subtracted from the total $^{210}$Pb to obtain the excess $^{210}$Pb, as it is common practice when using the CRS model.
+
+In order to provide an objective comparison, the bias of the true age-depth model (in yr), length of the 95\% intervals (in yr) and coverage (bias over the standard deviation) were calculated (the coverage indicates the distance of modelled ages from the true value given the model's own uncertainty). 
 The main discussion will revolve around the coverage as it provide an intuitive measure of the accuracy a model by taking into account the levels of uncertainty provided by each model. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Model Comparison}
 
-To allow for a reasonable comparison between models, and to evaluate the effect that different amount of information may have on the accuracy and precision of $^{210}$Pb models, we used our three simulated data sets (see Supplementary Material \ref{sec:supp_mat}). 
-For these simulated cores, samples were randomly generated, given a percentage of information (e.g. for a 20\% information a dataset with 6 random 1-cm samples -of a possible total 30 1-cm samples- is created) in order to create a sub-dataset, which was then used to create a chronology:
-100 of these sub-datasets were created for information percentages from 10\% to 95\% at 5\% intervals (i.e., 10\%, 15\%, 20\%,...,95\%). 
-The complete dataset was also used (i.e 100\% percentage of information sample).
-Once a dataset was created, both the CRS model and \textit{Plum} were applied.  
+To allow for a reasonable comparison between models, and to evaluate the effect that different amount of information may have on the accuracy and precision of $^{210}$Pb models, reflected in this study as the bias and coverage, the three simulated data sets previously described will be used. 
+In order to reflect the effect of sample sizes, which depending on the budget of the project, the core could entirely sample or only a portion of it.
+A samples of size $m$ is randomly generated provided a percentage of information, e.g. for a 20\% information a dataset with 6 random 1-cm samples -out of a possible total 30 1-cm samples- is created.
+This sample was then used to create the chronology and calculate the bias, length of interval and coverage:
+100 of these sub-datasets were created for different information percentages (from 10\% to 95\% at 5\% intervals - i.e., 10\%, 15\%, 20\%,...,95\%). 
+The complete dataset was also used (i.e 100\% percentage of information sample, or fully sampled core).
+Once a dataset was created, both CRS models and \textit{Plum} were applied (CIC and CF:CS were also applied and results shown on the appendix).  
 Both sets of outputs were then compared against the true known age value, see Figure \ref{fig:comparison1r}.
 
 \begin{figure}[!]
 	\centering
 	\includegraphics[width=\linewidth]{95Comparison.pdf}
-		\caption{Comparison between \textit{Plum}, R-CRS and the CI-CRS model against the true age-depth model using 95\% of the information percentage (using 1-cm samples at depths at every depth except 13 and 19 cm). Lines show the age estimates with the 95\% credible intervals (\textit{Plum}) and the 95\% confidence interval (CI-CRS). Dots show the coverage, i.e. the distance between the inferred age and the true age in relation to the standard error (the standard deviation in the case of the CI-CRS and the length of the confidence interval divided by 4 in the case of \textit{Plum}). The vertical right axis shows how many standard deviations is each model from the true age.  }
+		\caption{Comparison between \textit{Plum}, R-CRS and CI-CRS model against the true age-depth model using 95\% of the information percentage (using 1-cm samples). Lines show the age estimates with the 95\% credible intervals (\textit{Plum}) and the 95\% confidence interval (CI-CRS). Dots show the coverage, i.e. the distance between the inferred age and the true age in relation to the standard error (the standard deviation in the case of the CI-CRS and the length of the confidence interval divided by 4 in the case of \textit{Plum}). The vertical right axis shows how many standard deviations is each model from the true age.  }
 		\label{fig:comparison1r}
 \end{figure}
 
@@ -418,27 +424,28 @@ As we are dealing with a total of $n =$ 5333 simulations, in order to evaluate t
 \begin{figure}[!]
  \centering
   \includegraphics[width=.75\linewidth]{AccPrec.pdf}
-	\caption{Top panel A) shows the bias between the modelled and true age of the CI-CRS (red) and \textit{Plum} (blue). This panel shows how \textit{Plum} provides a small bias in almost every scenario with both models improving their bias as more information is available. Middle panel B) shows the 95\% confidence intervals. It is clear, from this panel, than the uncertainty provided by \textit{Plum} is a lot bigger for low percentage of information and it constantly improves as more data is available, whereas the length of the intervals provided by the CI-CRS appear to stay constant regardless of the available information. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age normalized divided by the standard deviation (in the case of \textit{Plum}, the length of the 95\% interval divided by 4). This panel presents a worrying situation where the CI-CRS model's calculated standard deviation (on average) is incapable of capturing the true age. On the other hand, \textit{Plum}'s credible intervals almost always capture the true age even when little information is available.}
+	\caption{Top panel A) shows the bias between the modelled and true age of the CI-CRS (red), R-CRS (green) and \textit{Plum} (blue). This panel shows how \textit{Plum} provides a small bias in almost every scenario with both models improving their bias as more information is available. Middle panel B) shows the 95\% confidence intervals. It is clear, from this panel, than the uncertainty provided by \textit{Plum} is a lot bigger for low percentage of information and it constantly improves as more data is available, whereas the length of the intervals provided by the CI-CRS and R-CRS appear to stay constant regardless of the available information. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age normalized divided by the standard deviation (in the case of \textit{Plum}, the length of the 95\% interval divided by 4). This panel presents a worrying situation where the CI-CRS and R-CRS model's calculated standard deviation (on average) is incapable of capturing the true age. On the other hand, \textit{Plum}'s credible intervals almost always capture the true age even when little information is available.}
   \label{fig:accpre}
 \end{figure}
 
 
 Figure \ref{fig:accpre} show results similar to those presented by \citet{Blaauw2018}. 
-The classical model (CI-CRS) at first appears to provide a similar results (similar biass) to the Bayesian alternative (\textit{Plum}), but at higher estimated precision, if we only consider at the length of the 95\% interval. 
-It is important to note that the CI-CRS model's bias improves as more information is available.
+The classical model (CI-CRS and R-CRS) at first appears to provide a similar results (similar biasses) to the Bayesian alternative (\textit{Plum}), but at higher estimated precision, if we only consider at the length of the 95\% interval. 
+It is important to note that the CI-CRS and R-CRS models' bias improves as more information is available.
 However, if we do not consider both the effects of both the bias and length of the interval together, the results are not favourable to the CI-CRS. 
 To have a more realistic representation of how the models capture the true age-depth models relationship, we should observe the coverage. 
 This variable shows the degree to which the average models contain the truth within their uncertainty intervals (normalized to one standard deviation). 
 Any model with a coverage larger than two (two standard deviations) is incapable of capturing the true ages within its uncertainty intervals.  
-This means that, while the CI-CRS estimates smaller uncertainties and its ages improve as more data is available, it does so at the cost of its accuracy and the improvements are not sufficient to capture the true age.
+This means that, while the CI-CRS and R-CRS estimates smaller uncertainties and its ages improve as more data is available, it does so at the cost of its accuracy and the improvements are not sufficient to capture the true age.
 It also appears that the length of the 95\% interval and bias are not affected by how much information is provided to the CRS model. 
 
 On the other hand, \textit{Plum} seems to provide increasingly accurate results as more information is added to the model.
 This again coincides with the results outlined by \citet{Blaauw2018}. 
-When we observe the regular bias (not normalized), we find that \textit{Plum} provides a smaller bias in comparison to the CI-CRS model; this, in combination with slightly larger (more realistic) modelled uncertainties, results in more consistently accurate age-depth models that are capable of capturing the true values within their uncertainty intervals. 
-This result supports the claim that \textit{Plum} provides more realistic uncertainties compared those obtained by the CI-CRS. 
-Another important statistic to take into account is that 87.86\% (4686/5333) of \textit{Plum}'s runs remain within the 2 standard deviations, opposed to 7.48\% (399/5333) for the CI-CRS model. Furthermore, only 0.54\% (29/5333) of the CI-CRS model runs remain under the 1 standard deviation, which is the most commonly reported interval when reporting CI-CRS results.
-We can also observe a clear structure in the way that \textit{Plum} increases its accuracy and precision to obtain a better chronology as more information is available, whereas the CI-CRS model does not appears to improve its ability to capture the true value from additional data. 
+When we observe the regular bias (not normalized), we find that \textit{Plum} provides a smaller bias in comparison to the CI-CRS and R-CRS models; this, in combination with slightly larger (more realistic) modelled uncertainties, results in more consistently accurate age-depth models that are capable of capturing the true values within their uncertainty intervals. 
+This result supports the claim that \textit{Plum} provides more realistic uncertainties compared those obtained by the CI-CRS and R-CRS. 
+Another important statistic to take into account is that 87.86\% (4686/5333) of \textit{Plum}'s runs remain within the 2 standard deviations, opposed to 7.48\% (399/5333) for the CI-CRS models. Furthermore, only 0.54\% (29/5333) of the CI-CRS models runs remain under the 1 standard deviation, which is the most commonly reported interval when reporting CI-CRS results, with R-CRS providing very similar results.
+We can also observe a clear structure in the way that \textit{Plum} increases its accuracy and precision to obtain a better chronology as more information is available, whereas the CI-CRS and R-CRS model does not appears to improve its ability to capture the true value from additional data, i.e it does not improve its coverage as more data is available. 
+Since we obtained very similar results from both the CI-CRS and R-CRS, the discussion will now focus on the CRS in general taking the CI-CRS as its base for the following calculations.
 
 These results are valid for the overall chronology (the mean bias, interval and coverage of the overall chronology). 
 In order to evaluate whether certain models are better predicting ages at certain section of the sediment cores, we have to look at the coverage of every depth. 
@@ -461,14 +468,9 @@ It is important to note that the inaccuracies of the CI-CRS model are not exclus
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Discussion and Conclusions}
 
-This research focuses on exploring the uncertainty and precision of the most commonly used $^{210}$Pb dating methods (CI-CRS and \textit{Plum}).
+This research focuses on exploring the uncertainty and precision of the most commonly used $^{210}$Pb dating methods (CRS and \textit{Plum}).
 By using different scenarios, three different simulations were created.
 These simulations were then sub-sampled at different percentages of information in order to observe the effects that different sample sizes have on the resulting chronology. 
 This experiment provided an objective comparison of the accuracy and precision of both methods.
@@ -479,14 +481,14 @@ The mean of the bias, length of the 95\% confidence and credible intervals, as w
 The second level focused on the ability of each model to capture the true value in their credible/confidence interval, and the coverage of every scenario per depth was calculated. 
 These two comparisons provided a good picture of the difference in precision and accuracy between these methods.
 
-From the overall accuracy (see Figure \ref{fig:accpre}) it is clear that both the CI-CRS model and \textit{Plum} reduce their bias as more data becomes available, with the Bayesian method providing, on average, a smaller bias regardless of the sample size. 
+From the overall accuracy (see Figure \ref{fig:accpre}) it is clear that both the CRS model and \textit{Plum} reduce their bias as more data becomes available, with the Bayesian method providing, on average, a smaller bias regardless of the sample size. 
 On the subject of precision, the Bayesian method is providing much larger uncertainties when small sample sizes are used. 
 It is only with 60\%, or more, of the information that the length of the intervals becomes comparable. 
 This is a consequence of the linear interpolation, between data points, used by the CRS method, in contraste to the Bayesian approach (\textit{Plum}) using a proper statistical inference.  
 As has been previously discussed by \citet{Aquino2020}, the larger uncertainties provided by \textit{Plum} are more realistic, and this experiment confirms the latter.
 Further evidence that these uncertainties are more sensible is that the length of the credible intervals becomes smaller as more data becomes available. 
-On the other hand, the length of the confidence intervals provided by the classical model (CI-CRS) remain almost constant at any sample size.
-Lastly, the coverage, which shows the capability of the model to capture the true values within their intervals, shows that the classical model (CI-CRS) on average is incapable of capturing the true values within its 95\% confidence interval. 
+On the other hand, the length of the confidence intervals provided by the classical model (CRS) remain almost constant at any sample size.
+Lastly, the coverage, which shows the capability of the model to capture the true values within their intervals, shows that the classical model (CRS) on average is incapable of capturing the true values within its 95\% confidence interval. 
 These results are especially worrisome considering that the $^{210}$Pb dating community rarely report 95\% confidence intervals and instead tend to use only 65\% confidence intervals (one standard deviation intervals) are reported.
 On the other hand, \textit{Plum}'s coverages always remain $\leq 2$, therefore guaranteeing that on average the true value is capture within its 95\% credible intervals, even with small sample sizes.
 \textit{Plum}'s coverages are constantly improving and reaching stability with 50\%, or more, of information percentage.
@@ -494,9 +496,9 @@ These experiments show that the Bayesian method, on average, provides more relia
 
 
 Because the coverage shows the capability of capturing the true value within its intervals, this variable can be used to conclude if any given method is better at estimating certain time period.
-Figure \ref{fig:depths} presents the performance of both the CI-CRS model and \textit{Plum} for every simulated scenario.
-It appears that, the coverage of many of the CI-CRS chronologies are $> 2$ throughout the whole chronology, meaning that the model does not have a period of time for which it is more precise. 
-Moreover, the CI-CRS does not exhibits a clear learning pattern, where the coverage appears to be indifferent to the amount of information available.
+Figure \ref{fig:depths} presents the performance of both the CRS model and \textit{Plum} for every simulated scenario.
+It appears that, the coverage of many of the CRS chronologies are $> 2$ throughout the whole chronology, meaning that the model does not have a period of time for which it is more precise. 
+Moreover, the CRS does not exhibits a clear learning pattern, where the coverage appears to be indifferent to the amount of information available.
 It appears that even high levels of information percentage provide coverages $> 2$, in some cases closer to 4 for scenarios 2 and 3.
 \textit{Plum} on the other hand, shows a structure where more data is reflected in improved models in scenarios 1 and 3.
 It is only at low levels of information where \textit{Plum}'s coverage is $>2$.
@@ -505,10 +507,10 @@ This may be of concern if we do not recognized that this scenario is unrealistic
 It is also important to acknowledge that this experiment was performed using default settings.  
 In a real-world scenario the user typically has some prior knowledge of the sedimentation process, about the site of interest, which could be incorporated as prior information to the model to improve the resulting chronology.
 
-The results obtained by this experiment appear to persist even in the case of the revised version of the CRS model (R-CRS).
-The R-CRS model appears to improve the bias but this improvement appears to be nullified by the smaller uncertainties presented by \citet{Sanchez-Cabeza2014}.
-The question of which version of the CRS provides the best result is beyond the scope of this research and is dependent on expert application of the model.
-Nevertheless, it is important to note that that the bias, related to the CI-CRS and R-CRS, are reasonably small at certain sections of the sediment, but the uncertainty quantification of both methods is overly optimistic.  
+% The results obtained by this experiment appear to persist even in the case of the revised version of the CRS model (R-CRS).
+% The R-CRS model appears to improve the bias but this improvement appears to be nullified by the smaller uncertainties presented by \citet{Sanchez-Cabeza2014}.
+% The question of which version of the CRS provides the best result is beyond the scope of this research and is dependent on expert application of the model.
+% Nevertheless, it is important to note that that the bias, related to the CI-CRS and R-CRS, are reasonably small at certain sections of the sediment, but the uncertainty quantification of both methods is overly optimistic.  
 
 In conclusion, the use of the Bayesian age-depth models is preferred for the consistent construction of sediment chronologies, not only on radiocarbon-based chronologies as presented by \citet{Blaauw2018} but also in the more complex case of $^{210}$Pb as demonstrated by this research.
 While the classical approach provides reasonable results, regarding the bias, unfortunately the uncertainty quantification in these methods needs improvements as they do not rely on a proper statistical structure. 
@@ -537,13 +539,22 @@ The corresponding author is founded by CONACYT through the postdoctoral residenc
 
 \section{Supplementary Material}
 \label{sec:supp_mat}
-Data for each simulation and code used is hosted at: https://github.com/maquinolopez/Paper\_Simulations
+Data for each simulation and code used are hosted at: \url{https://github.com/maquinolopez/Paper_Simulations}
 
 \section{Appendix A}
+
+Bias, length of 95\% confidence intervals and coverage of the CIC and CF:CS models.
+As it can be observe and as expected the bias of the CIC model (which can be consider the simples model) is much bigger when compare to any other alternative and it does not decrease as more data is available.
+The confidence interval remains regarles of the information available, and coverage is almost always above two, which means that the uncertainties are not sufficient to capture the true age-depth model.
+On the other hand the CF:CS model does decrease its bias as more data is available and after 60\% to 70\% this decrease does not seen improve.
+The length of the interval remains the same regarles of the information available and the coverage just like the CIC model is almost always above 2 meaning that the uncertainties are not sufficient. 
+
+
+
 \begin{figure}
 	\begin{centering}
-		\includegraphics[width = 15cm]{AccPrec-appendix.pdf}
-		\caption{}
+		\includegraphics[width = 13cm]{AccPrec-appendix.pdf}
+		\caption{ Top panel A) shows the bias between the modelled and true age of the CF:CS (purple) and CIC (Orange). Middle panel B) shows the 95\% confidence intervals. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age normalized divided by the standard deviation. }
 		\label{}
 	\end{centering}
 \end{figure}
