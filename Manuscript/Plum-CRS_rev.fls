@@ -187,6 +187,9 @@ INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam1
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT Figures/TEHUAII.pdf
+INPUT ./Figures/TEHUAII.pdf
+INPUT ./Figures/TEHUAII.pdf
 INPUT Figures/chronology.pdf
 INPUT ./Figures/chronology.pdf
 INPUT ./Figures/chronology.pdf
@@ -197,9 +200,9 @@ INPUT ./Figures/95Comparison.pdf
 INPUT Figures/AccPrec.pdf
 INPUT ./Figures/AccPrec.pdf
 INPUT ./Figures/AccPrec.pdf
-INPUT Figures/depths.pdf
-INPUT ./Figures/depths.pdf
-INPUT ./Figures/depths.pdf
+INPUT Figures/depthsnew.pdf
+INPUT ./Figures/depthsnew.pdf
+INPUT ./Figures/depthsnew.pdf
 INPUT Plum-CRS_rev.bbl
 INPUT Plum-CRS_rev.bbl
 INPUT Figures/AccPrec-appendix.pdf

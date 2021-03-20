@@ -277,7 +277,6 @@ ggplot(simu3) +
   facet_wrap(vars(Information_percentage)) + scale_color_manual(labels = c("Plum", "CRS"), values = c("blue", "red"))  +
   xlim(0, 10) + ylim(0, 150)+theme(legend.position = c(0.9, 0.1),legend.direction="vertical")+
   geom_vline(xintercept = c(1,2),alpha=.45,color='green' )
-
 dev.off()
 
 
@@ -334,7 +333,7 @@ for (i in fls){
   splt      <- unlist(strsplit(i,'_'))
   if (splt[1]=="Sim01"){Simu=sim1
     colo='blue'
-    ylabel="Normalized Offset"
+    ylabel="Coverage"
     mainlabel = "CRS \n Scenario 1"#"Plum" # Cambiar para plum y para CRS
     
   }else{
@@ -384,7 +383,7 @@ for (i in fls){
   splt      <- unlist(strsplit(i,'_'))
   if (splt[1]=="Sim01"){Simu=sim1
   colo='blue'
-  ylabel="Normalized Offset"
+  ylabel="Coverage"
   mainlabel = "Plum"
   
   }else{

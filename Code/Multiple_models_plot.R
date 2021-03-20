@@ -41,7 +41,7 @@ accplot <- ggplot(serac, aes(x=Information_percentage)) +
   geom_quantile(aes(y = CFCS),size=.5,alpha=.5,color="purple",method = "rqss") +
   # #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
   # ##
-  geom_quantile(aes(y = CIC ),size=.5,alpha=.5,color="green",method = "rqss") +
+  geom_quantile(aes(y = CIC ),size=.5,alpha=.5,color="orange1",method = "rqss") +
   # #geom_point(aes(y = CIC),size=.7,alpha=.1,color='green') +
   # ##
   # geom_quantile(data=E_CRS,aes(y = offset ),size=.5,alpha=.5,color="green",method = "rqss") + #forestgreen
@@ -64,7 +64,7 @@ preplot <-  ggplot(serac, aes(Information_percentage)) +
   geom_quantile(aes(y = 4*CFCS_sd),size=.5,alpha=.5,color="purple",method = "rqss") +
   # #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
   # ##
-  geom_quantile(aes(y = 4*CIC_sd ),size=.5,alpha=.5,color="green",method = "rqss") +
+  geom_quantile(aes(y = 4*CIC_sd ),size=.5,alpha=.5,color="orange1",method = "rqss") +
   #geom_point(aes(y = CIC),size=.7,alpha=.1,color='green') +
   ##
   # geom_quantile(data=E_CRS,aes(y = 4*sd ),size=.5,alpha=.5,color="green",method = "rqss") +
@@ -87,7 +87,7 @@ naccplot <- ggplot(serac, aes(Information_percentage)) +
   geom_quantile(aes(y = CFCS/CFCS_sd),size=.5,alpha=.5,color="purple",method = "rqss") +
   # #geom_point(aes(y = CFCS),size=.7,alpha=.1,color='blue') +
   # ##
-  geom_quantile(aes(y = CIC/CIC_sd ),size=.5,alpha=.5,color="green",method = "rqss") +
+  geom_quantile(aes(y = CIC/CIC_sd ),size=.5,alpha=.5,color="orange1",method = "rqss") +
   #geom_point(aes(y = CIC),size=.7,alpha=.1,color='green') +
   ##
   # geom_quantile(data=E_CRS,aes(y = N_offset ),size=.5,alpha=.5,color="green",method = "rqss") +

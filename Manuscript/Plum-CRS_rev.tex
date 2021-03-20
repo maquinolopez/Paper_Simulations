@@ -199,6 +199,44 @@ It is important to note that all these model, excluding \textit{Plum}, only deal
 Considering that almost any sediment contains some level of local $^{210}$Pb (call supported $^{210}$Pb), which is constantly replenish, and it is indistinguishable from the unsupported $^{210}$Pb the proper calculation of the unsupported $^{210}$Pb is critical.  
 In this chapter, we will go into some details of each model.
 
+\subsection{Data}
+
+In order to introduce the nature of the data which these models use to create a age-depth model, we will use the data presented by  \citet{Sanchez-Cabeza2012} in Table \ref{tab:tehuaii}.
+This data comes from gamma spectrometry which only measures $^{210}$Pb, in order to have an estimate of the supported activity the authors used the deepest 3 samples. When data comes from gamma spectrometry measurements of $^{226}$Ra are available and are used to infer the supported $^{210}$Pb.
+
+
+\begin{table}
+\centering
+    \begin{tabular}{|c| c| c| c| c| c|}
+\hline
+	    ID  & Depth ($cm$)  & Density ($\frac{g}{cm^3}$)  & $^{210}$Pb ($\frac{Bq}{kg}$) & sd($^{210}$Pb)  & Thickness ($cm$) \\
+\hline
+TehuaII-01  & 1  & 1.071583866  & 112.5  & 5.8  & 1\\
+TehuaII-02  & 2  & 0.973213378  & 108.4  & 5.7  & 1\\
+TehuaII-03  & 3  & 1.121380264  & 102.4  & 5.4  & 1\\
+TehuaII-04  & 4  & 1.732484316  & 103.4  & 5.4  & 1\\
+TehuaII-05  & 5  & 1.263766643  & 92.9  & 5  & 1\\
+TehuaII-06  & 6  & 1.135424096  & 86.6  & 4.8  & 1\\
+TehuaII-07  & 7  & 2.085680966  & 70.3  & 3.9  & 1\\
+TehuaII-08  & 8  & 1.211092723  & 51  & 3  & 1\\
+TehuaII-09  & 9  & 1.339040564  & 45.7  & 2.8  & 1\\
+TehuaII-10  & 10  & 2.199381257  & 43.6  & 2.6  & 1\\
+TehuaII-11  & 11  & 1.397469527  & 39.7  & 2.4  & 1\\
+TehuaII-12  & 12  & 1.280204165  & 34.2  & 2.1  & 1\\
+TehuaII-13  & 13  & 1.516059058  & 28  & 1.8  & 1\\
+TehuaII-14  & 14  & 1.456445983  & 23.9  & 1.5  & 1\\
+TehuaII-15  & 15  & 1.42113905  & 20.5  & 1.4  & 1\\
+\hline
+TehuaII-16  & 16  & 1.443497137  & 17.1  & 1.3  & 1\\
+TehuaII-17  & 17  & 0.451885447  & 14.4  & 1  & 1\\
+TehuaII-18  & 18  & 0.630431828  & 15.7  & 1  & 1\\
+\hline
+    \end{tabular}
+	\caption{Data from Tehuantepec Gulf (TEHUAII) reported in \citet{Sanchez-Cabeza2012}. Depth represents the bottom depth of the samples (from the surface to a given depth), density is the sample's density which is used to correct for compaction and other phenomena, $^{210}$Pb is the measured $^{210}$Pb in the given sample, sd($^{210}$Pb) is the error reported by the laboratory and thickness is the sample's thickness.  }
+	\label{tab:tehuaii}
+\end{table}
+
+
 \subsection{CIC}
 
 The Constant Initial Concentration model (CIC) \citep{Goldberg1963,Crozaz1964,Robbins1978}, this model assumes that the inicial concentration at any layer of the sediment is the same. 
@@ -271,7 +309,20 @@ This differs from the CRS model, which does not provide a formal statistical inf
 The CRS model uses the decay equation to obtain an age-depth function, resulting in a more restrictive age-depth model. 
 It only deals with the excess $^{210}$Pb, the estimated supported $^{210}$Pb having been previously removed before modelling.
 \textit{Plum} has shown to provide accurate results with a realistic precision using different case scenarios \citep{Aquino2018,Aquino2020} - both in simulations as well as for real cores.
-Under optimal dating conditions, \textit{Plum} and the CRS model have been shown to provide similar results \citep{Aquino2020}, with \textit{Plum} providing more realistic uncertainties, with minimal user interaction. 
+Under optimal dating conditions, \textit{Plum} and the CRS model have been shown to provide similar results \citep{Aquino2020}, with \textit{Plum} providing more realistic uncertainties, with minimal user interaction.
+
+\begin{figure}[h!]
+ \centering
+	\includegraphics[width=.75\linewidth]{TEHUAII.pdf}
+	\caption{Comparison between the \textit{Plum}, CIC, CRS and CF:CS.} 
+  \label{fig:tehuaii}
+\end{figure}
+
+Figure \ref{fig:tehuaii} shows the resulting chronology of each model. 
+From this figure we can observe that the CIC and CF:CS provide very different age-depth models when compared to the CRS and \textit{Plum}. 
+As mentioned, the CIC and CF:CS have much more restrictive assumptions which may be the reason to the very different results.
+For this reason the main discussion will focus on the CRS and \textit{Plum}.
+
 
 ###########################
 ###########################
@@ -365,15 +416,14 @@ Scenario 3 	&	$8x+25\sin(\frac{x}{\pi})$	&	500 	& 15
 
 	Let $C_{\hat{x}}$ be the true $^{210}$Pb concentration in the interval $\hat{x}=[ x-\delta, x)$, given the age-depth function $t(x)$ and parameters $\Phi$ and $A^S$ in each scenario. 
 To simulate disturbances in the material, we can introduce scatter centred around the true value, $\theta \sim \mathcal{N}\left(C_{\hat{x}},y^2_{scat}\right)$, where $x^2_{scat}$ is the amount of scatter for this variable (in this case $y^2_{scat}=10$). 
-Now, to replicate outliers, a shift from the true value ($x_{shift}$) is defined, which occurs with a probability $p_{out}$. This results in a new variable $\theta'$ which is defined as
-\begin{align}
-	\theta' = \begin{cases}
-			\mathcal{U}(\theta - x_{shift},\theta + x_{shift}), &  p_{out} \\
-			\theta, & 1-p_{out}
-		\end{cases}.
-\end{align}
+Now, to replicate outliers, a shift from the true value ($X_{shift}$) is defined, which occurs with a probability $p_{out}$ resulting in 
+$X_{shift} \sim (1-p_{out}) \delta_0 + p_{out} \mathcal{U}(-x_{shift}, x_{shift})$, where $\delta_0$ is a point-mass at 0.
 
-	Finally, to simulate the uncertainty provided by the laboratory, we can define the simulated measurements as  $y(\theta')\sim\mathcal{N}\left(\theta',\sigma_R^2\right)$, where $\sigma_R$ is the standard deviation reported by the laboratory. 
+Finally, to simulate the data provided by the laboratory ($y(\theta')$), we can define as,  
+\begin{align}
+	y(\theta')\sim\mathcal{N}\left(C_{\hat{x}} + X_{shift}, y^2_{scat} + \sigma^2_{R} \right), 
+\end{align}
+where $\sigma_R$ is the standard deviation reported by the laboratory. 
 $\sigma_R$ is defined as $\sigma_R= \max \left(\sigma_{min}, \mu(\theta')~\varepsilon~y_{scat}~\right)$, where $\sigma_{min}$ is the minimum standard deviation assigned to a measurement. This variable differs between laboratories,we use a default value of $1~ Bq/kg$. 
 Finally, $\varepsilon$ is the analytical uncertainty (default .01) and $y_{scat}$ an error multiplier (default 1.5).
 The default parameters were set in accordance with \citet{Blaauw2018}.
@@ -424,7 +474,7 @@ As we are dealing with a total of $n =$ 5333 simulations, in order to evaluate t
 \begin{figure}[!]
  \centering
   \includegraphics[width=.75\linewidth]{AccPrec.pdf}
-	\caption{Top panel A) shows the bias between the modelled and true age of the CI-CRS (red), R-CRS (green) and \textit{Plum} (blue). This panel shows how \textit{Plum} provides a small bias in almost every scenario with both models improving their bias as more information is available. Middle panel B) shows the 95\% confidence intervals. It is clear, from this panel, than the uncertainty provided by \textit{Plum} is a lot bigger for low percentage of information and it constantly improves as more data is available, whereas the length of the intervals provided by the CI-CRS and R-CRS appear to stay constant regardless of the available information. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age normalized divided by the standard deviation (in the case of \textit{Plum}, the length of the 95\% interval divided by 4). This panel presents a worrying situation where the CI-CRS and R-CRS model's calculated standard deviation (on average) is incapable of capturing the true age. On the other hand, \textit{Plum}'s credible intervals almost always capture the true age even when little information is available.}
+	\caption{Top panel A) shows the bias between the modelled and true age of the CI-CRS (red), R-CRS (green) and \textit{Plum} (blue). This panel shows how \textit{Plum} provides a small bias in almost every scenario with both models improving their bias as more information is available. Middle panel B) shows the 95\% confidence intervals and credible intervals in the case of plum. It is clear, from this panel, than the uncertainty provided by \textit{Plum} is a lot bigger for low percentage of information and it constantly improves as more data is available, whereas the length of the intervals provided by the CI-CRS and R-CRS appear to stay constant regardless of the available information. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age normalized divided by the standard deviation (in the case of \textit{Plum}, the length of the 95\% interval divided by 4). This panel presents a worrying situation where the CI-CRS and R-CRS model's calculated standard deviation (on average) is incapable of capturing the true age. On the other hand, \textit{Plum}'s credible intervals almost always capture the true age even when little information is available.}
   \label{fig:accpre}
 \end{figure}
 
@@ -453,7 +503,7 @@ In order to evaluate whether certain models are better predicting ages at certai
 
 \begin{figure}[!]
 	\begin{centering}
-		\includegraphics[width=\linewidth]{depths.pdf}
+		\includegraphics[width=\linewidth]{depthsnew.pdf}
 		\caption{coverage of every sampling sample at every depth for the three simulated scenarios - CI-CRS age estimates at samples depths and \textit{Plum}'s age estimates at 1 cm intervals. Dots go from lowest information percentage samples (few dated depths; red) to high percentage samples (nearly completely dated cores; purple). The CI-CRS's normalized bias shows no learning pattern at any particular depth regardless of the available information. This means that the model can provide a reasonable chronology with low levels of information or a very inaccurate age estimate with high levels of information at any given depth resulting in a distrustful age-depth model. On the other hand, \textit{Plum} demonstrates a systematic improvement in its age estimates as more data is available. This results assures that a Bayesian approach would consistently provide more reliable results.     }
 		\label{fig:depths}
 	\end{centering}
@@ -543,7 +593,7 @@ Data for each simulation and code used are hosted at: \url{https://github.com/ma
 
 \section{Appendix A}
 
-Bias, length of 95\% confidence intervals and coverage of the CIC and CF:CS models are shown in Figure \ref{fig:CIC-CFCS}.
+Bias, length of 95\% confidence intervals (credible intervals for \textit{Plum}) and coverage of the CIC and CF:CS models are shown in Figure \ref{fig:CIC-CFCS}.
 As it can be observe and as expected the bias of the CIC model (which can be consider the simples model) is much bigger when compare to any other alternative and it does not decrease as more data is available.
 The confidence interval remains regarles of the information available, and coverage is almost always above two, which means that the uncertainties are not sufficient to capture the true age-depth model.
 On the other hand the CF:CS model does decrease its bias as more data is available and after 60\% to 70\% this decrease does not seen improve.
@@ -555,7 +605,7 @@ These results are consistent with the discussion in the paper as classical model
 \begin{figure}
 	\begin{centering}
 		\includegraphics[width = 13cm]{AccPrec-appendix.pdf}
-		\caption{ Top panel A) shows the bias between the modelled and true age of the CF:CS (purple) and CIC (Orange). Middle panel B) shows the 95\% confidence intervals. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age normalized divided by the standard deviation. }
+		\caption{ Top panel A) shows the bias between the modelled and true age of the CF:CS (purple) and CIC (Orange). Middle panel B) shows the 95\% confidence intervals (credible intervals for \textit{Plum}). Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age normalized divided by the standard deviation. }
 		\label{fig:CIC-CFCS}
 	\end{centering}
 \end{figure}
