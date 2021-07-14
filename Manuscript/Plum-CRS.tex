@@ -119,16 +119,17 @@
 
 	\bigskip
 \begin{abstract}
-	The increasing interest in understanding anthropogenic impacts on the environment have led to a considerable number of studies focusing on sedimentary records for the last $\sim$ 100 - 200 years. 
-Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon (14C) ages, which is the most popular dating technique. 
+	The increasing interest in understanding anthropogenic impacts on the environment has led to a considerable number of studies focusing on sedimentary records for the last $\sim$ 100 - 200 years. 
+	Dating this period is often complicated by the poor resolution and large errors associated with radiocarbon ($^{14}$C) ages, which is the most popular dating technique. 
 To improve age-depth model resolution for the recent period, sediment dating with lead-210 ($^{210}$Pb) is widely used as it provides absolute and continuous dates for the last $\sim$ 100 - 150 years. 
-The $^{210}$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS, also known as Constant Flux - CF) model which uses the radioactive decay equation as an age-depth relationship resulting in a restrictive model to approximate dates. In this work, we compare the classical approach to $^{210}$Pb dating (CRS) and its Bayesian alternative (\textit{Plum}). 
-To do so, we created simulated $^{210}$Pb profiles following three different sedimentation processes, complying with the assumptions imposed by the CRS model, and analysed them using both approaches. 
-Results indicate that the CRS model does not capture the true values even with a high dating resolution for the sediment, nor improves does its accuracy improve as more information is available. 
+The $^{210}$Pb dating method has traditionally relied on the Constant Rate of Supply (CRS, also known as Constant Flux - CF) model which uses the radioactive decay equation as an age-depth relationship resulting in a restrictive model to approximate dates. 
+In this study, we compare the classical approach to $^{210}$Pb dating (CRS), it is important to note that every lab has a different version of this model, and its Bayesian alternative (\textit{Plum}). 
+To do so, we created simulated depth $^{210}$Pb profiles following three different sedimentation processes, complying with the assumptions imposed by the CRS model, and analysed them using both approaches. 
+Results indicate that the CRS model, used in a non-expert mode, does not capture the true values, even with a high dating resolution of the sediment record, does its accuracy improves as more information is available. 
 On the other hand, the Bayesian alternative (\textit{Plum}) provides consistently more accurate results even with few samples, and its accuracy and precision constantly improves as more information is available.
 \end{abstract}
 	\noindent%
-	{\it Keywords:} Plum, Age-depth models, Chronology, Constant Rate of Supply, Comparison.
+	{\it Keywords:} Plum, Age-depth models, Chronology, Constant Rate of Supply, Comparison, Simulations
 	\vfill
 	\newpage
 	\spacingset{1.45} % DON'T change the spacing!
@@ -137,15 +138,18 @@ On the other hand, the Bayesian alternative (\textit{Plum}) provides consistentl
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-Lead-210 ($^{210}$Pb) is a radionuclide, part of the $^{238}$U decay chain, which forms naturally in the atmosphere as well as in sediments.
+Lead-210 ($^{210}$Pb) is a natural radionuclide, part of the $^{238}$U decay chain, which forms naturally in the atmosphere as well as in sediments.
 This isotope, with a half-life of 22.23$\pm$0.12 years, is commonly used to date recent recently accumulated sediments ($<150$years). 
-In recent decades, increasing number of palaeoecological and pollution studies have focused on these recent sediments \citep[e.g.,][]{Courtney2019} in order to evaluate human impacts on the environment.
-Unlike to other dating techniques such as $^{14}$C (radiocarbon dating), dating single sediment layers is not possible from a single measurement of $^{210}$Pb; it is only when a suitable portion of the excess-$^{210}$Pb (atmospheric $^{210}$Pb) decay curve is measured, representing the toral inventory of $^{210}$Pb from atmospheric deposition and runoff, and when certain assumptions about the sedimentation process are met that a chronology can be established.  
-These studies strongly rely on the accuracy of their chronologies in order to correctly assign dates to chemical, biological and ecological changes.
-That is, unlike other dating techniques, an analysis of a series (data set) of $^{210}$Pb measurements must be carried out in order to obtain meaningful dates.  Samples are taken along a core (e.g., lake, peatland, marine sediments) at different depths, from which $^{210}$Pb activity is measured.  
+In recent decades, an increasing number of palaeoecological and pollution studies have focused on these recent sediments \citep[e.g.,][]{Courtney2019} to evaluate human impacts on the environment.
+Unlike other dating techniques, such as $^{14}$C (radiocarbon dating), $^{210}$Pb dating of a given single sediment layers is not possible from a single $^{210}$Pb measurement.
+Samples are taken along a core (e.g., lake, peatland, marine sediments) at different depths, from which $^{210}$Pb activity is measured.
+A $^{210}$Pb-chronology can only be established only when a suitable portion of the excess-$^{210}$Pb (atmospheric and water column $^{210}$Pb) decay curve is measured (representing the total inventory of $^{210}$Pb from deposition and runoff contribution) and when certain assumptions about the sedimentation process are met.  
+The retrospective enviromental studies strongly rely on the accuracy of chronologies to correctly assign dates to geological, chemical, biological and ecological changes.
+That is, unlike other dating techniques, the analysis of a complete series (data set) of $^{210}$Pb measurements must be carried out in order to obtain meaningful dates.  
+Samples are taken at different depths along a sediment core (e.g., lake, peatland, marine sediments) at different depths, from which $^{210}$Pb activity is measured.  
 The whole series of $^{210}$Pb measurements need to be analysed in order to attempt to produce a coherent chronology, see \citet{Aquino2018}.
 
-A range of traditional data analyses, or so called ``models'', are available for dating recent sediments using $^{210}$Pb; e.g. the Constant Initial Concentration \citep[CIC,][]{Goldberg1963}, also known as Constant Activity \citep[CA,][]{Robbins1975}, the Constant Flux : Constant sedimentation \citep[CFCS,][]{Crozaz1964} and the Constant Rate of Supply  \citep[CRS,][]{Appleby1978,Robbins1978,Sanchez-Cabeza2012} also known as the Constant Flux model (CF). 
+A range of traditional data analyses, so called ``models'', are available for dating recent sediments using $^{210}$Pb; e.g. the Constant Initial Concentration \citep[CIC,][]{Goldberg1963}, also known as Constant Activity \citep[CA,][]{Robbins1975}, the Constant Flux : Constant sedimentation \citep[CFCS,][]{Crozaz1964} and the Constant Rate of Supply  \citep[CRS,][]{Appleby1978,Robbins1978,Sanchez-Cabeza2012} also known as the Constant Flux model (CF). 
 The CRS model is by far the most popular (see Figure \ref{fig:210models}) and has the most flexible assumptions. 
 It assumes a constant supply of atmospheric $^{210}$Pb (also known as excess $^{210}$Pb) to the sediment and allows for changes in the sedimentation rate. 
 In order to build a chronology, the CRS model uses a ratio between the complete ``inventory'' (the excess $^{210}Pb$ activity accumulated in the sediment column, between the surface and the equilibrium depth, where excess $^{210}$Pb  can no longer be found) and the remaining  inventory from depth $x$ to the previously defined equilibrium depth, ($t(x)=\frac{1}{\lambda}\log\left( \frac{A_0}{A_x}\right)$, where $A_0$ is the complete inventory and $\lambda$ the decay constant of the $^{210}$Pb $\approx 0.03118\pm 0.00017$ yr$^{-1}$).
