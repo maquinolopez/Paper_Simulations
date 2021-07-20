@@ -139,12 +139,12 @@ On the other hand, the Bayesian alternative (\textit{Plum}) provides consistentl
 \section{Introduction}
 
 	Lead-210 ($^{210}$Pb) is a natural radionuclide, part of the $^{238}$U decay chain, which forms in the atmosphere as well as in sediments.
-This isotope, with a half-life of 22.23$\pm$0.12 years, is commonly used to date recently accumulated sediments ($<150$years). 
+This isotope, with a half-life of 22.23 $\pm$ 0.12 years, is commonly used to date recently accumulated sediments ($<150$ years). 
 In recent decades, an increasing number of palaeoecological and pollution studies have focused on these recent sediments \citep[e.g.,][]{Courtney2019} to evaluate human impacts on the environment.
 Such environmental studies strongly rely on the accuracy of chronologies to correctly assign dates to geological, chemical, biological and ecological changes.
 Unlike other dating techniques such as $^{14}$C (radiocarbon dating), $^{210}$Pb-dating a given single sediment layers is not possible from a single $^{210}$Pb measurement.
 Samples are taken along a core (e.g., lake, peatland, marine sediments) at different depths, from which $^{210}$Pb activity is measured.
-A $^{210}$Pb-chronology can only be established (1) when a suitable portion of the excess-$^{210}$Pb (atmospheric and water column $^{210}$Pb) decay curve is measured, which represents the total inventory of $^{210}$Pb from deposition and runoff, and (2) when certain assumptions about the sedimentation process are met.
+A $^{210}$Pb-chronology can only be established (1) when a suitable portion of the excess-$^{210}$Pb (atmospheric and/or water column $^{210}$Pb) decay curve is measured, which represents the total inventory of $^{210}$Pb from deposition and runoff, and (2) when certain assumptions about the sedimentation process are met.
 %The retrospective enviromental studies strongly rely on the accuracy of chronologies to correctly assign dates to geological, chemical, biological and ecological changes.
 That is, unlike other dating techniques, the analysis of a complete series (data set) of $^{210}$Pb measurements must be carried out in order to obtain meaningful dates, see \citet{Aquino2018}.
 %Samples are taken at different depths along a sediment core (e.g., lake, peatland, marine sediments) at different depths, from which $^{210}$Pb activity is measured.  
@@ -168,7 +168,7 @@ The flexibility of the CRS model, in terms of its assumptions, comes at the cost
 
 %Caro quiere que este párrafo se integre al párrafo donde se habla de las modificaciones revisar depues  
 	The CRS model has undergone several revisions in the last decade in order to improve its applicability and precision. 
-There are two types of revisions to this model: (1) revisions to its uncertainty quantification \citep[eg. ][]{Binford1990,Appleby2001,Sanchez-Cabeza2014} and (2) to its application where extra information is available, such as external independent dating markers (e.g. $^{137}$Cs profiles), laminated sediments, tephras, contaminated layers (known sedimentary events) \citep[eg.][]{Appleby1998,Appleby2001,Appleby2008}. 
+There are two types of revisions to this model: (1) revisions to its uncertainty quantification \citep[eg. ][]{Binford1990,Appleby2001,Sanchez-Cabeza2014} and (2) to its application where extra information is available, such as external independent dating markers (e.g. $^{137}$Cs profiles), laminated sediments, tephras, contaminated layers (known sedimentary events) \citep[e.g.][]{Appleby1998,Appleby2001,Appleby2008}. 
 
 	A recent inter-laboratory model comparison experiment \citep{Barsanti2020} presented concerning results when it comes to producing consistent chronologies.
 Two measured $^{210}$Pb datasets were sent to 14 laboratories around the world, these laboratories having varying degrees of expertise.
@@ -189,15 +189,16 @@ They concluded that Bayesian age-depth models provide a more accurate result and
 The objective of the present study is to test whether similar results are maintained in a more complex modelling situation, such as the construction of $^{210}$Pb-based age-depth models.
 To do so, we compare $^{210}$Pb dates (accuracy) and uncertainties (precision) from the widely applied CRS model against \textit{Plum} using simulated cores, i.e. sedimentation ``scenarios''.
 We also aim to observe the learning process of each of the models and estimate the amount of information needed to obtain a reasonable chronology for each model.
-This process is of critical importance as the amount of information depends on the number of samples, which in turn depends on the budget and user decision of resources (sample availability, time and budget) allocated to developing the age-depth model. 
+This process is of critical importance as the amount of information depends on the number of samples, which in turn depends on the budget, time and user decision of resources allocated to developing the age-depth model. 
 
 
 %Esto debe ser revisado antes de tener una version final, se esta agregando una sección
 	The paper is organized as follows: 
-Section 2 presents the tools we use for the model comparison, describing the three different sedimentation scenario simulations.
-Section 3 compares results from both models for both the overall chronologies and for single depths.
-Section 4 demostrares the impact of expert revisions on the CRS model.
-Lastly, Section 5 presents the conclusions and discussion of the results obtained in section 3. 
+Section 2 provides a short introduction to the most used $^{210}$Pb dating models (CRS, CIC and CF:CS) as well as \textit{Plum}.
+Section 3 discussed the consideration and the experimental setup.
+Section 4 presents the tools we use for the model comparison, describing the three different sedimentation scenario simulations.
+Section 5 compares results for the overall chronologies and for single depths.
+Lastly, Section 6 presents the conclusions and discussion of the results obtained in section 5. 
 
 \section{$^{210}$Pb models}
 
@@ -205,6 +206,7 @@ Lastly, Section 5 presents the conclusions and discussion of the results obtaine
 These methods are based on varying assumptions to achieve different chronologies. 
 It is important to note that all these models, excluding \textit{Plum}, only deal with unsupported $^{210}$Pb, which is atmospheric $^{210}$Pb -for continental sediments- and/or water column $^{210}$Pb for marine sediments . 
 Considering that almost any sediment contains some level of local $^{210}$Pb (i.e., supported $^{210}$Pb), which is constantly replenished, and it is indistinguishable from the excess $^{210}$Pb, the proper estimation of the excess $^{210}$Pb is critical.  
+It is important to note that in some cases, users can estimate levels of $^{226}$Ra, which is an extremely useful proxy for estimating the supported $^{210}$Pb, as they are always assumed to be in perfect equilibrium.
 In this section, we will describe how each model deals with the supported-excess $^{210}$Pb.
 
 \subsection{Data}
@@ -266,10 +268,9 @@ An example of the use of this model is shown at the end of this section with a c
 This model assumes both a constant initial concentration of $^{210}$Pb at any layer but also a constant accumulation rate over the sediment accumulated mass.  
 
 \begin{eqnarray}
-	t_i = -\frac{m_i b}{\lambda}
+	t_i = -\frac{m_i b}{\lambda},
 \end{eqnarray}
-
-Where $m_i$ is the accumulated dry mass of the sediment up to layer $i$, and $b$ is approximated using linear regression over the following model,
+where $m_i$ is the accumulated dry mass of the sediment up to layer $i$, and $b$ is approximated using linear regression over the following model,
 
 \begin{eqnarray}
 	ln(P_i^U) &= ln(P_0^U) - \frac{\lambda}{r}m_i \\
@@ -285,7 +286,7 @@ For the proper implementation of this model, refer to \citet{Sanchez-Cabeza2012}
 
 Up to this point, we have dealt with models which have very restrictive assumptions and are simple extensions of the decay equation. 
 The CRS \citep{Appleby1978,Appleby1998,Appleby2001,Appleby2008}, in contrast, assumes a constant flux of excess $^{210}$Pb to the sediment and allows for changes in the sedimentation rate. 
-. In order to allow for flexibility in the sedimentation rate, the CRS model uses remaining activity, obtained by multiplying $^{210}$Pb concentration and the density of the sediment. 
+In order to allow for flexibility in the sedimentation rate, the CRS model uses remaining activity, obtained by multiplying $^{210}$Pb concentration and the density of the sediment. 
 
 This model also requires that the sediment be measured to the point where excess $^{210}$Pb is not longer detected, i.e., reaching equilibrium or background.
 In order to build a chronology, the CRS model uses a ratio between the complete “inventory” (the excess $^{210}$Pb activity accumulated in the sediment column, between the surface and the equilibrium depth, where excess $^{210}$Pb can no longer be detected) and the remaining inventory from depth x to the previously defined equilibrium depth,
@@ -300,14 +301,14 @@ Once more details on the proper use of this and the previous models can be found
 \subsection{\textit{Plum}}
 
 Lastly, \textit{Plum} is the most recent age depth model \citep{Aquino2018}.
-This model is the first Bayesian method for dating ^210Pb sediments and is receiving growing interest from the palaeoecological community, with more applications since its publication than the CF:CS model in the literature review by \citet{Courtney2019}.
+This model is the first Bayesian method for dating $^{210}$Pb sediments and is receiving growing interest from the palaeoecological community, with more applications since its publication than the CF:CS model observed in the literature review by \citet{Courtney2019}.
 
 \textit{Plum} assumes that there exists an (unknown) age-depth function $t(x)$ that relates depth $x$ with calendar age $t(x)$. 
-Conditional on $t(x)$, the following model is assumed for the measured $^{210}$Pb $y_i$ between depths $x_i - \delta$ to $x_i$
+Conditional on $t(x)$, the following model is assumed for the measured $^{210}$Pb ($y_i$) between depths $x_i - \delta$ to $x_i$
 \begin{eqnarray}
 y_i\mid P^S_i, \Phi_i, \bar{t}\sim \mathcal{N} \left(P^S_i+\frac{\Phi_i}{\lambda} \left( e^{-\lambda t(x_i-\delta)} - e^{-\lambda t(x_i)} \right), (\sigma_i\rho_i)^2 \right). 
 \end{eqnarray}
-Here $P_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the flux of excess $^{210}$Pb to the sediment, the age-depth model $t(x)$ is based on a piece-wise linear model constrained by prior information on the sediment accumulation rates  \citep{Blaauw2011}, see \citep{Aquino2018} for details.
+Here $P_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the flux of excess $^{210}$Pb to the sediment, the age-depth model $t(x)$ is estimated using  a piece-wise linear model constrained by prior information on the sediment accumulation rates  \citep{Blaauw2011}, see \citep{Aquino2018} for details.
 
 This treatment of the data allows for a formal statistical inference on a well-defined model with specific parameters. 
 In order to infer the parameters of the model, a Bayesian approach is used.
