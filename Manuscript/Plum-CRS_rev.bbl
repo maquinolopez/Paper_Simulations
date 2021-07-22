@@ -27,15 +27,15 @@ Appleby, P.~G. (2001).
 \bibitem[Aquino-L{\'{o}}pez et~al., 2018]{Aquino2018}
 Aquino-L{\'{o}}pez, M.~A., Blaauw, M., Christen, J.~A., and Sanderson, N.~K.
   (2018).
-\newblock Bayesian analysis of 210pb dating.
+\newblock {Bayesian Analysis of $^{210}$Pb Dating}.
 \newblock {\em Journal of Agricultural, Biological and Environmental
   Statistics}, 23(3):317--333.
 
 \bibitem[Aquino-L{\'{o}}pez et~al., 2020]{Aquino2020}
 Aquino-L{\'{o}}pez, M.~A., Ruiz-Fern{\'{a}}ndez, A.~C., Blaauw, M., and
   Sanchez-Cabeza, J.-A. (2020).
-\newblock Comparing classical and bayesian 210pb dating models in
-  human-impacted aquatic environments.
+\newblock {Comparing classical and Bayesian $^{210}$Pb dating models in
+  human-impacted aquatic environments}.
 \newblock {\em Quaternary Geochronology}, 60:101106.
 
 \bibitem[Barsanti et~al., 2020]{Barsanti2020}
@@ -43,8 +43,8 @@ Barsanti, M., Garcia-Tenorio, R., Schirone, A., Rozmaric, M.,
   Ruiz-Fern{\'{a}}ndez, A., Sanchez-Cabeza, J., Delbono, I., Conte, F., Godoy,
   J. D.~O., Heijnis, H., Eriksson, M., Hatje, V., Laissaoui, A., Nguyen, H.,
   Okuku, E., Al-Rousan, S.~A., Uddin, S., Yii, M., and Osvath, I. (2020).
-\newblock Challenges and limitations of the 210pb sediment dating method:
-  Results from an {IAEA} modelling interlaboratory comparison exercise.
+\newblock {Challenges and limitations of the $^{210}$Pb sediment dating method:
+  Results from an {IAEA} modelling interlaboratory comparison exercise}.
 \newblock {\em Quaternary Geochronology}, 59:101093.
 
 \bibitem[Binford, 1990]{Binford1990}
@@ -78,15 +78,15 @@ Crozaz, G., Picciotto, E., and de~Breuck, W. (1964).
 
 \bibitem[Goldberg, 1963]{Goldberg1963}
 Goldberg, E.~D. (1963).
-\newblock Geochronology with pb-210.
+\newblock {Geochronology with Pb-210}.
 \newblock {\em Radioactive Dating}, pages 121--131.
 
 \bibitem[Mustaphi et~al., 2019]{Courtney2019}
 Mustaphi, C. J.~C., Brahney, J., Aquino-L{\'{o}}pez, M.~A., Goring, S., Orton,
   K., Noronha, A., Czaplewski, J., Asena, Q., Paton, S., and Brushworth, J.~P.
   (2019).
-\newblock Guidelines for reporting and archiving 210pb sediment chronologies to
-  improve fidelity and extend data lifecycle.
+\newblock {Guidelines for reporting and archiving $^{210}$Pb sediment
+  chronologies to improve fidelity and extend data lifecycle}.
 \newblock {\em Quaternary Geochronology}, 52:77--87.
 
 \bibitem[Robbins, 1978]{Robbins1978}
@@ -102,20 +102,20 @@ Robbins, J.~A. and Edgington, D. (1975).
 
 \bibitem[Sanchez-Cabeza and Ruiz-Fern{\'{a}}ndez, 2012]{Sanchez-Cabeza2012}
 Sanchez-Cabeza, J.~A. and Ruiz-Fern{\'{a}}ndez, A.~C. (2012).
-\newblock {210Pb sediment radiochronology: An integrated formulation and
+\newblock {$^{210}$Pb sediment radiochronology: An integrated formulation and
   classification of dating models}.
 \newblock {\em Geochimica et Cosmochimica Acta}, 82:183--200.
 
 \bibitem[Sanchez-Cabeza et~al., 2014]{Sanchez-Cabeza2014}
 Sanchez-Cabeza, J.~A., Ruiz-Fern{\'{a}}ndez, A.~C., Ontiveros-Cuadras, J.~F.,
   {P{\'{e}}rez Bernal}, L.~H., and Olid, C. (2014).
-\newblock {Monte Carlo uncertainty calculation of 210Pb chronologies and
+\newblock {Monte Carlo uncertainty calculation of $^{210}$Pb chronologies and
   accumulation rates of sediments and peat bogs}.
 \newblock {\em Quaternary Geochronology}, 23:80--93.
 
 \bibitem[Smith, 2001]{Smith2001}
 Smith, J.~N. (2001).
-\newblock Why should we believe 210pb sediment geochronologies?
+\newblock {Why should we believe $^{210}$Pb sediment geochronologies?}
 \newblock {\em Journal of Environmental Radioactivity}, 55(2):121 -- 123.
 
 \end{thebibliography}

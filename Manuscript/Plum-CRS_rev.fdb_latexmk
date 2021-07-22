@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Plum-CRS_rev"] 1626741700 "Plum-CRS_rev.aux" "Plum-CRS_rev.bbl" "Plum-CRS_rev" 1626912171
+["bibtex Plum-CRS_rev"] 1626913536 "Plum-CRS_rev.aux" "Plum-CRS_rev.bbl" "Plum-CRS_rev" 1626913538
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Plum-CRS_rev.aux" 1626912171 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
-  "bibliography.bib" 1626733099 20235 459022de6169d614a7ac8e8fd2905a41 ""
+  "Plum-CRS_rev.aux" 1626913538 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
+  "bibliography.bib" 1626913535 20349 c85af2087d6340c47d407bf0daf31641 ""
   (generated)
   "Plum-CRS_rev.blg"
   "Plum-CRS_rev.bbl"
-["pdflatex"] 1626912170 "Plum-CRS_rev.tex" "Plum-CRS_rev.pdf" "Plum-CRS_rev" 1626912171
+["pdflatex"] 1626913537 "Plum-CRS_rev.tex" "Plum-CRS_rev.pdf" "Plum-CRS_rev" 1626913538
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -136,10 +136,10 @@
   "Figures//barras.pdf" 1606777684 4585 9c8dc6d02275e080f5825a9417c2a590 ""
   "Figures//chronology.pdf" 1626910958 30205 6ff3aaadf8ae66cc432305b1b923968e ""
   "Figures//depthsnew.pdf" 1616282970 11301615 6fc3d4b720d5bc130ba2b95ca7f5c9bd ""
-  "Plum-CRS_rev.aux" 1626912171 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
-  "Plum-CRS_rev.bbl" 1626741700 5214 6e2af684bfe7d40259c6e456c3ee4fe4 "bibtex Plum-CRS_rev"
-  "Plum-CRS_rev.out" 1626912171 2071 4a69ec0809d19e90f567de34c0f00c51 "pdflatex"
-  "Plum-CRS_rev.tex" 1626751078 54440 a1ee80d7f32932fb4637b9d369870d54 ""
+  "Plum-CRS_rev.aux" 1626913538 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
+  "Plum-CRS_rev.bbl" 1626913537 5261 c8c6e027f89995d452e02d7375375c79 "bibtex Plum-CRS_rev"
+  "Plum-CRS_rev.out" 1626913538 2071 4a69ec0809d19e90f567de34c0f00c51 "pdflatex"
+  "Plum-CRS_rev.tex" 1626912931 54439 a1b5bb85bbb6d68ca1c54307b6897336 ""
   (generated)
   "Plum-CRS_rev.log"
   "Plum-CRS_rev.pdf"
