@@ -40,9 +40,9 @@ cores   <- core #vector()
 #cores   <- core[-c(1:202)]
 
 #write.csv(cores,"~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_bigest.csv")
-#cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_bigest.csv")[,2]
+cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_bigest.csv")[,2]
 #cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_big.csv")[,2]
-#cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS.csv")[,2]
+cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS.csv")[,2]
 
 #### preliminary actions ####
 profiles    <- paste0(wd,cores,"/",cores, ".csv")
@@ -140,7 +140,7 @@ abline(h=c(1,2),col="blue")
 #######################################################
 #######################################################
 
-kore= 90 #286 #300 #298 # 169 of the big file.
+kore= 86 #90 #286 #300 #298 # 169 of the big file.
 
 #cores para paper "Sim03_95_091", "Sim03_90_087"
 #########
@@ -158,13 +158,6 @@ plot(E_CRS$depths,E_CRS$age,type = 'l',main="",
 axis(side = 2,at= seq(0,300,50))
 mtext("sd", side=4, line=1.8, col="black")
 
-d <- E_CRS$depths
-age <- E_CRS$age
-er <- 2*E_CRS$sd
-pol = cbind( c(d, rev(d) ), c(age-er, rev(age+er) ) )
-lines(d,age,col=rgb(0,1,.6,.5))
-polygon(pol, col=rgb(0,1,.6,.5), border=rgb(0,1,.6,.5))
-
 d <- plum$depth
 lines(plum$depth,plum$mean,lwd=1.3,col=rgb(0,0,1,.3))
 pol = cbind( c(d, rev(d) ), c(plum$min, rev(plum$max) ) )
@@ -176,9 +169,18 @@ er <- 2*crs$Errors
 lines(crs$Depths,crs$Ages,col=rgb(1,0,0,.5),lwd=2)
 pol = cbind( c(d, rev(d) ), c(age-er, rev(age+er) ) )
 polygon(pol, col=rgb(1,0,0,.5), border=rgb(1,0,0,.5))
-lines(x,f3,col='green',lwd=2)
 
-legend(0,300,legend = c('Plum',"CI-CRS","R-CRS","True"),col=c(rgb(0,0,1,.3),rgb(1,0,0,.3),rgb(0,1,.6,.5),"green"),lty = c(1,1,1),bty = "n",pch=c(16,16,16,NA) )
+
+d <- E_CRS$depths
+age <- E_CRS$age
+er <- 2*E_CRS$sd
+pol = cbind( c(d, rev(d) ), c(age-er, rev(age+er) ) )
+lines(d,age,col=rgb(0,1,.6,.5))
+polygon(pol, col=rgb(0,1,.6,.5), border=rgb(0,1,.6,.5))
+
+lines(x,f3,col='cyan',lwd=2)
+
+legend(0,300,legend = c('Plum',"CI-CRS","R-CRS","True"),col=c(rgb(0,0,1,.3),rgb(1,0,0,.3),rgb(0,1,.6,.5),"cyan"),lty = c(1,1,1),bty = "n",pch=c(16,16,16,NA) )
 
 
 par(new = TRUE)

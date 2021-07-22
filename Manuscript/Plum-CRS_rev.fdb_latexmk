@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Plum-CRS_rev"] 1626741700 "Plum-CRS_rev.aux" "Plum-CRS_rev.bbl" "Plum-CRS_rev" 1626741902
+["bibtex Plum-CRS_rev"] 1626741700 "Plum-CRS_rev.aux" "Plum-CRS_rev.bbl" "Plum-CRS_rev" 1626912171
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/apalike.bst" 1292289607 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Plum-CRS_rev.aux" 1626741901 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
+  "Plum-CRS_rev.aux" 1626912171 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
   "bibliography.bib" 1626733099 20235 459022de6169d614a7ac8e8fd2905a41 ""
   (generated)
   "Plum-CRS_rev.blg"
   "Plum-CRS_rev.bbl"
-["pdflatex"] 1626741901 "Plum-CRS_rev.tex" "Plum-CRS_rev.pdf" "Plum-CRS_rev" 1626741902
+["pdflatex"] 1626912170 "Plum-CRS_rev.tex" "Plum-CRS_rev.pdf" "Plum-CRS_rev" 1626912171
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm0600.tfm" 1136768653 1536 12e8c510d3e158fdd0e9a42e75118bd9 ""
@@ -129,19 +129,19 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1621966258 2724736 8c3d347e83ed401751129a3568b0ca80 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Figures//95Comparison.pdf" 1607011647 11314 adb9e11f0269cd615c04bf2546fb9db3 ""
+  "Figures//95Comparison.pdf" 1626912054 11304 603ac664662289140b8a91431daddb0d ""
   "Figures//AccPrec-appendix.pdf" 1616080426 15229 39ca0e44a4c9d02f7d0be6722117d784 ""
-  "Figures//AccPrec.pdf" 1616034584 20024 73a62210416a25f3133fee1bdbc6790c ""
+  "Figures//AccPrec.pdf" 1626912169 38818 0f783637091c1ad1f52589eca09b4ccc ""
   "Figures//TEHUAII.pdf" 1616267041 5863 44a3af2360fb4dcbdfcbf90338ae5ef9 ""
   "Figures//barras.pdf" 1606777684 4585 9c8dc6d02275e080f5825a9417c2a590 ""
-  "Figures//chronology.pdf" 1605593614 8475 f8251132df8eb3a8ae0165cd74812c6d ""
+  "Figures//chronology.pdf" 1626910958 30205 6ff3aaadf8ae66cc432305b1b923968e ""
   "Figures//depthsnew.pdf" 1616282970 11301615 6fc3d4b720d5bc130ba2b95ca7f5c9bd ""
-  "Plum-CRS_rev.aux" 1626741901 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
+  "Plum-CRS_rev.aux" 1626912171 15532 1df01de1a71d849d3e68040b71bc55b4 "pdflatex"
   "Plum-CRS_rev.bbl" 1626741700 5214 6e2af684bfe7d40259c6e456c3ee4fe4 "bibtex Plum-CRS_rev"
-  "Plum-CRS_rev.out" 1626741901 2071 4a69ec0809d19e90f567de34c0f00c51 "pdflatex"
-  "Plum-CRS_rev.tex" 1626741900 54440 a1ee80d7f32932fb4637b9d369870d54 ""
+  "Plum-CRS_rev.out" 1626912171 2071 4a69ec0809d19e90f567de34c0f00c51 "pdflatex"
+  "Plum-CRS_rev.tex" 1626751078 54440 a1ee80d7f32932fb4637b9d369870d54 ""
   (generated)
+  "Plum-CRS_rev.log"
+  "Plum-CRS_rev.pdf"
   "Plum-CRS_rev.aux"
   "Plum-CRS_rev.out"
-  "Plum-CRS_rev.pdf"
-  "Plum-CRS_rev.log"

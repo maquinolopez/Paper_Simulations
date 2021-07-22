@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.25)  19 JUL 2021 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.25)  21 JUL 2021 19:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,16 +460,16 @@ Overfull \hbox (6.74527pt too wide) in paragraph at lines 431--436
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 472.
 
-<Figures//95Comparison.pdf, id=352, 650.43pt x 578.16pt>
+<Figures//95Comparison.pdf, id=385, 542.025pt x 490.83376pt>
 File: Figures//95Comparison.pdf Graphic file (type pdf)
 <use Figures//95Comparison.pdf>
 Package pdftex.def Info: Figures//95Comparison.pdf  used on input line 474.
-(pdftex.def)             Requested size: 469.75502pt x 417.57172pt.
+(pdftex.def)             Requested size: 469.75502pt x 425.40417pt.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 482.
 
-<Figures//AccPrec.pdf, id=354, 650.43pt x 867.24pt>
+<Figures//AccPrec.pdf, id=387, 650.43pt x 867.24pt>
 File: Figures//AccPrec.pdf Graphic file (type pdf)
 <use Figures//AccPrec.pdf>
 Package pdftex.def Info: Figures//AccPrec.pdf  used on input line 484.
@@ -482,7 +482,7 @@ LaTeX Warning: Float too large for page by 52.6723pt on input line 487.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 512.
 
-<Figures//depthsnew.pdf, id=395, 578.16pt x 433.62pt>
+<Figures//depthsnew.pdf, id=477, 578.16pt x 433.62pt>
 File: Figures//depthsnew.pdf Graphic file (type pdf)
 <use Figures//depthsnew.pdf>
 Package pdftex.def Info: Figures//depthsnew.pdf  used on input line 514.
@@ -495,7 +495,7 @@ Overfull \hbox (18.132pt too wide) in paragraph at lines 600--601
 
  []
 
-<Figures//AccPrec-appendix.pdf, id=448, 650.43pt x 867.24pt>
+<Figures//AccPrec-appendix.pdf, id=529, 650.43pt x 867.24pt>
 File: Figures//AccPrec-appendix.pdf Graphic file (type pdf)
 <use Figures//AccPrec-appendix.pdf>
 Package pdftex.def Info: Figures//AccPrec-appendix.pdf  used on input line 615.
@@ -537,10 +537,10 @@ t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf-dist/f
 onts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fon
 ts/type1/public/cm-super/sfrm0800.pfb>
-Output written on Plum-CRS_rev.pdf (22 pages, 11706477 bytes).
+Output written on Plum-CRS_rev.pdf (22 pages, 11741044 bytes).
 PDF statistics:
- 559 PDF objects out of 1000 (max. 8388607)
- 474 compressed objects within 5 object streams
+ 641 PDF objects out of 1000 (max. 8388607)
+ 527 compressed objects within 6 object streams
  74 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
