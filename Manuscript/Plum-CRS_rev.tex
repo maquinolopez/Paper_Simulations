@@ -142,9 +142,10 @@ On the other hand, the Bayesian alternative (\textit{Plum}) provides consistentl
 This isotope, with a half-life of 22.23 $\pm$ 0.12 years, is commonly used to date recently accumulated sediments ($<150$ years). 
 In recent decades, an increasing number of palaeoecological and pollution studies have focused on these recent sediments \citep[e.g.,][]{Courtney2019} to evaluate human impacts on the environment.
 Such environmental studies strongly rely on the accuracy of chronologies to correctly assign dates to geological, chemical, biological and ecological changes.
-Unlike other dating techniques such as $^{14}$C (radiocarbon dating), $^{210}$Pb-dating a given single sediment layers is not possible from a single $^{210}$Pb measurement.
+Unlike other dating techniques such as $^{14}$C (radiocarbon dating), dating a single sediment later is not possible using a single, independent $^{210}$Pb measurement.
+%$^{210}$Pb-dating a given single sediment layers is not possible from a single $^{210}$Pb measurement.
 Samples are taken along a core (e.g., lake, peatland, marine sediments) at different depths, from which $^{210}$Pb activity is measured.
-A $^{210}$Pb-chronology can only be established (1) when a suitable portion of the excess-$^{210}$Pb (atmospheric and/or water column $^{210}$Pb) decay curve is measured, which represents the total inventory of $^{210}$Pb from deposition and runoff, and (2) when certain assumptions about the sedimentation process are met.
+A $^{210}$Pb-chronology can only be established (1) when a suitable portion of the excess, or unsupported $^{210}$Pb decay curve is measured, which represents the total inventory from deposition (atmospheric or water column $^{210}$Pb) and runoff, and (2) when certain assumptions about the sedimentation process are met.
 %The retrospective enviromental studies strongly rely on the accuracy of chronologies to correctly assign dates to geological, chemical, biological and ecological changes.
 That is, unlike other dating techniques, the analysis of a complete series (data set) of $^{210}$Pb measurements must be carried out in order to obtain meaningful dates, see \citet{Aquino2018}.
 %Samples are taken at different depths along a sediment core (e.g., lake, peatland, marine sediments) at different depths, from which $^{210}$Pb activity is measured.  
@@ -175,8 +176,8 @@ Two measured $^{210}$Pb datasets were sent to 14 laboratories around the world, 
 Each laboratory was asked to provide a chronology, given the same data. 
 It is important to note that each laboratory applied their preferred model; in most cases the CRS model was used.
 This experiment resulted in a wide range of chronologies, independently of the model used, providing different results even when the same model and dataset were used.
-The authors reinforced the need to use independent time markers (independent dating sources) to validate and ``anchor" the chronologies, as suggested previously by \citep{Smith2001}.  
-This comparison experiment clearly and critically shows the impact that user decisions and applying expert adaptations/revisions have on the resulting chronologies.
+The authors reinforced the need to use independent time markers (independent dating sources) to validate and ``anchor" the chronologies, as suggested previously by \citet{Smith2001}.  
+This comparison experiment clearly and critically shows the impact that user decisions and expert adaptations/revisions have on the resulting chronologies.
 In order to replicate and/or update any given chronology, documenting such user decisions becomes extremely important, as is providing raw data; however raw data sets and user decisions are rarely reported.
 
 	Recently, \citet{Aquino2018} presented an alternative to these classical models by introducing \textit{Plum}, a Bayesian approach to $^{210}$Pb dating.
@@ -202,12 +203,18 @@ Lastly, Section 6 presents the conclusions and discussion of the results obtaine
 
 \section{$^{210}$Pb models}
 
-	As previously outlined in Section 1, several methods are used to estimate ages from sediments containing $^{210}$Pb.  
-These methods are based on varying assumptions to achieve different chronologies. 
-It is important to note that all these models, excluding \textit{Plum}, only deal with unsupported $^{210}$Pb, which is atmospheric $^{210}$Pb -for continental sediments- and/or water column $^{210}$Pb for marine sediments . 
-Considering that almost any sediment contains some level of local $^{210}$Pb (i.e., supported $^{210}$Pb), which is constantly replenished, and it is indistinguishable from the excess $^{210}$Pb, the proper estimation of the excess $^{210}$Pb is critical.  
-It is important to note that in some cases, users can estimate levels of $^{226}$Ra, which is an extremely useful proxy for estimating the supported $^{210}$Pb, as they are always assumed to be in perfect equilibrium.
+As previously outlined in Section 1, several methods are used to estimate ages from sediments containing $^{210}$Pb. 
+These methods are based on a range of assumptions which result in differing chronologies. 
+It is important to note that for all of these models, excluding \textit{Plum}, it is necessary to distinguish between the local supply of $^{210}$Pb, i.e. the supported $^{210}$Pb, and the excess $^{210}$Pb, which is the $^{210}$Pb supplied from the atmosphere for terrestrial sediments and/or the water column for marine sediments.
+Using gamma spectrometry, users can measure $^{226}$Ra, which is an indirect measurement of the supported $^{210}$Pb. 
+As $^{226}$Ra is part of the same decay chain as $^{210}$Pb, they are assumed to be in secular equilibrium under steady-state conditions. 
+However, as the excess and supported $^{210}$Pb inputs into sediments are otherwise indistinguishable by laboratory measurements, the proper estimation of the excess $^{210}$Pb is critical.
 In this section, we will describe how each model deals with the supported-excess $^{210}$Pb.
+	% As previously outlined in Section 1, several methods are used to estimate ages from sediments containing $^{210}$Pb.  
+% These methods are based on varying assumptions to achieve different chronologies. 
+% It is important to note that all these models, excluding \textit{Plum}, only deal with unsupported $^{210}$Pb, which is atmospheric $^{210}$Pb -for continental sediments- and/or water column $^{210}$Pb for marine sediments . 
+% Considering that almost any sediment contains some level of local $^{210}$Pb (i.e., supported $^{210}$Pb), which is constantly replenished, and it is indistinguishable from the excess $^{210}$Pb, the proper estimation of the excess $^{210}$Pb is critical.  
+% It is important to note that in some cases, users can estimate levels of $^{226}$Ra, which is an extremely useful proxy for estimating the supported $^{210}$Pb, as they are always assumed to be in perfect equilibrium.
 
 \subsection{Data}
 
@@ -254,11 +261,11 @@ With this assumption, we can define the initial concentration of any layer as $P
 \begin{eqnarray}
 	t_i = \frac{1}{\lambda}\ln \left( \frac{P_0^U}{P_i^U}\right),
 \end{eqnarray}
-where $\lambda$ the decay constant of $^{210}$Pb $= 0.03118\pm 0.00017$ yr$^{-1}$), $P_0^U$ and $P_i^U$ are the initial $^{210}$Pb concentration and measured concentration of layer $i$ respectively. 
+where $\lambda$ the decay constant of $^{210}$Pb $= 0.03118\pm 0.00017$ yr$^{-1}$, $P_0^U$ and $P_i^U$ are the initial $^{210}$Pb concentration and measured concentration of layer $i$ respectively. 
 
 The main assumption of this model, that sediments have a constant initial $^{210}$Pb concentration irrespective of the sedimentation rate, is particularly strong as it implies that the $^{210}$Pb influx to the sediment surface should be proportional to the mass accumulation. 
 This is a very restrictive condition and most likely false for most ecosystems, especially considering the impacts of land use changes on the sedimentation regimes around the world. 
-In addition, the CIC model requires the decrease of excess 210Pb monotonically down-core (uncommon in case of variable sedimentation), otherwise, deeper sections with higher concentrations would be younger (age reversal).
+In addition, the CIC model requires the decrease of excess $^{210}$Pb monotonically down-core (uncommon in case of variable sedimentation), otherwise, deeper sections with higher concentrations would be younger (age reversal).
 As Figure \ref{fig:210models} shows this model is rarely used, and its application is mostly limited to early users or when other models’ requirements are not met.
 An example of the use of this model is shown at the end of this section with a comparison to the other models. For details on the application of the model refer to \citet{Sanchez-Cabeza2012}.
 
@@ -308,7 +315,7 @@ Conditional on $t(x)$, the following model is assumed for the measured $^{210}$P
 \begin{eqnarray}
 y_i\mid P^S_i, \Phi_i, \bar{t}\sim \mathcal{N} \left(P^S_i+\frac{\Phi_i}{\lambda} \left( e^{-\lambda t(x_i-\delta)} - e^{-\lambda t(x_i)} \right), (\sigma_i\rho_i)^2 \right). 
 \end{eqnarray}
-Here $P_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the flux of excess $^{210}$Pb to the sediment, the age-depth model $t(x)$ is estimated using  a piece-wise linear model constrained by prior information on the sediment accumulation rates  \citep{Blaauw2011}, see \citep{Aquino2018} for details.
+Here $P_i^S$ is the supported $^{210}$Pb in the sample and $\Phi_i$ the flux of excess $^{210}$Pb to the sediment, and the age-depth model $t(x)$ is estimated using a piece-wise linear model constrained by prior information on the sediment accumulation rates  \citep{Blaauw2011}, see \citep{Aquino2018} for details.
 
 This treatment of the data allows for a formal statistical inference on a well-defined model with specific parameters. 
 In order to infer the parameters of the model, a Bayesian approach is used.
@@ -383,8 +390,8 @@ These results are shown in Appendix A of this paper.
 These simulations follow the equations presented by \cite{Appleby1978, Robbins1978} guaranteeing that the CRS assumptions are met. 
 By using the approach presented by \citet{Aquino2018} for simulating $^{210}$Pb data and the structure of uncertainty quantification presented by \citet{Blaauw2018}, reliable simulated $^{210}$Pb data can be obtained.
 
-	This simulation was used to generate three different data sets, that were then sampled. 
-Sampling on this datasets mimics the sampling each laboratory, or $^{210}$Pb user, do on a real core. 
+	This simulation was used to generate three different data sets, which were then sampled. 
+This dataset sampling mimics the sample selection that each laboratory, or 210Pb user, does on a real core.
 The quantity of samples is decided by the resources available to each project (budget, time), as explained by \citet{Blaauw2018}. 
 In some cases very few samples are selected to create an age-depth model.
 
@@ -425,7 +432,7 @@ To simulate disturbances in the material, we can introduce scatter centred aroun
 Now, to replicate outliers, a shift from the true value ($X_{shift}$) is defined, which occurs with a probability $p_{out}$ resulting in 
 $X_{shift} \sim (1-p_{out}) \delta_0 + p_{out} \mathcal{U}(-x_{shift}, x_{shift})$, where $\delta_0$ is a point-mass at 0.
 
-Finally, to simulate the data provided by the laboratory ($y(\theta')$), we can define as,  
+Finally, to simulate the data provided by the laboratory ($y(\theta')$) can defined as:   
 \begin{align}
 	y(\theta')\sim\mathcal{N}\left(C_{\hat{x}} + X_{shift}, y^2_{scat} + \sigma^2_{R} \right), 
 \end{align}
@@ -439,8 +446,8 @@ For this study we created a dataset for each simulation by integrating in interv
 The complete simulated $^{210}$Pb data sets can be found in \url{https://github.com/maquinolopez/Paper_Simulations/tree/master/Code/Data}.
 
 \subsection{Model considerations}
-In order to create a comparison with minimal user interaction, each model was run automatically, with default settings.
-In the case of \textit{Plum}, default settings were used in order to minimize user interaction.
+In order to create a comparison with minimal user interaction, each model was run automatically, with default settings to minimize user interaction.
+%In the case of \textit{Plum}, default settings were used in order to minimize user interaction.
 Default settings for \textit{Plum} are; 1 cm bacon sections, 10 $\frac{cm}{yr}$ mean prior accumulation rate, 50 $\frac{yr Bq}{m^2}$ mean prior influx and 10 $\frac{Bq}{kg}$ mean prior supported $^{210}$Pb.
 As the CRS model (for both the CI-CRS and R-CRS) assumes that supported and excess $^{210}$Pb have reached equilibrium, in order to reduce user input, we decided to fix the last sample (30 cm depth) for every case, as this allows every model to reach equilibrium.
 This step guarantees the consistent application of the CRS model and provides the model with a single bottom-most depth to be removed as required by the CRS model calculation process. 
@@ -472,7 +479,7 @@ Both sets of outputs were then compared against the true known age value, see Fi
 \begin{figure}[!]
 	\centering
 	\includegraphics[width=\linewidth]{95Comparison.pdf}
-		\caption{Comparison between \textit{Plum}, R-CRS and CI-CRS model against the true age-depth model using 95\% of the information percentage (using 1-cm samples). Lines show the age estimates with the 95\% credible intervals (\textit{Plum}) and the 95\% confidence interval (CI-CRS). Dots show the coverage, i.e. the distance between the inferred age and the true age in relation to the standard error (the standard deviation in the case of the CI-CRS and the length of the confidence interval divided by 4 in the case of \textit{Plum}). The vertical right-hand axis shows how many standard deviations each model is from from the true age.  }
+		\caption{Comparison between \textit{Plum}, R-CRS and CI-CRS model against the true age-depth model using 95\% of the information percentage (using 1-cm samples). Lines show the age estimates with the 95\% credible intervals (\textit{Plum}) and the 95\% confidence interval (CI-CRS). Dots show the coverage, i.e. the distance between the inferred age and the true age in relation to the standard error (the standard deviation in the case of the CI-CRS and the length of the confidence interval divided by 4 in the case of \textit{Plum}). The vertical right-hand axis shows how many standard deviations each model is from the true age.  }
 		\label{fig:comparison1r}
 \end{figure}
 
@@ -482,7 +489,7 @@ As we are dealing with a total of $n =$ 5333 simulations, in order to evaluate t
 \begin{figure}[!]
  \centering
   \includegraphics[width=.75\linewidth]{AccPrec.pdf}
-	\caption{Top panel A) shows the bias between the modelled and true age of the CI-CRS (red), R-CRS (green) and \textit{Plum} (blue). This panel shows how \textit{Plum} provides a small bias in almost every scenario with both models improving their bias as more information is available. Middle panel B) shows the 95\% confidence intervals and credible intervals in the case of \textit{Plum}. It is clear, from this panel, than the uncertainty provided by \textit{Plum} is a significantly bigger for low percentages of information and it constantly improves as more data is available, whereas the lengths of the intervals provided by the CI-CRS and R-CRS appear to stay constant regardless of the available information. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age divided by the standard deviation (in the case of \textit{Plum}, the length of the 95\% interval divided by 4). This panel shows that the CI-CRS and R-CRS model's calculated standard deviation (on average) is incapable of capturing the true age. On the other hand, \textit{Plum}'s credible intervals almost always capture the true age even when little information is available.}
+	\caption{Top panel A) shows the bias between the modelled and true age of the CI-CRS (red), R-CRS (green) and \textit{Plum} (blue). This panel shows how \textit{Plum} provides a small bias in almost every scenario with both models improving their bias as more information is available. Middle panel B) shows the 95\% confidence intervals and credible intervals in the case of \textit{Plum}. It is clear, from this panel, than the uncertainty provided by \textit{Plum} is a significantly larger for low percentages of information and it constantly improves as more data is available, whereas the lengths of the intervals provided by the CI-CRS and R-CRS appear to stay constant regardless of the available information. Bottom panel C) shows the coverage, presenting the distance between the modelled age and the true age divided by the standard deviation (in the case of \textit{Plum}, the length of the 95\% interval divided by 4). This panel shows that the CI-CRS and R-CRS model's calculated standard deviation (on average) is incapable of capturing the true age. On the other hand, \textit{Plum}'s credible intervals almost always capture the true age even when little information is available.}
   \label{fig:accpre}
 \end{figure}
 
@@ -493,7 +500,7 @@ It is important to note that the CI-CRS and R-CRS models' biases do improves wit
 However, if we do not consider the effects of both the bias and length of the interval together, the results are not favourable to the CI-CRS. 
 To have a more realistic representation of how the models capture the true age-depth relationship, we consider the coverage. 
 This variable shows the degree to which the average models contain the truth within their uncertainty intervals (normalized to one standard deviation). 
-Any model with a coverage larger than two (two standard deviations) is incapable of capturing the true ages within its uncertainty intervals.  
+Any model with coverage larger than two (two standard deviations) is incapable of capturing the true ages within its uncertainty intervals.  
 This means that, while the CI-CRS and R-CRS estimate smaller uncertainties and the ages improve as sample size increases, it does so at the cost of accuracy as the improvements are not sufficient to capture the true age.
 It also appears that the length of the 95\% interval and bias are not affected by how much information is provided to the CRS model.
 
@@ -512,7 +519,7 @@ These results are valid for the overall chronology (mean bias, interval and cove
 \begin{figure}[!]
 	\begin{centering}
 		\includegraphics[width=\linewidth]{depthsnew.pdf}
-		\caption{Coverage of every sample at every depth for the three simulated scenarios - CI-CRS age estimates at sample depths and \textit{Plum}'s age estimates at 1 cm intervals. Dots go from lowest information percentage samples (few dated depths; red) to high percentage samples (nearly completely dated cores; purple). The CI-CRS's coverage shows no learning pattern at any particular depth regardless of the available information. This means that the model can provide a reasonable chronology with low levels of information or a very inaccurate age estimate with high levels of information at any given depth resulting in an unrealistic age-depth model. On the other hand, \textit{Plum} demonstrates a systematic improvement in its age estimates as more data is available. These results support that a Bayesian approach can consistently provide more reliable results.     }
+		\caption{Coverage of every sample at every depth for the three simulated scenarios - CI-CRS age estimates at sample depths and \textit{Plum}'s age estimates at 1 cm intervals. Dots go from lowest information percentage samples (few dated depths; red) to high percentage samples (nearly completely dated cores; purple). The CI-CRS's coverage shows no learning pattern at any particular depth regardless of the available information. This means that the model can provide a reasonable chronology with low levels of information or a very inaccurate age estimate with high levels of information at any given depth resulting in an unrealistic age-depth model. On the other hand, \textit{Plum} demonstrates a systematic improvement in its age estimates as more data is available. These results show that a Bayesian approach can consistently provide more reliable results.     }
 		\label{fig:depths}
 	\end{centering}
 \end{figure}
@@ -580,7 +587,7 @@ Lastly, it is important to highlight the benefits of the Bayesian methods.
 From both \citet{Blaauw2018} and the present work, it is shown that Bayesian methods constantly improve as more data are added, the uncertainty associated to the method is realistic and coherent with the amount of information available. 
 This leads to chronologies that are capable of capturing the true age in their credible intervals, especially with minimal expert input (unlike the CRS which relies on expert modifications). 
 The ability to capture the true value in the credible intervals becomes important when the problem is associated with decision making processes, as it provides a more realistic picture of the available knowledge of the process. 
-Given that $^{210}$Pb-dating is now widely-used in pollution, environmental and climate change studies, which potentially have a high impact on both policy-making and public perception, realistic age estimates and uncertainties become extremely important.
+Given that $^{210}$Pb-dating is now widely used in pollution, environmental and climate change studies, which potentially have a high impact on both policy-making and public perception, realistic age estimates and uncertainties become extremely important.
 
 \section{Acknowledgments}
 
@@ -603,7 +610,7 @@ Data for each simulation and code used are hosted at: \url{https://github.com/ma
 
 Bias, length of 95\% confidence intervals (credible intervals for \textit{Plum}) and coverage of the CIC and CF:CS models are shown in Figure \ref{fig:CIC-CFCS}.
 As can be observed and as expected the bias of the CIC model (which can be considered the simplest model) is much bigger when compared to any other alternative and it does not decrease as more data is available.
-The confidence interval remains regardless of the information available, and coverage is almost always above two, which means that the uncertainties are not sufficient to capture the true age-depth model.
+The confidence interval remains the same regardless of the information available, and coverage is almost always above two, which means that the uncertainties are not sufficient to capture the true age-depth model.
 On the other hand the CF:CS model does decrease its bias as more data is available and after 60\% to 70\% this decrease does not seen improve.
 The length of the interval remains the same regardless of the information available and the coverage just like the CIC model is almost always above 2 meaning that the uncertainties are not sufficient.
 
