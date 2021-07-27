@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.25)  26 JUL 2021 17:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.5.25)  27 JUL 2021 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -380,33 +380,21 @@ LaTeX Info: Redefining \nameref on input line 64.
 \@outlinefile=\write3
 \openout3 = `Plum-CRS_rev.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 107
+LaTeX Font Info:    Trying to load font information for U+msa on input line 115
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 107
+LaTeX Font Info:    Trying to load font information for U+msb on input line 115
 .
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 1097) in paragraph at lines 107--107
-[][]\OT1/cmr/m/n/8 GEOTOP Re-search Cen-tre, Uni-ver-sit^^Se du Qu^^Sebec ^^Ra 
-Montr^^Seal, Montr^^Seal, Qu^^Sebec, H2X 3Y7, Canada. email:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[][]\OT1/cmr/m/n/8 School of Nat-u-ral and Built En-vi-ron-ment, Queen's Uni-ve
-r-sity Belfast, Belfast, BT7-1NN, UK.
- []
-
-[1
+) [1
 
 {/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Figures//barras.pdf, id=103, 325.215pt x 289.08pt>
+<Figures//barras.pdf, id=99, 325.215pt x 289.08pt>
 File: Figures//barras.pdf Graphic file (type pdf)
 <use Figures//barras.pdf>
 Package pdftex.def Info: Figures//barras.pdf  used on input line 164.
@@ -429,7 +417,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 204.
 
 [4] [5] [6]
-<Figures//TEHUAII.pdf, id=245, 370.38374pt x 357.335pt>
+<Figures//TEHUAII.pdf, id=241, 370.38374pt x 357.335pt>
 File: Figures//TEHUAII.pdf Graphic file (type pdf)
 <use Figures//TEHUAII.pdf>
 Package pdftex.def Info: Figures//TEHUAII.pdf  used on input line 330.
@@ -439,7 +427,7 @@ Package pdftex.def Info: Figures//TEHUAII.pdf  used on input line 330.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7] [8 <./Figures//TEHUAII.pdf>] [9]
-<Figures//chronology.pdf, id=324, 614.295pt x 325.215pt>
+<Figures//chronology.pdf, id=320, 614.295pt x 325.215pt>
 File: Figures//chronology.pdf Graphic file (type pdf)
 <use Figures//chronology.pdf>
 Package pdftex.def Info: Figures//chronology.pdf  used on input line 424.
@@ -460,7 +448,7 @@ Overfull \hbox (6.74527pt too wide) in paragraph at lines 438--443
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 479.
 
-<Figures//95Comparison.pdf, id=385, 542.025pt x 490.83376pt>
+<Figures//95Comparison.pdf, id=381, 542.025pt x 490.83376pt>
 File: Figures//95Comparison.pdf Graphic file (type pdf)
 <use Figures//95Comparison.pdf>
 Package pdftex.def Info: Figures//95Comparison.pdf  used on input line 481.
@@ -469,7 +457,7 @@ Package pdftex.def Info: Figures//95Comparison.pdf  used on input line 481.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 489.
 
-<Figures//AccPrec.pdf, id=387, 650.43pt x 867.24pt>
+<Figures//AccPrec.pdf, id=383, 650.43pt x 867.24pt>
 File: Figures//AccPrec.pdf Graphic file (type pdf)
 <use Figures//AccPrec.pdf>
 Package pdftex.def Info: Figures//AccPrec.pdf  used on input line 491.
@@ -482,7 +470,7 @@ LaTeX Warning: Float too large for page by 52.6723pt on input line 494.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 519.
 
-<Figures//depthsnew.pdf, id=477, 578.16pt x 433.62pt>
+<Figures//depthsnew.pdf, id=473, 578.16pt x 433.62pt>
 File: Figures//depthsnew.pdf Graphic file (type pdf)
 <use Figures//depthsnew.pdf>
 Package pdftex.def Info: Figures//depthsnew.pdf  used on input line 521.
@@ -495,7 +483,7 @@ Overfull \hbox (18.132pt too wide) in paragraph at lines 607--608
 
  []
 
-<Figures//AccPrec-appendix.pdf, id=529, 650.43pt x 867.24pt>
+<Figures//AccPrec-appendix.pdf, id=525, 650.43pt x 867.24pt>
 File: Figures//AccPrec-appendix.pdf Graphic file (type pdf)
 <use Figures//AccPrec-appendix.pdf>
 Package pdftex.def Info: Figures//AccPrec-appendix.pdf  used on input line 622.
@@ -506,41 +494,36 @@ Package rerunfilecheck Info: File `Plum-CRS_rev.out' has not changed.
 (rerunfilecheck)             Checksum: 4A69EC0809D19E90F567DE34C0F00C51;2071.
  ) 
 Here is how much of TeX's memory you used:
- 9930 strings out of 478994
- 144979 string characters out of 5858184
+ 9906 strings out of 478994
+ 144704 string characters out of 5858184
  480019 words of memory out of 5000000
- 27175 multiletter control sequences out of 15000+600000
- 417702 words of font info for 82 fonts, out of 8000000 for 9000
+ 27158 multiletter control sequences out of 15000+600000
+ 415314 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,11n,74p,1352b,479s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><
-/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/202
-1/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2021/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2021/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2021/texmf-dist/f
-onts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2021/texmf-dist/fon
-ts/type1/public/cm-super/sfrm0800.pfb>
-Output written on Plum-CRS_rev.pdf (22 pages, 11750837 bytes).
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></us
+r/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/t
+exlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
+/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
+21/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/202
+1/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2021/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2021/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/local/texlive/2021/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Plum-CRS_rev.pdf (22 pages, 11676417 bytes).
 PDF statistics:
- 662 PDF objects out of 1000 (max. 8388607)
- 540 compressed objects within 6 object streams
+ 645 PDF objects out of 1000 (max. 8388607)
+ 527 compressed objects within 6 object streams
  74 named destinations out of 1000 (max. 500000)
  164 words of extra memory for PDF output out of 10000 (max. 10000000)
 
