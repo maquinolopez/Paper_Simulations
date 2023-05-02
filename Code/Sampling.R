@@ -1,7 +1,5 @@
 ###################################################
-# Bayesian Logistic Regression 
-# with measurement error in Early Irish
-#
+# Sampling data
 # Author:
 # Marco A. Aquino-López
 ###################################################

@@ -1,4 +1,4 @@
-This repository host the paper for comparing the *CRS* and *Plum* using simulations: 
+# Repository host the paper for comparing the *CRS* and *Plum* using simulations: 
 
 ***"A simulation study to compare 210Pb dating data analyses"***
 
@@ -29,4 +29,41 @@ Unidad Académica de Mazatlán, Instituto de Ciencias del Mar y Limnología, Uni
 **J Andrés Christen**
 
 Centro de Investigación en Matemáticas (CIMAT), Jalisco s/n, Valenciana, 36023 Guanajuato, GT, Mexico. 
+
+
+## Code can be find in the Code folder.
+
+subfolder ""Data" contains the simulated data for the 3 examples founds in the paper. This data is subsampled sandomly using "Sampling.R" code and then it is compared agains the true values. 
+
+Plots are created using "TEHUAII-plot.R", "Multiple_models_plot.R" and "Experiment_with_serac_package.R". Other files show funcions used for the comparison like the implementation of the models "CRS-CFCS.R" and "CI-CRS_vs_E-CRS.R".
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

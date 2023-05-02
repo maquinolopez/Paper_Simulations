@@ -2,8 +2,7 @@
 # Author:
 # Marco A. Aquino-López
 # Code:
-# Pruebas de CF:CS
-# 
+#  CF:CS
 ###############################
 
 if(!require("devtools"))
