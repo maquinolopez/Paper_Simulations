@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex Simulation_manuscript"] 1684773137 "Simulation_manuscript.aux" "Simulation_manuscript.bbl" "Simulation_manuscript" 1684773640
+["bibtex Simulation_manuscript"] 1684774513 "Simulation_manuscript.aux" "Simulation_manuscript.bbl" "Simulation_manuscript" 1684774513
   "/opt/local/share/texmf-texlive/bibtex/bst/base/apalike.bst" 1556755946 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "Simulation_manuscript.aux" 1684773638 14418 e20fba0b479cf3e8ea93df174d027afe "pdflatex"
-  "bibliography.bib" 1626913558 20349 c85af2087d6340c47d407bf0daf31641 ""
+  "Simulation_manuscript.aux" 1684774513 14323 152385362a93d11d92351aca77ea5f2b "pdflatex"
+  "bibliography.bib" 1684774487 17824 3dd1f9fd6675a07312290c77161dd73c ""
   (generated)
   "Simulation_manuscript.bbl"
   "Simulation_manuscript.blg"
-["pdflatex"] 1684773640 "Simulation_manuscript.tex" "Simulation_manuscript.pdf" "Simulation_manuscript" 1684773640
+["pdflatex"] 1684774481 "Simulation_manuscript.tex" "Simulation_manuscript.pdf" "Simulation_manuscript" 1684774513
   "/Users/ma2060/Library/texmf/tex/context/base/mkii/supp-pdf.mkii" 1678549815 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/Users/ma2060/Library/texmf/tex/generic/atbegshi/atbegshi.sty" 1678549815 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/Users/ma2060/Library/texmf/tex/generic/babel-english/english.ldf" 1678549815 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
@@ -76,7 +76,6 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbx9.tfm" 1136768653 1328 5442e22a7072966dbaf88ca900acf3f0 ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -96,12 +95,10 @@
   "/usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm" 1136768653 768 d7b9a2629a0c353102ad947dc9221d49 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1248133631 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1248133631 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
-  "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1248133631 36094 798f80770b3b148ceedd006d487db67c ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
@@ -128,10 +125,10 @@
   "Figures//barras.pdf" 1606777684 4585 9c8dc6d02275e080f5825a9417c2a590 ""
   "Figures//chronology.pdf" 1626910958 30205 6ff3aaadf8ae66cc432305b1b923968e ""
   "Figures//depthsnew.pdf" 1616282970 11301615 6fc3d4b720d5bc130ba2b95ca7f5c9bd ""
-  "Simulation_manuscript.aux" 1684773638 14418 e20fba0b479cf3e8ea93df174d027afe "pdflatex"
-  "Simulation_manuscript.bbl" 1684773137 5009 e6e8d9f50fe823310182539bed240eb8 "bibtex Simulation_manuscript"
-  "Simulation_manuscript.out" 1684773638 1712 a5daa905623d195c4aec686e2a91ffba "pdflatex"
-  "Simulation_manuscript.tex" 1684773628 64982 292f8f8b51d738b3493b6fdcfe5b06be ""
+  "Simulation_manuscript.aux" 1684774513 14323 152385362a93d11d92351aca77ea5f2b "pdflatex"
+  "Simulation_manuscript.bbl" 1684774513 5009 e6e8d9f50fe823310182539bed240eb8 "bibtex Simulation_manuscript"
+  "Simulation_manuscript.out" 1684774513 1712 a5daa905623d195c4aec686e2a91ffba "pdflatex"
+  "Simulation_manuscript.tex" 1684774089 64593 709f0924917bc982a8169c8683e0c9b0 ""
   (generated)
   "Simulation_manuscript.aux"
   "Simulation_manuscript.log"
