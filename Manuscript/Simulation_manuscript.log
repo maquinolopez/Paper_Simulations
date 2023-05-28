@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.26)  22 MAY 2023 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.26)  27 MAY 2023 15:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -374,26 +374,13 @@ Package hyperref Info: Link coloring OFF on input line 65.
 \@outlinefile=\write3
 \openout3 = `Simulation_manuscript.out'.
 
+ [1
 
-Underfull \hbox (badness 1097) in paragraph at lines 108--108
-[][]\OT1/cmr/m/n/8 GEOTOP Re-search Cen-tre, Uni-ver-sit^^Se du Qu^^Sebec ^^Ra 
-Montr^^Seal, Montr^^Seal, Qu^^Sebec, H2X 3Y7, Canada. email:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 108--108
-[][]\OT1/cmr/m/n/8 School of Nat-u-ral and Built En-vi-ron-ment, Queen's Uni-ve
-r-sity Belfast, Belfast, BT7-1NN, UK.
- []
-
-[1
-
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<Figures//barras.pdf, id=86, 325.215pt x 289.08pt>
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<Figures//barras.pdf, id=82, 325.215pt x 289.08pt>
 File: Figures//barras.pdf Graphic file (type pdf)
 <use Figures//barras.pdf>
-Package pdftex.def Info: Figures//barras.pdf  used on input line 154.
+Package pdftex.def Info: Figures//barras.pdf  used on input line 167.
 (pdftex.def)             Requested size: 352.31625pt x 313.19421pt.
 
 
@@ -402,18 +389,18 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [2] [3 <./Figures//barras.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 185.
+(hyperref)                removing `math shift' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 185.
+(hyperref)                removing `superscript' on input line 198.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 185.
+(hyperref)                removing `math shift' on input line 198.
 
 [4]
-Overfull \hbox (14.2595pt too wide) in paragraph at lines 203--228
+Overfull \hbox (14.2595pt too wide) in paragraph at lines 216--240
  [][] 
  []
 
@@ -421,53 +408,57 @@ Overfull \hbox (14.2595pt too wide) in paragraph at lines 203--228
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [5] [6]
-<Figures//TEHUAII-2.pdf, id=219, 521.95pt x 390.45876pt>
+<Figures//TEHUAII-2.pdf, id=215, 521.95pt x 390.45876pt>
 File: Figures//TEHUAII-2.pdf Graphic file (type pdf)
 <use Figures//TEHUAII-2.pdf>
-Package pdftex.def Info: Figures//TEHUAII-2.pdf  used on input line 322.
+Package pdftex.def Info: Figures//TEHUAII-2.pdf  used on input line 337.
 (pdftex.def)             Requested size: 352.31625pt x 263.5602pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8 <./Figures//TEHUAII-2.pdf>] [9]
-<Figures//chronology.pdf, id=293, 614.295pt x 325.215pt>
+[7] [8 <./Figures//TEHUAII-2.pdf>] [9{/usr/local/texlive/2023/texmf-dist/fonts/
+enc/dvips/cm-super/cm-super-ts1.enc}]
+<Figures//chronology.pdf, id=289, 614.295pt x 325.215pt>
 File: Figures//chronology.pdf Graphic file (type pdf)
 <use Figures//chronology.pdf>
-Package pdftex.def Info: Figures//chronology.pdf  used on input line 412.
+Package pdftex.def Info: Figures//chronology.pdf  used on input line 427.
 (pdftex.def)             Requested size: 446.26582pt x 236.25867pt.
- [10 <./Figures//chronology.pdf>]
-[11]
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10] [11 <./Figures//chronology.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 466.
+               Default added (so using `!tbp') on input line 487.
 
-<Figures//95Comparison.pdf, id=358, 542.025pt x 490.83376pt>
+<Figures//95Comparison.pdf, id=354, 542.025pt x 490.83376pt>
 File: Figures//95Comparison.pdf Graphic file (type pdf)
 <use Figures//95Comparison.pdf>
-Package pdftex.def Info: Figures//95Comparison.pdf  used on input line 468.
+Package pdftex.def Info: Figures//95Comparison.pdf  used on input line 489.
 (pdftex.def)             Requested size: 469.75502pt x 425.40417pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 476.
+               Default added (so using `!tbp') on input line 497.
 
-<Figures//AccPrec.pdf, id=360, 650.43pt x 867.24pt>
+<Figures//AccPrec.pdf, id=356, 650.43pt x 867.24pt>
 File: Figures//AccPrec.pdf Graphic file (type pdf)
 <use Figures//AccPrec.pdf>
-Package pdftex.def Info: Figures//AccPrec.pdf  used on input line 478.
+Package pdftex.def Info: Figures//AccPrec.pdf  used on input line 499.
 (pdftex.def)             Requested size: 305.33789pt x 407.12648pt.
 
-LaTeX Warning: Float too large for page by 5.49603pt on input line 481.
+LaTeX Warning: Float too large for page by 5.49603pt on input line 502.
 
 [12] [13 <./Figures//95Comparison.pdf>] [14 <./Figures//AccPrec.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `!tbp') on input line 504.
+               Default added (so using `!tbp') on input line 529.
 
-<Figures//depthsnew.pdf, id=450, 578.16pt x 433.62pt>
+<Figures//depthsnew.pdf, id=446, 578.16pt x 433.62pt>
 File: Figures//depthsnew.pdf Graphic file (type pdf)
 <use Figures//depthsnew.pdf>
-Package pdftex.def Info: Figures//depthsnew.pdf  used on input line 506.
+Package pdftex.def Info: Figures//depthsnew.pdf  used on input line 531.
 (pdftex.def)             Requested size: 469.75502pt x 352.31538pt.
 [15] [16 <./Figures//depthsnew.pdf>] [17] (./Simulation_manuscript.bbl [18]
 [19]) [20] (./Simulation_manuscript.aux)
@@ -475,13 +466,13 @@ Package rerunfilecheck Info: File `Simulation_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: A5DAA905623D195C4AEC686E2A91FFBA;1712.
  ) 
 Here is how much of TeX's memory you used:
- 10612 strings out of 476001
- 169047 string characters out of 5789199
- 1873074 words of memory out of 5000000
- 30868 multiletter control sequences out of 15000+600000
- 522486 words of font info for 68 fonts, out of 8000000 for 9000
+ 10590 strings out of 476001
+ 168794 string characters out of 5789199
+ 1874074 words of memory out of 5000000
+ 30853 multiletter control sequences out of 15000+600000
+ 520506 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,1344b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,76p,1353b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
@@ -493,21 +484,17 @@ al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
 ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/202
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2023/texmf-dist
-/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/f
-onts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fon
-ts/type1/public/cm-super/sfrm1000.pfb>
-Output written on Simulation_manuscript.pdf (20 pages, 11733755 bytes).
+2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/202
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2023/texmf
+-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on Simulation_manuscript.pdf (20 pages, 11658270 bytes).
 PDF statistics:
- 607 PDF objects out of 1000 (max. 8388607)
- 477 compressed objects within 5 object streams
+ 587 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
  65 named destinations out of 1000 (max. 500000)
  127 words of extra memory for PDF output out of 10000 (max. 10000000)
 
