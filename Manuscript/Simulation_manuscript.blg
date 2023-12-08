@@ -1,46 +1,46 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/MacPorts 2022.62882_1)
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Simulation_manuscript.aux
 The style file: apalike.bst
 Database file #1: bibliography.bib
-You've used 18 entries,
+You've used 19 entries,
             1935 wiz_defined-function locations,
-            611 strings with 7762 characters,
-and the built_in function-call counts, 8231 in all, are:
-= -- 813
-> -- 367
+            621 strings with 8025 characters,
+and the built_in function-call counts, 8727 in all, are:
+= -- 858
+> -- 395
 < -- 15
-+ -- 130
-- -- 128
-* -- 718
-:= -- 1409
-add.period$ -- 54
-call.type$ -- 18
-change.case$ -- 154
-chr.to.int$ -- 18
-cite$ -- 18
-duplicate$ -- 286
-empty$ -- 544
-format.name$ -- 154
-if$ -- 1609
++ -- 140
+- -- 138
+* -- 768
+:= -- 1496
+add.period$ -- 57
+call.type$ -- 19
+change.case$ -- 164
+chr.to.int$ -- 19
+cite$ -- 19
+duplicate$ -- 300
+empty$ -- 576
+format.name$ -- 165
+if$ -- 1703
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 93
-num.names$ -- 54
-pop$ -- 115
+missing$ -- 19
+newline$ -- 98
+num.names$ -- 57
+pop$ -- 123
 preamble$ -- 1
-purify$ -- 154
+purify$ -- 164
 quote$ -- 0
-skip$ -- 237
+skip$ -- 247
 stack$ -- 0
-substring$ -- 651
-swap$ -- 52
+substring$ -- 690
+swap$ -- 53
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 108
+type$ -- 114
 warning$ -- 0
-while$ -- 72
+while$ -- 75
 width$ -- 0
-write$ -- 236
+write$ -- 249
