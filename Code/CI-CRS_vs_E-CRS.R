@@ -16,11 +16,11 @@ library("devtools")
 library(roxygen2)
 roxygenize()
 document()
-setwd("..")
+setwd("~/MEGA_A/Paleo work/Caro Y Joan/Paquete-CRS/Pb210Dating/")
 #uninstall("Pb210Dating")
-install  ("~/MEGA_A/Paleo work/Caro Y Joan/Paquete-CRS/Pb210Dating/")
+install("~/MEGA_A/Paleo work/Caro Y Joan/Paquete-CRS/Pb210Dating/")
 library(Pb210Dating)
-source('~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/CRS.R')
+source('~/MEGA_A/Paleo work/Nicole K Sanderson/Sampling and percentages/CRS.R')
 #load_all ("Pb210Dating")
 #?Pb210CF
 #################################
@@ -28,16 +28,16 @@ source('~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/CRS.R')
 
 #### User defined parameters ####
 
-wd      <- "~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/Plum_runs/"
+wd      <- "~/MEGA_A/Paleo work/Nicole K Sanderson/Sampling and percentages/Plum_runs/"
 core    <- list.files(wd)
-#core    <- core[grepl("Sim01",substr(core,0,5) )]
-cores   <- core #vector()
-# for (k in seq(20,95,5)){
-#   tmp1  <- core[grepl(as.character(k),substr(core,7,8) )]
-#   cores <- c(cores,sample(tmp1,20)) 
-# }
+core    <- core[grepl("Sim01",substr(core,0,5) )]
+cores   <- vector()#core #vector()
+for (k in seq(20,95,5)){
+  tmp1  <- core[grepl(as.character(k),substr(core,7,8) )]
+  cores <- c(cores,sample(tmp1,20))
+}
 
-#cores   <- core[-c(1:202)]
+cores   <- core[-c(1:202)]
 
 #write.csv(cores,"~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_bigest.csv")
 cores  <- read.csv("~/OwnCloud-NicoleKS/Plum vs CRS/Sampling and percentages/cores_E-CRS_bigest.csv")[,2]
