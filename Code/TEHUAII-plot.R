@@ -1,5 +1,5 @@
 
-pb = read.csv(paste0("~/GitHub//Paper_Simulations/Code/Plum_runs/TEHUAII/TEHUAII-S.csv"))
+pb = read.csv(paste0("./Code/Plum_runs/TEHUAII/TEHUAII-S.csv"))
 
 header <- c("depth_min","depth_max","density","Pb210ex","Pb210ex_er","Cs137","Cs137_er","Am241","Am241_er")
 newcore <- c(pb$Depth-pb$Thinkness,pb$Depth,pb$Density,pb$X120Pb-pb$X226Ra,pb$u.210Pb.+pb$X226Ra_sd,rep(NA,length(pb$ID)),rep(NA,length(pb$ID)),rep(NA,length(pb$ID)),rep(NA,length(pb$ID)) )
@@ -11,10 +11,10 @@ test<- try(serac::serac("First_core",coring_yr=2020,model=c("CIC","CRS","CFCS"),
 #serac::serac("First_core",coring_yr=2020,model=c("CIC","CRS","CFCS"),plotphoto = F,plotpdf = F,plot_Pb = F,plot_Am = F)
 
 
-CFCS = read.table(paste0("~/GitHub//Paper_Simulations/Code/Plum_runs/TEHUAII/TEHUAII_CFCS.txt"),sep = " ",header = T)
+CFCS = read.table(paste0("./Code/Plum_runs/TEHUAII/TEHUAII_CFCS.txt"),sep = " ",header = T)
 # menos 2020
-Models = read.csv("~/GitHub//Paper_Simulations/Code/Plum_runs/TEHUAII/TEHUAII-Models.csv")
-Plum = read.table("~/GitHub//Paper_Simulations/Code/Plum_runs/TEHUAII/TEHUAII_19_ages.txt",sep = "\t",header = T)
+Models = read.csv("./Code/Plum_runs/TEHUAII/TEHUAII-Models.csv")
+Plum = read.table("./Code/Plum_runs/TEHUAII/TEHUAII_19_ages.txt",sep = "\t",header = T)
 # -55
 
 plot(Plum$depth,Plum$mean+55,col=rgb(0,0,1,.5),type = 'l',xlab="depth (cm)",ylab = "age (yr)",main = "TEHUAII",
