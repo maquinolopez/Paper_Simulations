@@ -4,7 +4,7 @@
 # Marco A. Aquino-López
 ###################################################
 setwd('~/OneDrive - Maynooth University/Paleo work/Nicole K Sanderson/Sampling and percentages/')
-source("Sampling.R")
+source("Sampling_function.R")
 
 
 # Simulation 1

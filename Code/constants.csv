@@ -1,0 +1,12 @@
+Name,Value,Required
+TimeSampling,2020-01-01,Required
+Diameter,1.128379,Required
+DiameterU,0.01,Required
+LayerDating,,Not required
+MITopS,,Not required
+MITopSU,,Not required
+MIBotS,,Not required
+MIBotSU,,Not required
+Runs,,Not required
+Halflife,,Not required
+HalflifeU,,Not required

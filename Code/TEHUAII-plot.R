@@ -47,7 +47,7 @@ polygon(pol, col=rgb(1,0,0,.5), border=rgb(.5,.5,0,.5))
 legend(0,240,legend = c('Plum',"CRS"),
        col=c(rgb(0,0,1,.5),rgb(1,0,0,.5) ),
        bty = "n",pch=c(15,15) )
-
+n
 
 legend(0,240,legend = c('Plum',"CIC","CRS","CF:CS"),
        col=c(rgb(0,0,1,.5),rgb(1,0,0,.5),rgb(.5,.5,0,.5),rgb(0,1,.6,.5) ),
